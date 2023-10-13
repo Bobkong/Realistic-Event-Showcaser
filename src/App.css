@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* Components */
+.Tool-tip-text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+.Tool-tip-img {
+  border: none;
+}
