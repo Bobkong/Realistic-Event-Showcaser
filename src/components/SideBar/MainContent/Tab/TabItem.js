@@ -7,6 +7,7 @@ import {
     ButtonBase
 } from '@material-ui/core'
 import { useEffect, useState, useRef } from 'react';
+import { useAppState } from '../../../../state';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -76,12 +77,14 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const handleClick = ({tab, setCurrentIndex}) => {
+const handleClick = ({tab, setCurrentIndex, setCurrentSlide}) => {
+    setCurrentSlide(null);
     setCurrentIndex(tab.index);
   };
 
 export const TabItem = ({ tab, currentIndex, setCurrentIndex }) => {
     const [selected, setSelected] = useState(false);
+    const {setCurrentSlide} = useAppState();
     useEffect(() => {
         // update selected status
         setSelected(currentIndex === tab.index)
@@ -91,7 +94,7 @@ export const TabItem = ({ tab, currentIndex, setCurrentIndex }) => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root} onClick={() => handleClick({tab, setCurrentIndex})}>
+        <div className={classes.root} onClick={() => handleClick({tab, setCurrentIndex, setCurrentSlide})}>
             <ButtonBase className={classes.buttonBase} disableTouchRipple>
                 <IconButton className={[
                     classes.tabIconButton,

@@ -1,4 +1,4 @@
-import { List, Typography, makeStyles } from "@material-ui/core"
+import { List, Typography, makeStyles, useMediaQuery } from "@material-ui/core"
 import { LocationCard } from "./LocationCard";
 import { useState } from "react";
 import { LocationSlide } from "./LocationDetail/LocationSlide";
@@ -10,44 +10,43 @@ const useStyles = makeStyles((theme) => ({
     },
 
     listRoot: {
-        padding: '24px 16px',
-        [theme.breakpoints.down('sm')]: {
-            padding: '0px 0px'
-        }
+        padding: '16px 16px',
     },
 
-    cardList: {
+    mobileListRoot: {
+        padding: '16px 0px',
+    },
+
+    mobileCollapsedList: {
         // if mobile, show the list horizontally
-        [theme.breakpoints.down('sm')]: {
-            width: '100%',
-            display: 'flex',
-            whiteSpace: 'nowrap',
-            overflowX: 'auto',
-            paddingInline: "24px",
-        }
+        width: '100%',
+        display: 'flex',
+        whiteSpace: 'nowrap',
+        overflowX: 'auto',
+        paddingInline: '16px'
     },
 
-    tabDescription: {
+    mobileCollapsedDescription: {
         [theme.breakpoints.down('sm')]: {
-            paddingInline: "24px"
+            paddingInline: "16px"
         }
     }
 }));
 
 export const RightPanel = ({ currentIndex }) => {
-    const classes = useStyles();
-    const {currentSlide, jsonData} = useAppState();
+    const {currentSlide, jsonData, mobileExpanded, isMobileCollapsed} = useAppState();
+    const classes = useStyles({mobileExpanded: mobileExpanded});
     const tab = jsonData.tabs[currentIndex];
 
     return (
         <div className={classes.root}>
             {/* show list */}
             {!currentSlide && (
-                <div className={classes.listRoot} >
-                    <Typography variant="body2" color="textSecondary" component='p' className={classes.tabDescription}>
+                <div className={isMobileCollapsed ? classes.mobileListRoot : classes.listRoot} >
+                    <Typography variant="body2" color="textSecondary" component='p' className={isMobileCollapsed ? classes.mobileCollapsedDescription: ''}>
                         {tab.description}
                     </Typography>
-                    <List className={classes.cardList}>
+                    <List className={isMobileCollapsed ? classes.mobileCollapsedList: ''}>
                         {tab.locations.map((location, slideNum) => (
                             <LocationCard data={{
                                 location: location,

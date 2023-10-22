@@ -1,5 +1,6 @@
 import { createContext, useState, useContext } from "react"
 import { createGoogle3DLayer } from "./layers/google-3d";
+import { useMediaQuery } from "@material-ui/core";
 
 export const AppStateContext = createContext();
 
@@ -17,8 +18,8 @@ export const AppStateStore = ({children, jsonData}) => {
     };
 
     const [viewState, setViewState] = useState(initViewState);
-
-
+    const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
+    const isMobileCollapsed = !isDesktop && !mobileExpanded
 
     const Google3DLayer = createGoogle3DLayer(setCredits);
     const allLayers = [Google3DLayer];
@@ -44,6 +45,7 @@ export const AppStateStore = ({children, jsonData}) => {
                 jsonData,
                 layers,
                 viewState,
+                isMobileCollapsed
             }}>
             {children}
         </AppStateContext.Provider>

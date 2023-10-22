@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
       whiteSpace: 'nowrap',
       overflowX: 'auto',
       paddingLeft: '16px',
+      marginBottom: '0px',
       marginTop: '0px',
       '&::-webkit-scrollbar': {
         height: '0px',

@@ -11,7 +11,9 @@ const useStyles = makeStyles((theme) => ({
         padding: '0px',
         overflow: 'hidden',
         position: 'relative',
-        flex: '0 0 auto',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '16px'
+        }
     },
 
     mobileRoot: {
@@ -65,8 +67,7 @@ const useStyles = makeStyles((theme) => ({
 export const SlideHeader = () => {
     const classes = useStyles();
     const theme = useTheme();
-    const { reset, currentSlide, setLoctionSlide } = useAppState();
-    const { mobileExpanded, setMobileExpanded } = useAppState();
+    const { reset, currentSlide, setLoctionSlide, mobileExpanded, setMobileExpanded } = useAppState();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
     const headerStyle = {
