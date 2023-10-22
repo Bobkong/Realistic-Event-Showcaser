@@ -1,6 +1,6 @@
 import {Tile3DLayer} from '@deck.gl/geo-layers';
 
-const API_KEY = 'AIzaSyAp9layJVehgMEkJd_XUCKR4zVWg5K--YQ';
+const API_KEY = 'AIzaSyCpvQymc5wjSYIsxy3RV1widM3p3h78CAk';
 const TILESET_URL = 'https://tile.googleapis.com/v1/3dtiles/root.json';
 
 

@@ -30,12 +30,12 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 
-export const Tabs = ({ currentIndex, setCurrentIndex }) => {
+export const Tabs = () => {
   const classes = useStyles()
-  const {jsonData} = useAppState();
+  const {jsonData, curretnTabIndex, setCurrentTabIndex} = useAppState();
   const tabItems = jsonData.tabs.map((tab, index) => (
     <li className={classes.tabItem} key={index}>
-      <TabItem tab={ tab } currentIndex={ currentIndex } setCurrentIndex = { setCurrentIndex}/>
+      <TabItem tab={ tab }/>
     </li>
   ))
   const containerRef = useRef(null);

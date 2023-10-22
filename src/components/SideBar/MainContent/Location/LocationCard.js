@@ -51,15 +51,14 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const handleClick = ({data, setCurrentSlide}) => {
+const handleClick = ({location, setCurrentSlide}) => {
     // open location slide
-    setCurrentSlide(data)
+    setCurrentSlide(location)
 }
 
-export const LocationCard = ({ data }) => {
+export const LocationCard = ({ location }) => {
     const classes = useStyles();
     const theme = useTheme();
-    const {location} = data;
     const {setCurrentSlide, isMobileCollapsed} = useAppState();
     
 
@@ -70,7 +69,7 @@ export const LocationCard = ({ data }) => {
 
     return (
         <ListItem className={isMobileCollapsed ? classes.mobileCollapsedRoot : classes.root} 
-            style={cardItemStyle} onClick={() => handleClick({data, setCurrentSlide})}>
+            style={cardItemStyle} onClick={() => handleClick({location, setCurrentSlide})}>
             <div className={classes.textContainer}>
                 <Typography variant="subtitle1" className={classes.title} component='p'>
                     {location.name}

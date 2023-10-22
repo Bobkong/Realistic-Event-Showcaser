@@ -30,15 +30,14 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export const MainContent = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
     const classes = useStyles();
     const {jsonData} = useAppState();
 
     return (
         <div className={classes.root}>
-            <Tabs currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+            <Tabs />
             <div className={classes.divider} />
-            <RightPanel currentIndex={currentIndex}/>
+            <RightPanel/>
         </div>
     )
 }

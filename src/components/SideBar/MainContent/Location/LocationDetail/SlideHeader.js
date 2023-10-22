@@ -71,7 +71,7 @@ export const SlideHeader = () => {
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
     const headerStyle = {
-        background: `url(${currentSlide.location.imgURL})`,
+        background: `url(${currentSlide.imgURL})`,
         backgroundSize: 'cover',
     }
 
@@ -89,10 +89,10 @@ export const SlideHeader = () => {
                     </IconButton>
                     <div className={classes.textContainer}>
                         <Typography variant="subtitle1" className={classes.title} component='p'>
-                            {currentSlide.location.name}
+                            {currentSlide.name}
                         </Typography>
                         <Typography variant="body2" className={classes.address} component='p'>
-                            {currentSlide.location.address}
+                            {currentSlide.address}
                         </Typography>
                     </div>
                 </div>
@@ -102,10 +102,10 @@ export const SlideHeader = () => {
             {!mobileExpanded && !isDesktop && (
                 <div className={classes.mobileRoot}>
                     <Typography variant="h4" color="primary" component='p'>
-                        {currentSlide.location.name}
+                        {currentSlide.name}
                     </Typography>
                     <Typography variant="body1" color="textSecondary" component='p'>
-                        {currentSlide.location.address}
+                        {currentSlide.address}
                     </Typography>
                 </div>
             )}

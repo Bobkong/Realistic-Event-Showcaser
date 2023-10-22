@@ -77,24 +77,24 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const handleClick = ({tab, setCurrentIndex, setCurrentSlide}) => {
+const handleClick = ({tab, setCurrentTabIndex, setCurrentSlide}) => {
     setCurrentSlide(null);
-    setCurrentIndex(tab.index);
+    setCurrentTabIndex(tab.index);
   };
 
-export const TabItem = ({ tab, currentIndex, setCurrentIndex }) => {
+export const TabItem = ({ tab}) => {
     const [selected, setSelected] = useState(false);
-    const {setCurrentSlide} = useAppState();
+    const {setCurrentSlide, currentTabIndex, setCurrentTabIndex} = useAppState();
     useEffect(() => {
         // update selected status
-        setSelected(currentIndex === tab.index)
-    }, [currentIndex]);
+        setSelected(currentTabIndex === tab.index)
+    }, [currentTabIndex]);
 
     
     const classes = useStyles();
 
     return (
-        <div className={classes.root} onClick={() => handleClick({tab, setCurrentIndex, setCurrentSlide})}>
+        <div className={classes.root} onClick={() => handleClick({tab, setCurrentTabIndex, setCurrentSlide})}>
             <ButtonBase className={classes.buttonBase} disableTouchRipple>
                 <IconButton className={[
                     classes.tabIconButton,

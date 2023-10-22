@@ -1,20 +1,28 @@
-import { createContext, useState, useContext } from "react"
+import { createContext, useState, useContext, useCallback, useEffect } from "react"
 import { createGoogle3DLayer } from "./layers/google-3d";
-import { useMediaQuery } from "@material-ui/core";
+import { useMediaQuery, useTheme } from "@material-ui/core";
+import { createIconLayer } from "./layers/icon-layer";
+import { Easing } from '@tweenjs/tween.js';
+import { LinearInterpolator } from '@deck.gl/core';
+import FlyToInterpolator from './layers/fly-to-interpolator.js';
 
 export const AppStateContext = createContext();
+const transitionInterpolator = new LinearInterpolator(['bearing', 'longitude', 'latitude']);
 
-export const AppStateStore = ({children, jsonData}) => {
+export const AppStateStore = ({ children, jsonData }) => {
     const [credits, setCredits] = useState('');
     const [currentSlide, setCurrentSlide] = useState(null);
+    const [currentTabIndex, setCurrentTabIndex] = useState(0);
     const [mobileExpanded, setMobileExpanded] = useState(false);
+    const theme = useTheme();
 
     const initViewState = {
-        longitude: 2.2945,
-        latitude: 48.8584,
+        longitude: 2.2478,
+        latitude: 48.9293,
         zoom: 15,
         bearing: 90,
-        pitch: 60
+        pitch: 60,
+        height: 30
     };
 
     const [viewState, setViewState] = useState(initViewState);
@@ -22,19 +30,68 @@ export const AppStateStore = ({children, jsonData}) => {
     const isMobileCollapsed = !isDesktop && !mobileExpanded
 
     const Google3DLayer = createGoogle3DLayer(setCredits);
-    const allLayers = [Google3DLayer];
-    const[layers, setLayers] = useState(allLayers);
+    let allLocaitons = [];
+    jsonData.tabs.map((tab, index) => {
+        allLocaitons.push(...tab.locations);
+    });
+    const [tooltipStyle, setTooltipStyle] = useState({ position: "absolute", display: "none" });
+    let IconLayer = createIconLayer(allLocaitons, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex)
+    let allLayers = [Google3DLayer, IconLayer];
+    const [layers, setLayers] = useState(allLayers);
+    // hover tooltip
+
+    const orbit = useCallback(previousTransition => {
+        setViewState((viewState) => ({
+            ...viewState,
+            bearing: viewState.bearing + 120,
+            transitionDuration: previousTransition ? 20000 : 25000, // TODO should match gradients with easing
+            transitionEasing: previousTransition ? x => x : Easing.Quadratic.In,
+            transitionInterpolator,
+            onTransitionEnd: orbit
+        }));
+    }, []);
+
+    const updateViewState = function (viewState) {
+        setViewState({
+            transitionDuration: 5000,
+            ...viewState,
+            transitionEasing: Easing.Quadratic.InOut,
+            transitionInterpolator: new FlyToInterpolator({ curve: 1.1 }),
+            onTransitionEnd: () => {
+                orbit();
+            }
+        });
+    };
+
+    useEffect(
+        () => {
+            if (currentSlide != null) {
+                // update icon
+                IconLayer = createIconLayer(allLocaitons, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex)
+                allLayers = [Google3DLayer, IconLayer];
+                setLayers(allLayers);
+                // update view state
+                updateViewState({ latitude: currentSlide.coordinates[1], longitude: currentSlide.coordinates[0], zoom: 15, bearing: 90, pitch: 60});
+            }
+        },
+        [currentSlide]
+    );
+
+    useEffect(()=> {
+        // orbit initially
+        orbit();
+    },[]);
 
     return (
         <AppStateContext.Provider
             value={{
-                next: ()=> {
+                next: () => {
                     setCurrentSlide(currentSlide => currentSlide.tab.locations[Math.min(currentSlide.index + 1, currentSlide.tab.locations.length - 1)]);
                 },
-                prev: ()=> {
+                prev: () => {
                     setCurrentSlide(currentSlide => currentSlide.tab.locations[Math.max(0, currentSlide.index - 1)]);
                 },
-                reset: ()=>{
+                reset: () => {
                     setCurrentSlide(null);
                 },
                 credits,
@@ -45,7 +102,10 @@ export const AppStateStore = ({children, jsonData}) => {
                 jsonData,
                 layers,
                 viewState,
-                isMobileCollapsed
+                isMobileCollapsed,
+                currentTabIndex,
+                setCurrentTabIndex,
+                tooltipStyle
             }}>
             {children}
         </AppStateContext.Provider>
@@ -55,4 +115,4 @@ export const AppStateStore = ({children, jsonData}) => {
 
 export function useAppState() {
     return useContext(AppStateContext);
-  }
+}

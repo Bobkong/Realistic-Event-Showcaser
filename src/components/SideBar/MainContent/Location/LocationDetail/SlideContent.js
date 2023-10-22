@@ -36,10 +36,10 @@ export const SlideContent = () => {
 
             <div className={classes.textDiv}>
                 <Typography variant="subtitle1" color="primary" component='p' className={classes.subtitle}>
-                    {currentSlide.location.subtitle}
+                    {currentSlide.subtitle}
                 </Typography>
 
-                {currentSlide.location.description.map((content, index) => (
+                {currentSlide.description.map((content, index) => (
                     <Typography variant="body2" color="textPrimary" component='p' className={classes.subtitle}>
                         {content}
                     </Typography>

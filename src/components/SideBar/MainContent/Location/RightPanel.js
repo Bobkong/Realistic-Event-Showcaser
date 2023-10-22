@@ -1,6 +1,6 @@
 import { List, Typography, makeStyles, useMediaQuery } from "@material-ui/core"
 import { LocationCard } from "./LocationCard";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { LocationSlide } from "./LocationDetail/LocationSlide";
 import { useAppState } from "../../../../state";
 
@@ -33,13 +33,22 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export const RightPanel = ({ currentIndex }) => {
-    const {currentSlide, jsonData, mobileExpanded, isMobileCollapsed} = useAppState();
+export const RightPanel = () => {
+    const {currentSlide, jsonData, mobileExpanded, isMobileCollapsed, currentTabIndex} = useAppState();
     const classes = useStyles({mobileExpanded: mobileExpanded});
-    const tab = jsonData.tabs[currentIndex];
+    const tab = jsonData.tabs[currentTabIndex];
+    const rootRef = useRef(null);
+
+    useLayoutEffect(() => {
+        if(rootRef.current) {
+            // reset slide vertical scroll distance
+            console.log("reset")
+            rootRef.current.scrollTop = 0;
+        }
+    }, [currentSlide]);
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} ref={rootRef}>
             {/* show list */}
             {!currentSlide && (
                 <div className={isMobileCollapsed ? classes.mobileListRoot : classes.listRoot} >
@@ -47,12 +56,8 @@ export const RightPanel = ({ currentIndex }) => {
                         {tab.description}
                     </Typography>
                     <List className={isMobileCollapsed ? classes.mobileCollapsedList: ''}>
-                        {tab.locations.map((location, slideNum) => (
-                            <LocationCard data={{
-                                location: location,
-                                tab: tab,
-                                slideNum: slideNum
-                            }} key={location.name} />
+                        {tab.locations.map((location, index) => (
+                            <LocationCard location={location} key={location.name} />
                         ))}
                     </List>
                 </div>)

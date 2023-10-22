@@ -1,8 +1,9 @@
 import DeckGL from '@deck.gl/react';
 import React, { useEffect, useState } from 'react';
-import { createGoogle3DLayer } from '../../layers/google-3d';
-import { createIconLayer } from '../../layers/icon-layer';
 import { useAppState } from '../../state';
+import { createGoogle3DLayer } from '../../layers/google-3d';
+import { makeStyles } from '@material-ui/core';
+import { SIDEBAR_WIDTH, Slidebar } from '../SideBar/Sidebar';
 
 const INITIAL_VIEW_STATE = {
     longitude: 2.2945,
@@ -12,20 +13,29 @@ const INITIAL_VIEW_STATE = {
     pitch: 60
 }
 
+const useStyle = makeStyles((theme) => ({
+    root: {
+        position: 'relative',
+        width: '100vw',
+        height: `calc(100vh - 300px)`,
+        [theme.breakpoints.up('lg')]: {
+            width: `calc(100% - ${SIDEBAR_WIDTH.lg})`,
+            height: '100vh',
+        },
+        [theme.breakpoints.up('md')]: {
+            width: `calc(100% - ${SIDEBAR_WIDTH.xs})`,
+            height: '100vh',
+        },
+    }
+    
+}));
+
 
 function Map() {
-    const { jsonData } = useAppState();
-
-    const [credits, setCredits] = useState('');
-
-    const [tooltipStyle, setTooltipStyle] = useState({ position: "absolute", display: "none" });
+    const { jsonData, layers, viewState, tooltipStyle } = useAppState();
+    const classes = useStyle();
 
 
-
-    const Google3DLayer = createGoogle3DLayer(setCredits);
-    //const IconLayer = createIconLayer(data., setTooltipStyle);
-    //const layers = [Google3DLayer, IconLayer];
-    const layers = [Google3DLayer];
     // const [showControl, setShowControl] = useState(true);
 
     // useEffect(() => {
@@ -38,17 +48,16 @@ function Map() {
     //     };
     // })
 
-
     return (
-        <div>
+        <div className={classes.root}>
 
             <DeckGL
                 container='map'
-                initialViewState={INITIAL_VIEW_STATE}
+                initialViewState={viewState}
                 controller={{ touchRotate: true, minZoom: 12, maxZoom: 17, inertia: 250 }}
                 // style={{filter: 'sepia(50%) saturate(80%) brightness(90%) contrast(80%)'}}
                 layers={layers}>
-                <div id="custom-tooltip" style={tooltipStyle}></div>
+                <div style={tooltipStyle} id='custom-tooltip'></div>
             </DeckGL>
             {/* <div style={{position: "relative", width: "70vw", height: "100vh"}}>
                 {showControl && <video src="https://ik.imagekit.io/poonr2gma/Phryges(1).mp4?updatedAt=1697687302199" autoPlay="autoplay" muted style={{ width: "100%", height: "100%", objectFit: "cover" }}></video>}

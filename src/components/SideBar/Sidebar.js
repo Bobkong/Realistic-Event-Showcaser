@@ -72,6 +72,7 @@ export function Slidebar() {
         <Drawer className={classes.drawer}
             anchor={isDesktop ? 'right' : 'bottom'}
             hideBackdrop={true}
+            variant='permanent'
             open={true}
             classes={{
                 paper: [classes.drawerPaper, mobileExpanded ? classes.drawerPaperExpanded : ''].join(' ')
