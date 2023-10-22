@@ -44,6 +44,7 @@
 }
 
 
-.Tool-tip-img {
-  border: none;
+video {
+  mix-blend-mode: normal;
+  transition: opacity 0.5s, visibility 0.5s;
 }

@@ -1,0 +1,222 @@
+{
+    "eventName": "Paris 2024",
+    "eventStartTime": "07/26/2024",
+    "eventEndTime": "08/11/2024",
+    "eventLogo": "https://ik.imagekit.io/poonr2gma/image%2017.png?updatedAt=1697509592740",
+    "enableGoogleNearyby": "true",
+    "tabs": [
+        {
+            "name":"Olympic venues", 
+            "index": 0,
+            "icon": "https://ik.imagekit.io/poonr2gma/_%EF%B8%8F.png?updatedAt=1697319451770",
+            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
+            "locations": [
+                {
+                    "name": "YVES-DU-MANOIR STADIUM",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "subtitle": "The only venue in France to host the Olympic Games for the second time.One century ago, it was here that the Paris 1924 Games opened.",
+                    "coordinates":[2.2478,48.9293], 
+                    "location": "",
+                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/YDM_1_Stade-Yves-du-Manoir_Paris2024-2-scaled.jpg?x-oss-process=image/resize,w_2560,h_1500,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/yves-du-manoir-stadium/",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2021/06/YDM_1_Stade-Yves-du-Manoir_Paris2024-2-scaled.jpg?x-oss-process=image/resize,w_2560,h_1500,m_lfit/format,webp",
+                    "description": [
+                        {
+                            "content": "Hosting the Olympic Games twice is a privilege that very few venues will experience. Designed by the architect Louis Faure-Dujarric, Yves-du-Manoir Stadium is one of them. It was the main venue for the eighth Olympiad in 1924, staging the opening ceremony and athletics events for instance. A unique venue in France, it is the only one that will host the second Games in its history in 2024, staging the hockey competitions."
+                        },
+                        {
+                            "content": "Until 1972, when the Parc des Princes was inaugurated, the Yves-du-Manoir multi-sports venue, named after a French rugby player, was the main stadium in the Paris Region. Located in Colombes, northwest of Paris, it has hosted around 250 national and international competitions over the past century, from athletics to rugby, football and even boxing, including the World Championship in 1972, in front of 40,000 spectators."
+                        },
+                        {
+                            "content": "Yves-du-Manoir Stadium has already been renovated several times, and the Hauts-de-Seine department, which owns this facility, will be launching a modernisation programme to benefit its communities, associations, schools and universities."
+                        }
+                    ]
+                },
+                {
+                    "name": "STADE DE FRANCE",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.3601,48.9245], 
+                    "subtitle": "testestesttest",
+                    "location": "",
+                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/stade-de-france/",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
+                    "description": [
+                        {
+                            "content": "For the Paris 2024 Olympic and Paralympic Games, the Stade de France, the country’s largest stadium, will transform into the Olympic Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998."
+                        },
+                        {
+                            "content": "Since the World Cup, this multi-sports arena, which is still the country’s largest stadium, has continued to host the biggest sporting events organised in France, from the World Athletics Championships in 2003 to the 2007 Rugby World Cup and the Euro 2016 Football Championship, which will be followed soon by the 2023 Rugby World Cup. Each year, it stages the matches of the French football and rugby teams, as well as some of the biggest concerts by French and international artists."
+                        }
+                    ]
+                },
+                {
+                    "name": "PARC DES PRINCES - 1",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.2530,48.8414],
+                    "subtitle": "testestesttest", 
+                    "location": "",
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "description": [
+                        {
+                            "content": "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                        },
+                        {
+                            "content": "In addition to being the home of Paris Saint Germain since 1974, the Parc des Princes has staged many matches for the French football and rugby teams, as well as major international competitions, including the 1998 Football World Cup and the Euro 2016 Football Championship, alongside major concerts by French and global stars. When it was France’s largest stadium for over 25 years, it also staged the finals of the Coupe de France for football and the French rugby union championship each year. Its most recent renovation was carried out for Euro 2016."
+                        }
+                    ]
+                },
+                {
+                    "name": "PARC DES PRINCES - 2",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.2530,48.8414],
+                    "subtitle": "testestesttest", 
+                    "location": "",
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "description": [
+                        {
+                            "content": "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                        },
+                        {
+                            "content": "In addition to being the home of Paris Saint Germain since 1974, the Parc des Princes has staged many matches for the French football and rugby teams, as well as major international competitions, including the 1998 Football World Cup and the Euro 2016 Football Championship, alongside major concerts by French and global stars. When it was France’s largest stadium for over 25 years, it also staged the finals of the Coupe de France for football and the French rugby union championship each year. Its most recent renovation was carried out for Euro 2016."
+                        }
+                    ]
+                },
+                {
+                    "name": "PARC DES PRINCES - 3",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.2530,48.8414],
+                    "subtitle": "testestesttest", 
+                    "location": "",
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "description": [
+                        {
+                            "content": "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                        },
+                        {
+                            "content": "In addition to being the home of Paris Saint Germain since 1974, the Parc des Princes has staged many matches for the French football and rugby teams, as well as major international competitions, including the 1998 Football World Cup and the Euro 2016 Football Championship, alongside major concerts by French and global stars. When it was France’s largest stadium for over 25 years, it also staged the finals of the Coupe de France for football and the French rugby union championship each year. Its most recent renovation was carried out for Euro 2016."
+                        }
+                    ]
+                },
+                {
+                    "name": "PARC DES PRINCES",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.2530,48.8414],
+                    "subtitle": "testestesttest", 
+                    "location": "",
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "description": [
+                        {
+                            "content": "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                        },
+                        {
+                            "content": "In addition to being the home of Paris Saint Germain since 1974, the Parc des Princes has staged many matches for the French football and rugby teams, as well as major international competitions, including the 1998 Football World Cup and the Euro 2016 Football Championship, alongside major concerts by French and global stars. When it was France’s largest stadium for over 25 years, it also staged the finals of the Coupe de France for football and the French rugby union championship each year. Its most recent renovation was carried out for Euro 2016."
+                        }
+                    ]
+                }
+            ]
+            
+        },
+        {
+            "name":"Olympic histories", 
+            "index": 1,
+            "description": "Test",
+            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
+            "locations": [
+                {
+                    "name": "Women were finally allowed to take part in the 1924 Paris Olympic games!",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "subtitle": "testestesttest",
+                    "coordinates":[2.2396,48.8847], 
+                    "location": "",
+                    "imgURL": "https://ik.imagekit.io/poonr2gma/image%2019.png?updatedAt=1697320139071",
+                    "openURL": "https://olympics.com/en/athletes/charlotte-cooper",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://upload.wikimedia.org/wikipedia/commons/9/97/Stade-leon-rabot-puteaux.JPG",
+                    "toolTipTitle": "Île de Puteaux",
+                    "description": [
+                        {
+                            "content": "The Paris 1900 Olympic Games saw women compete for the first time. The first female Olympic champion was Charlotte Cooper, a British tennis player who won Wimbledon five times. Out of a total of 997 athletes, 22 were women, competing in just five sports: tennis, sailing, croquet, equestrian events and golf. Of these disciplines, only golf and tennis included women‑only events. "
+                        },
+                        {
+                            "content": "According to the Olympic Charter, the IOC’s role is “to encourage and support the promotion of women in sport at all levels and in all structures, with a view to implementing the principle of equality of men and women”. Female participation in the Olympic Games has increased dramatically since; 48.9% of the athletes at the 2020 Tokyo Games are expected to be women."
+                        }
+                    ]
+                },
+                {
+                    "name": "The Olympic Village across time",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "subtitle": "testestesttest",
+                    "coordinates":[2.3574,48.9362], 
+                    "location": "",
+                    "imgURL": "https://ik.imagekit.io/poonr2gma/image%2023.png?updatedAt=1697320708378",
+                    "openURL": "https://olympics.com/en/news/paris-1924-the-olympic-games-come-of-age",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "toolTipImg": "https://medias.paris2024.org/uploads/2020/01/%C2%A9-luxigonPARIS-2024-VILLAGE@QUARTIERS-OLY.jpg?x-oss-process=image/resize,w_1920,h_1080,m_lfit/format,webp",
+                    "toolTipTitle": "Île de Puteaux",
+                    "description": [
+                        {
+                            "content": "The Paris Games were already blazing new trails in 1924, when they introduced the notion of an Olympic Village – which every Games since then have adopted."
+                        },
+                        {
+                            "content": "The first ever Olympic Village was built near the Stade Olympique in Colombes, north-west of Paris. It was an array of temporary wooden cabins, with three beds in each. The athletes were served three meals a day, and shared the toilets, showers and refectory. The village had a currency exchange bureau, dry-cleaner’s, hairdresser’s, newsagent and post office. Unlike the ones after it, the village in 1924 was not built to be used after the Games."
+                        },
+                        {
+                            "content": "One major difference between Paris 2024 and Paris 1924 is that the Olympic Village is now built with the future in mind. No longer is the objective to house athletes for a few weeks and consequently remove temporary infrastructure, but to create a lasting impact that will benefit locals.The Olympic Village will be located seven kilometres north of the centre of Paris in the communes of Saint-Denis, Île-Saint-Denis and Saint-Ouen, less than five minutes away from the Stade de France. Seven of the 51 hectares it covers will be dedicated to green space, including a public park at its heart, and some 9,000 trees and bushes have been planted within the Village."
+                        }
+                    ]
+                }
+            ]
+            
+        },
+        {
+            "name":"Olympic news", 
+            "index": 2,
+            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
+            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
+            "locations": [
+            ]
+            
+        },
+        {
+            "name":"Iconic attractions", 
+            "index": 3,
+            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
+            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
+            "locations": [
+            ]
+            
+        },
+        {
+            "name":"French cuisine", 
+            "index": 4,
+            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
+            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
+            "locations": [
+            ]
+            
+        }
+    ]
+}
