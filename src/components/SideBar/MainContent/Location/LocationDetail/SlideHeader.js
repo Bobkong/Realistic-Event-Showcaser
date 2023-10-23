@@ -1,6 +1,7 @@
 import { Typography, makeStyles, useTheme, IconButton, useMediaQuery } from "@material-ui/core"
 import { useAppState } from "../../../../../state";
 import { ReactComponent as IconBack } from '../../../../../assets/icons/arrow-back.svg'
+import { useEffect, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
     fullRoot: {
@@ -47,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
         display: "-webkit-box",
         "-webkit-box-orient": "vertical",
         wordBreak: 'keep-all',
-        
+
     },
 
     tabIconButton: {
@@ -70,23 +71,31 @@ export const SlideHeader = () => {
     const { reset, currentSlide, setLoctionSlide, mobileExpanded, setMobileExpanded } = useAppState();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
-    const headerStyle = {
-        background: `url(${currentSlide.imgURL})`,
-        backgroundSize: 'cover',
-    }
+
+    const [backgroundStyle, setBackgroundStyle] = useState({
+        background: 'none',
+    });
+
+    useEffect(() => {
+        setBackgroundStyle({
+            background: `url(${currentSlide.imgURL})`,
+            backgroundSize: 'contain',
+        });
+    }, [currentSlide]);
+
 
     return (
         <div>
 
             {/* desktop or mobile expanded, show the full header */}
             {(mobileExpanded || isDesktop) && (
-                <div className={classes.fullRoot} style={headerStyle}>
-                    <IconButton className={[
+                <div className={classes.fullRoot} style={backgroundStyle}>
+                    {/* <IconButton className={[
                         classes.tabIconButton,
                     ].join(' ')}
                         onClick={reset}>
                         <IconBack />
-                    </IconButton>
+                    </IconButton> */}
                     <div className={classes.textContainer}>
                         <Typography variant="subtitle1" className={classes.title} component='p'>
                             {currentSlide.name}

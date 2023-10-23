@@ -1,13 +1,15 @@
-import { List, Typography, makeStyles } from "@material-ui/core"
+import { IconButton, List, Typography, makeStyles } from "@material-ui/core"
 import { SlideHeader } from "./SlideHeader";
 import { useAppState } from "../../../../../state";
 import { SlideContent } from "./SlideContent";
-import { useLayoutEffect, useRef } from "react";
+import { ReactComponent as IconForward } from '../../../../../assets/icons/arrow-forward.svg'
+import { ReactComponent as IconBack } from '../../../../../assets/icons/arrow-back.svg'
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        position: 'relative'
+        position: 'relative',
+        width: '100%'
     },
 
     dot: {
@@ -16,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(0.5),
         borderRadius: theme.spacing(0.5),
         backgroundColor: theme.palette.text.disabled,
-        ransition: theme.transitions.create('background-color', {
+        transition: theme.transitions.create('background-color', {
             easing: theme.transitions.easing.easeInOut,
             duration: theme.transitions.duration.short
         }),
@@ -27,9 +29,8 @@ const useStyles = makeStyles((theme) => ({
 
     dots: {
         display: 'flex',
-        alignItems: 'center',
-        minHeight: theme.spacing(4.5),
-        alignSelf: 'center'
+        justifyContent: 'center',
+        flexGrow: '1'
     },
 
     footer: {
@@ -37,32 +38,60 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         backgroundColor: theme.palette.common.white,
-        position: 'fixed',
+        position: 'sticky',
         bottom: 0,
+        padding: '12px 16px',
+        borderTop: `1px solid ${theme.palette.divider}`,
+        borderLeft: `1px solid ${theme.palette.divider}`
     },
+
+    iconButton: {
+        backgroundColor: theme.palette.primary.main,
+        width: '40px',
+        height: '40px',
+        '& svg path': {
+            fill: theme.palette.common.white
+        },
+        '&:hover': {
+            backgroundColor: theme.palette.primary.light
+        },
+    },
+
+    hiddenIconButton: {
+        visibility: 'hidden',
+        pointerEvents: 'none',
+    }
+
 }));
 
 export const LocationSlide = () => {
     const classes = useStyles();
     const { prev, next, currentSlide, isMobileCollapsed, jsonData } = useAppState();
+    const tabLocationLength = jsonData.tabs[currentSlide.tabIndex].locations.length
     const curretnSlideNum = jsonData.tabs[currentSlide.tabIndex].locations.indexOf(currentSlide);
-    
 
     return (
         <div className={classes.root}>
             <SlideHeader />
             {!isMobileCollapsed && <SlideContent />}
             <div className={classes.footer}>
+                <IconButton className={[classes.iconButton,
+                    curretnSlideNum == 0 ? classes.hiddenIconButton: ''].join(' ')} onClick={prev}>
+                    <IconBack />
+                </IconButton>
                 <div className={classes.dots}>
                     {jsonData.tabs[currentSlide.tabIndex].locations.map((item, i) => (
-                        <div 
+                        <div
                             key={`dot-%{i}`}
                             className={classes.dot}
                             data-active={i == curretnSlideNum}
                         />
                     ))}
                 </div>
-                
+                <IconButton className={[classes.iconButton,
+                    curretnSlideNum == tabLocationLength - 1 ? classes.hiddenIconButton: ''].join(' ')} onClick={next}>
+                    <IconForward />
+                </IconButton>
             </div>
         </div>
     )

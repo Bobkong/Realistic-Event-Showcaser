@@ -12,7 +12,7 @@ const useStyle = makeStyles((theme) => ({
         gap: '20px',
         alignItems: 'start',
         paddingBottom: '16px',
-        borderBottom: `1px solid ${theme.palette.grey[100]}`
+        borderBottom: `1px solid ${theme.palette.divider}`
     },
 
     buttonBase: {

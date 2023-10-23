@@ -40,12 +40,13 @@
 .Tool-tip-text {
   width: 100%;
   margin-bottom: 12px;
-  padding-inline: 4px;
+  padding-inline: 8px;
   font-family: "Open Sans", 'sans-serif';
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.429;
   letter-spacing: 0.018em;
+  text-align: center;
 }
 
 

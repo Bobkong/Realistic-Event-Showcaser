@@ -66,14 +66,14 @@
                 {
                     "name": "PARC DES PRINCES - 2",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "coordinates":[2.2530,48.8414],
+                    "coordinates":[2.2530,48.84],
                     "subtitle": "testestesttest", 
                     "location": "",
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
-                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_default.png?updatedAt=1697319095903",
-                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_marker.png?updatedAt=1697165020743",
+                    "defaultMarker": "https://ik.imagekit.io/poonr2gma/location_on_FILL1_wght400_GRAD0_opsz24%201.png?updatedAt=1698006103780",
+                    "selectedMarker": "https://ik.imagekit.io/poonr2gma/location_on_FILL1_wght400_GRAD0_opsz24%202.png?updatedAt=1698006103721",
                     "toolTipImg": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
                     "description": [
                         "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games.",
@@ -83,7 +83,7 @@
                 {
                     "name": "PARC DES PRINCES - 3",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "coordinates":[2.2530,48.8414],
+                    "coordinates":[2.25,48.8414],
                     "subtitle": "testestesttest", 
                     "location": "",
                     "tabIndex": 0,
@@ -100,7 +100,7 @@
                 {
                     "name": "PARC DES PRINCES",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "coordinates":[2.2530,48.8414],
+                    "coordinates":[2.2560,48.8444],
                     "subtitle": "testestesttest", 
                     "location": "",
                     "tabIndex": 0,

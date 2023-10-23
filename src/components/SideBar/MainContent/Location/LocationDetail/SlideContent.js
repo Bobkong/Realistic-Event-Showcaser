@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         gap: '16px',
-        borderBottom: `1px solid ${theme.palette.grey[100]}`
+        borderBottom: `1px solid ${theme.palette.divider}`
     },
 
 

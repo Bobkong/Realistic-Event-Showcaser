@@ -82,14 +82,21 @@ export const AppStateStore = ({ children, jsonData }) => {
         orbit();
     },[]);
 
+    let tabLocationLength, curretnSlideNum
+    if(currentSlide) {
+        tabLocationLength = jsonData.tabs[currentSlide.tabIndex].locations.length
+        curretnSlideNum = jsonData.tabs[currentSlide.tabIndex].locations.indexOf(currentSlide); 
+    }
+    
+
     return (
         <AppStateContext.Provider
             value={{
                 next: () => {
-                    setCurrentSlide(currentSlide => currentSlide.tab.locations[Math.min(currentSlide.index + 1, currentSlide.tab.locations.length - 1)]);
+                    setCurrentSlide(currentSlide => jsonData.tabs[currentSlide.tabIndex].locations[Math.min(curretnSlideNum + 1, tabLocationLength - 1)]);
                 },
                 prev: () => {
-                    setCurrentSlide(currentSlide => currentSlide.tab.locations[Math.max(0, currentSlide.index - 1)]);
+                    setCurrentSlide(currentSlide => jsonData.tabs[currentSlide.tabIndex].locations[Math.max(0, curretnSlideNum - 1)]);
                 },
                 reset: () => {
                     setCurrentSlide(null);
