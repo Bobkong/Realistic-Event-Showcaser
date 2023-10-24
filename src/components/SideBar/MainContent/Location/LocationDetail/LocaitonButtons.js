@@ -4,6 +4,8 @@ import { ReactComponent as Locate } from '../../../../../assets/icons/locate.svg
 import { ReactComponent as GoogleMaps } from '../../../../../assets/icons/googlemap.svg'
 import { ReactComponent as Website } from '../../../../../assets/icons/website.svg'
 import { Typography, makeStyles, IconButton, ButtonBase } from "@material-ui/core"
+import { useAppState } from '../../../../../state'
+import { ReadFrench } from '../../../../../utils'
 
 const useStyle = makeStyles((theme) => ({
     root: {
@@ -44,8 +46,10 @@ export const LocationButtons = () => {
 
 const HearFrenchButton = () => {
     const classes = useStyle();
+    const {currentSlide} = useAppState();
+
     return (
-        <ButtonBase className={classes.buttonBase} disableTouchRipple>
+        <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={() => ReadFrench(currentSlide.name)}>
             <IconButton className={classes.icon}>
                 <Heaer />
             </IconButton>
@@ -59,8 +63,9 @@ const HearFrenchButton = () => {
 
 const LocateButton = () => {
     const classes = useStyle();
+    const {updateViewState} = useAppState();
     return (
-        <ButtonBase className={classes.buttonBase} disableTouchRipple>
+        <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={updateViewState}>
             <IconButton className={classes.icon}>
                 <Locate />
             </IconButton>
@@ -74,8 +79,11 @@ const LocateButton = () => {
 
 const GoogleMapseButton = () => {
     const classes = useStyle();
+    const {currentSlide} = useAppState();
     return (
-        <ButtonBase className={classes.buttonBase} disableTouchRipple>
+        <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={() => {
+            window.open(`https://www.google.com/maps?q=${currentSlide.coordinates[1]},${currentSlide.coordinates[0]}`)
+        }}>
             <IconButton className={classes.icon}>
                 <GoogleMaps />
             </IconButton>
@@ -89,8 +97,11 @@ const GoogleMapseButton = () => {
 
 const WebsiteButton = () => {
     const classes = useStyle();
+    const {currentSlide} = useAppState();
     return (
-        <ButtonBase className={classes.buttonBase} disableTouchRipple>
+        <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={() => {
+            window.open(currentSlide.openURL)
+        }}>
             <IconButton className={classes.icon}>
                 <Website />
             </IconButton>

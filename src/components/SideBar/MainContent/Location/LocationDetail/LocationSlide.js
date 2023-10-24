@@ -82,7 +82,7 @@ export const LocationSlide = () => {
                 <div className={classes.dots}>
                     {jsonData.tabs[currentSlide.tabIndex].locations.map((item, i) => (
                         <div
-                            key={`dot-%{i}`}
+                            key={`dot-${i}`}
                             className={classes.dot}
                             data-active={i == curretnSlideNum}
                         />

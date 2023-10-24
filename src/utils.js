@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export function calDaysLeft(dateString) {
     // today's date
     const today = new Date();
@@ -13,4 +15,25 @@ export function calDaysLeft(dateString) {
     } else {
         return null;
     }
+}
+
+const apiKey = 'AIzaSyAp9layJVehgMEkJd_XUCKR4zVWg5K--YQ';
+export const ReadFrench = (text) => {
+    axios.post('https://translation.googleapis.com/language/translate/v2', {
+        q: text,
+        source: 'en',
+        target: 'fr',
+    },
+        {
+            params: {
+                key: apiKey,
+            },
+        }).then((response) => {
+            const translated = response.data.data.translations[0].translatedText;
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(translated);
+            utterance.lang = 'fr-FR';
+            synth.speak(utterance);
+
+        })
 }

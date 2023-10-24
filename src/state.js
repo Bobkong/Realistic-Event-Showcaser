@@ -51,10 +51,10 @@ export const AppStateStore = ({ children, jsonData }) => {
         }));
     }, []);
 
-    const updateViewState = function (viewState) {
+    const updateViewState = function () {
         setViewState({
             transitionDuration: 5000,
-            ...viewState,
+            ...{ latitude: currentSlide.coordinates[1], longitude: currentSlide.coordinates[0], zoom: 15, bearing: 90, pitch: 60},
             transitionEasing: Easing.Quadratic.InOut,
             transitionInterpolator: new FlyToInterpolator({ curve: 1.1 }),
             onTransitionEnd: () => {
@@ -71,7 +71,7 @@ export const AppStateStore = ({ children, jsonData }) => {
                 allLayers = [Google3DLayer, IconLayer];
                 setLayers(allLayers);
                 // update view state
-                updateViewState({ latitude: currentSlide.coordinates[1], longitude: currentSlide.coordinates[0], zoom: 15, bearing: 90, pitch: 60});
+                updateViewState();
             }
         },
         [currentSlide]
@@ -112,7 +112,8 @@ export const AppStateStore = ({ children, jsonData }) => {
                 isMobileCollapsed,
                 currentTabIndex,
                 setCurrentTabIndex,
-                tooltipStyle
+                tooltipStyle,
+                updateViewState
             }}>
             {children}
         </AppStateContext.Provider>
