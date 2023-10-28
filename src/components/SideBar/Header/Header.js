@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         gap: '8px',
-        marginTop: '36px',
+        marginTop: '16px',
         marginBottom: '24px',
         padding: '0px 24px',
         '& svg path': {

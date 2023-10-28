@@ -1,6 +1,4 @@
 import { IconLayer } from 'deck.gl';
-import { useAppState } from '../state';
-import { useTheme } from '@material-ui/core';
 
 // click listener
 const handleIconClick = ({object, setCurrentSlide, setCurrentTabIndex}) => {
@@ -40,7 +38,6 @@ const handleIconHover = ({ object, x, y, setTooltipStyle, theme }) => {
 };
 
 export function createIconLayer(mapData, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex) {
-
     // icon layer
     return new IconLayer({
         id: 'icon-layer',

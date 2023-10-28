@@ -17,7 +17,7 @@ const useStyle = makeStyles((theme) => ({
     root: {
         position: 'relative',
         width: '100vw',
-        height: `calc(100vh - 300px)`,
+        height: `calc(100vh - 260Px)`,
         [theme.breakpoints.up('lg')]: {
             width: `calc(100% - ${SIDEBAR_WIDTH.lg})`,
             height: '100vh',

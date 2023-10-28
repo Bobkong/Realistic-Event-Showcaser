@@ -1,5 +1,5 @@
 
-import { ReactComponent as Heaer } from '../../../../../assets/icons/hear.svg'
+import { ReactComponent as Hear } from '../../../../../assets/icons/hear.svg'
 import { ReactComponent as Locate } from '../../../../../assets/icons/locate.svg'
 import { ReactComponent as GoogleMaps } from '../../../../../assets/icons/googlemap.svg'
 import { ReactComponent as Website } from '../../../../../assets/icons/website.svg'
@@ -51,7 +51,7 @@ const HearFrenchButton = () => {
     return (
         <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={() => ReadFrench(currentSlide.name)}>
             <IconButton className={classes.icon}>
-                <Heaer />
+                <Hear />
             </IconButton>
             <Typography variant='caption' color='primary' component='p'>
                 Hear French

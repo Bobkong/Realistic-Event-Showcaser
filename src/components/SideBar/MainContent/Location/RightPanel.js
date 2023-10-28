@@ -42,7 +42,6 @@ export const RightPanel = () => {
     useLayoutEffect(() => {
         if(rootRef.current) {
             // reset slide vertical scroll distance
-            console.log("reset")
             rootRef.current.scrollTop = 0;
         }
     }, [currentSlide]);

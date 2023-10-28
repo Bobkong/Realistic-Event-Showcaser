@@ -38,7 +38,6 @@ export const AppStateStore = ({ children, jsonData }) => {
     let IconLayer = createIconLayer(allLocaitons, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex)
     let allLayers = [Google3DLayer, IconLayer];
     const [layers, setLayers] = useState(allLayers);
-    // hover tooltip
 
     const orbit = useCallback(previousTransition => {
         setViewState((viewState) => ({

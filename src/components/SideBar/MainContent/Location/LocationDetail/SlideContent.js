@@ -1,7 +1,9 @@
-import { Typography, makeStyles, useTheme, IconButton, useMediaQuery } from "@material-ui/core"
+import { Typography, makeStyles, useTheme, Tabs, Tab } from "@material-ui/core"
 import { useAppState } from "../../../../../state";
 import { LocationButtons } from "./LocaitonButtons";
-
+import { useEffect, useRef, useState } from "react";
+import NearbySearch, { NEARBY_LODGING, NEARBY_RESTAURANT, NEARBY_THINGS_TO_DO } from "../../../../../NearbySearch";
+import { NearbyCard } from "./NearbyCard";
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
@@ -16,23 +18,64 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: `1px solid ${theme.palette.divider}`
     },
 
-
     nearyByDiv: {
         paddingBlock: '16px',
-    }
-    
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '16px'
+    },
+
+    tabs: {
+        display: 'flex',
+        gap: '8px',
+        marginTop: '16px',
+        display: 'flex',
+        flexWrap: 'wrap'
+    },
+
+    defaultTab: {
+        padding: '8px 16px',
+        borderRadius: '20px',
+        border: `1px solid ${theme.palette.primary.main}`,
+        color: theme.palette.primary.main,
+        cursor: 'pointer'
+    },
+
+    selectedTab: {
+        padding: '8px 16px',
+        borderRadius: '20px',
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.common.white,
+        cursor: 'pointer'
+    },
+
 
 }));
+
+export const tabInfo = [
+    { value: NEARBY_RESTAURANT, label: "Restaurant" },
+    { value: NEARBY_LODGING, label: "Lodging" },
+    { value: NEARBY_THINGS_TO_DO, label: "Things to Do" },
+];
 
 
 export const SlideContent = () => {
     const classes = useStyles();
     const theme = useTheme();
     const { reset, currentSlide, isMobileCollapsed } = useAppState();
-    
+    const [nearbyResponse, setNearbyResponse] = useState([]);
+    const [mapLoaded, setMapLoaded] = useState(false);
+    const [nearbyTab, setNearbyTab] = useState(NEARBY_RESTAURANT);
+    const nearbySearchRef = useRef(null);
+
+    const handleTabChange = (nearbyTab) => {
+        setNearbyTab(nearbyTab.value);
+        nearbySearchRef.current.nearbySearch(nearbyTab.value)
+    };
+
     return (
         <div className={classes.root}>
-            <LocationButtons/>
+            <LocationButtons />
 
             <div className={classes.textDiv}>
                 <Typography variant="subtitle1" color="primary" component='p' className={classes.subtitle}>
@@ -45,12 +88,28 @@ export const SlideContent = () => {
                     </Typography>
                 ))}
             </div>
-            
-            <div className={classes.nearyByDiv}>
+
+            <NearbySearch slide={currentSlide} setMapLoaded={setMapLoaded} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef}/>
+
+            {mapLoaded && <div className={classes.nearyByDiv}>
                 <Typography variant="subtitle2" color="primary" component='p'>
                     Nearby Recommendations
                 </Typography>
-            </div>
+                <div className={classes.tabs}>
+                    {tabInfo.map((tab) => (
+                        <div className={nearbyTab === tab.value ? classes.selectedTab : classes.defaultTab} onClick={() => handleTabChange(tab)}>
+                            <Typography variant="caption" color={nearbyTab === tab.value ? 'white' : 'primary'} component='p'>
+                                {tab.label}
+                            </Typography>
+                        </div>
+
+                    ))}
+                </div>
+                {nearbyResponse.map((item, index) => (
+                    <NearbyCard location={item}/>
+                ))}
+
+            </div>}
         </div>
     )
 }
