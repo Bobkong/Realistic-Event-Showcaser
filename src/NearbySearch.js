@@ -69,7 +69,6 @@ class NearbySearch extends Component {
           // only keep locations with photos
           const filteredRadius = results.filter(item => item['photos'] && item['photos'].length > 0)
           this.setNearbyResponse(filteredRadius);
-          console.log(filteredRadius)
         }
       });
     }

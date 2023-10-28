@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     tabs: {
         display: 'flex',
         gap: '8px',
-        marginTop: '16px',
         display: 'flex',
         flexWrap: 'wrap'
     },
