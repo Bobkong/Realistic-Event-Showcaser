@@ -1,4 +1,5 @@
 import { IconLayer } from 'deck.gl';
+import NearbySearch from '../NearbySearch';
 
 // click listener
 const handleIconClick = ({object, setCurrentSlide, setCurrentTabIndex}) => {
@@ -37,14 +38,15 @@ const handleIconHover = ({ object, x, y, setTooltipStyle, theme }) => {
     }
 };
 
-export function createIconLayer(mapData, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex) {
+export function createIconLayer(mapData, nearbyPlace, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex) {
+    console.log(nearbyPlace);
     // icon layer
     return new IconLayer({
         id: 'icon-layer',
         parameters: {
           depthTest: false
         },
-        data: mapData,
+        data: mapData.concat(nearbyPlace),
         pickable: true,
         getIcon: d => ({
           url: (currentSlide != null && currentSlide.name === d.name) ? d.selectedMarker : d.defaultMarker,

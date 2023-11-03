@@ -1,6 +1,6 @@
 import {Tile3DLayer} from '@deck.gl/geo-layers';
+import { apiKey } from '../utils';
 
-const API_KEY = 'AIzaSyAp9layJVehgMEkJd_XUCKR4zVWg5K--YQ';
 const TILESET_URL = 'https://tile.googleapis.com/v1/3dtiles/root.json';
 
 
@@ -29,7 +29,7 @@ export function createGoogle3DLayer(setCredits) {
                     };
                 },
                 loadOptions: {
-                fetch: {headers: {'X-GOOG-API-KEY': API_KEY}}
+                fetch: {headers: {'X-GOOG-API-KEY': apiKey}}
                 },
                 operation: 'terrain+draw',
           });

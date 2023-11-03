@@ -1,10 +1,10 @@
 import { createContext, useState, useContext, useCallback, useEffect } from "react"
 import { createGoogle3DLayer } from "./layers/google-3d";
 import { useMediaQuery, useTheme } from "@material-ui/core";
-import { createIconLayer } from "./layers/icon-layer";
 import { Easing } from '@tweenjs/tween.js';
 import { LinearInterpolator } from '@deck.gl/core';
 import FlyToInterpolator from './layers/fly-to-interpolator.js';
+import { createSceneGraphLayer } from "./layers/scenegrah-layer";
 
 export const AppStateContext = createContext();
 const transitionInterpolator = new LinearInterpolator(['bearing', 'longitude', 'latitude']);
@@ -12,6 +12,7 @@ const transitionInterpolator = new LinearInterpolator(['bearing', 'longitude', '
 export const AppStateStore = ({ children, jsonData }) => {
     const [credits, setCredits] = useState('');
     const [currentSlide, setCurrentSlide] = useState(null);
+    const [currentLocate, setCurrentLocate] = useState(null);
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
     const [mobileExpanded, setMobileExpanded] = useState(false);
     const theme = useTheme();
@@ -19,10 +20,10 @@ export const AppStateStore = ({ children, jsonData }) => {
     const initViewState = {
         longitude: 2.2478,
         latitude: 48.9293,
-        zoom: 15,
+        zoom: 16.5,
         bearing: 90,
-        pitch: 60,
-        height: 30
+        pitch: 70,
+        height: 20
     };
 
     const [viewState, setViewState] = useState(initViewState);
@@ -30,13 +31,12 @@ export const AppStateStore = ({ children, jsonData }) => {
     const isMobileCollapsed = !isDesktop && !mobileExpanded
 
     const Google3DLayer = createGoogle3DLayer(setCredits);
-    let allLocaitons = [];
-    jsonData.tabs.map((tab, index) => {
-        allLocaitons.push(...tab.locations);
-    });
+
+    // 3d graph layer
     const [tooltipStyle, setTooltipStyle] = useState({ position: "absolute", display: "none" });
-    let IconLayer = createIconLayer(allLocaitons, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex)
-    let allLayers = [Google3DLayer, IconLayer];
+    const defaultLocaiton = jsonData.tabs[0].locations[0];
+    const ScenegraphLayer = createSceneGraphLayer(defaultLocaiton, defaultLocaiton.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
+    let allLayers = [Google3DLayer, ScenegraphLayer];
     const [layers, setLayers] = useState(allLayers);
 
     const orbit = useCallback(previousTransition => {
@@ -50,10 +50,10 @@ export const AppStateStore = ({ children, jsonData }) => {
         }));
     }, []);
 
-    const updateViewState = function () {
+    const updateViewState = function (lat, lng) {
         setViewState({
             transitionDuration: 5000,
-            ...{ latitude: currentSlide.coordinates[1], longitude: currentSlide.coordinates[0], zoom: 15, bearing: 90, pitch: 60},
+            ...{ latitude: lat, longitude: lng, zoom: 16.5, bearing: 90, pitch: 70 },
             transitionEasing: Easing.Quadratic.InOut,
             transitionInterpolator: new FlyToInterpolator({ curve: 1.1 }),
             onTransitionEnd: () => {
@@ -65,28 +65,42 @@ export const AppStateStore = ({ children, jsonData }) => {
     useEffect(
         () => {
             if (currentSlide != null) {
-                // update icon
-                IconLayer = createIconLayer(allLocaitons, setTooltipStyle, theme, currentSlide, setCurrentSlide, setCurrentTabIndex)
-                allLayers = [Google3DLayer, IconLayer];
-                setLayers(allLayers);
                 // update view state
-                updateViewState();
+                updateViewState(currentSlide.coordinates[1], currentSlide.coordinates[0]);
+
+                // update current locate
+                setCurrentLocate(currentSlide);
+
+                // update 3d graph
+                const ScenegraphLayer = createSceneGraphLayer(currentSlide, currentSlide.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
+                setLayers([Google3DLayer, ScenegraphLayer]);
             }
         },
         [currentSlide]
     );
 
-    useEffect(()=> {
+    useEffect(() => {
+        if (currentLocate != null) {
+            // update view state
+            updateViewState(currentLocate.coordinates[1], currentLocate.coordinates[0]);
+
+            // update 3d graph
+            const ScenegraphLayer = createSceneGraphLayer(currentLocate, currentLocate.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
+            setLayers([Google3DLayer, ScenegraphLayer]);
+        }
+    }, [currentLocate]);
+
+    useEffect(() => {
         // orbit initially
+        console.log('orbit')
         orbit();
-    },[]);
+    }, []);
 
     let tabLocationLength, curretnSlideNum
-    if(currentSlide) {
+    if (currentSlide) {
         tabLocationLength = jsonData.tabs[currentSlide.tabIndex].locations.length
-        curretnSlideNum = jsonData.tabs[currentSlide.tabIndex].locations.indexOf(currentSlide); 
+        curretnSlideNum = jsonData.tabs[currentSlide.tabIndex].locations.indexOf(currentSlide);
     }
-    
 
     return (
         <AppStateContext.Provider
@@ -112,7 +126,8 @@ export const AppStateStore = ({ children, jsonData }) => {
                 currentTabIndex,
                 setCurrentTabIndex,
                 tooltipStyle,
-                updateViewState
+                updateViewState,
+                setCurrentLocate
             }}>
             {children}
         </AppStateContext.Provider>

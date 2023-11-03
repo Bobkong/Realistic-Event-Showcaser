@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap } from 'react-google-maps';
-import { apiKey } from './utils';
+import { apiKey, myApiKey } from './utils';
 export function loadScript(url) {
   // only load once
   if (hasLoadedScript) {
@@ -39,7 +39,7 @@ class NearbySearch extends Component {
   }
 
   loadMapScript = () => {
-    loadScript(`https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&callback=initMap`);
+    loadScript(`https://maps.googleapis.com/maps/api/js?key=${myApiKey}&libraries=places&callback=initMap`);
     window.initMap = this.initMap;
   }
 
@@ -52,7 +52,7 @@ class NearbySearch extends Component {
     this.map = new window.google.maps.Map(document.getElementById('map'), mapOptions);
     this.service = new window.google.maps.places.PlacesService(this.map);
     this.setMapLoaded(true);
-    this.nearbySearch(NEARBY_RESTAURANT);
+    this.nearbySearch(NEARBY_THINGS_TO_DO);
   }
 
   nearbySearch = (type) => {

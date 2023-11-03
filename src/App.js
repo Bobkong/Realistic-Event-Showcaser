@@ -7,9 +7,10 @@ import {CssBaseline, ThemeProvider} from '@material-ui/core';
 import axios from 'axios';
 import {useState, useEffect} from 'react'
 import { AppStateStore } from './state';
-import WrappedMap from './NearbySearch';
-import { apiKey } from './utils';
+import { useGLTF } from '@react-three/drei';
+
 const theme = createTheme();
+
 
 function App() {
 

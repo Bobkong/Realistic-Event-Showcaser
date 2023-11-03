@@ -52,25 +52,32 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const tabInfo = [
+    { value: NEARBY_THINGS_TO_DO, label: "Things to Do" },
     { value: NEARBY_RESTAURANT, label: "Restaurant" },
     { value: NEARBY_LODGING, label: "Lodging" },
-    { value: NEARBY_THINGS_TO_DO, label: "Things to Do" },
 ];
 
 
 export const SlideContent = () => {
     const classes = useStyles();
     const theme = useTheme();
-    const { reset, currentSlide, isMobileCollapsed } = useAppState();
+    const { reset, currentSlide } = useAppState();
     const [nearbyResponse, setNearbyResponse] = useState([]);
     const [mapLoaded, setMapLoaded] = useState(false);
-    const [nearbyTab, setNearbyTab] = useState(NEARBY_RESTAURANT);
+    const [nearbyTab, setNearbyTab] = useState(tabInfo[0]);
     const nearbySearchRef = useRef(null);
 
     const handleTabChange = (nearbyTab) => {
+        setNearbyResponse([]);
         setNearbyTab(nearbyTab.value);
         nearbySearchRef.current.nearbySearch(nearbyTab.value)
     };
+
+    useEffect(() => {
+        if (currentSlide !=null && nearbySearchRef.current != null) {
+            handleTabChange(tabInfo[0])
+        }
+    }, [currentSlide])
 
     return (
         <div className={classes.root}>
@@ -101,7 +108,6 @@ export const SlideContent = () => {
                                 {tab.label}
                             </Typography>
                         </div>
-
                     ))}
                 </div>
                 {nearbyResponse.map((item, index) => (

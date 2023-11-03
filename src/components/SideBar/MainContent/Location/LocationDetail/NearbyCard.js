@@ -4,6 +4,7 @@ import { calculateDistance, googleMapsLink } from "../../../../../utils";
 import { useAppState } from "../../../../../state";
 import { ReactComponent as Locate } from '../../../../../assets/icons/locate.svg'
 import { ReactComponent as GoogleMaps } from '../../../../../assets/icons/googlemap.svg'
+import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
 
@@ -62,6 +63,12 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
+const handleClick = (location, setCurrentLocate) => {
+    // open location slide
+    console.log(location);
+    setCurrentLocate(location)
+}
+
 export const NearbyCard = (location) => {
     const classes = useStyles();
     const lat = location['location']['geometry']['location'].lat();
@@ -70,8 +77,15 @@ export const NearbyCard = (location) => {
     const rating = location['location']['rating'];
     const photo = location['location']['photos'][0].getUrl();
     const placeId = location['location']['place_id'];
-    const { currentSlide } = useAppState();
+    const { currentSlide, setCurrentLocate } = useAppState();
     const distance = `· ${calculateDistance(currentSlide.coordinates[1], currentSlide.coordinates[0], lat, lng)} mi`;
+    
+    const formatLocation = {
+        coordinates: [lng, lat, 100],
+        imgURL: photo,
+        name: name,
+        marker: 'https://ik.imagekit.io/poonr2gma/Realistic3d/recommend/map_pin%20(1).glb?updatedAt=1698978972181'
+    }
 
     return (
         <div className={classes.root}>
@@ -95,7 +109,7 @@ export const NearbyCard = (location) => {
                 </div>
             </div>
             <div className={classes.buttons}>
-                <IconButton className={classes.button}>
+                <IconButton className={classes.button} onClick={() => handleClick(formatLocation, setCurrentLocate)}>
                     <Locate />
                 </IconButton>
                 <IconButton className={classes.button} onClick={() => {

@@ -1,4 +1,4 @@
-import { Typography, makeStyles, useTheme, IconButton, useMediaQuery } from "@material-ui/core"
+import { Typography, makeStyles, useTheme, IconButton, useMediaQuery, CardMedia } from "@material-ui/core"
 import { useAppState } from "../../../../../state";
 import { ReactComponent as IconBack } from '../../../../../assets/icons/arrow-back.svg'
 import { useEffect, useState } from "react";
@@ -62,13 +62,23 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: theme.palette.grey[100]
         },
     },
+
+    headerImg: {
+        position: "absolute",
+        top: '0',
+        left: '0',
+        objectFit: 'cover',
+        height: '100%',
+        width: '100%',
+        zIndex: '-1'
+    }
 }));
 
 
 export const SlideHeader = () => {
     const classes = useStyles();
     const theme = useTheme();
-    const { reset, currentSlide, setLoctionSlide, mobileExpanded, setMobileExpanded } = useAppState();
+    const { currentSlide, mobileExpanded } = useAppState();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
 
@@ -76,26 +86,19 @@ export const SlideHeader = () => {
         background: 'none',
     });
 
-    useEffect(() => {
-        setBackgroundStyle({
-            background: `url(${currentSlide.imgURL})`,
-            backgroundSize: 'contain',
-        });
-    }, [currentSlide]);
-
-
     return (
         <div>
 
             {/* desktop or mobile expanded, show the full header */}
             {(mobileExpanded || isDesktop) && (
-                <div className={classes.fullRoot} style={backgroundStyle}>
+                <div className={classes.fullRoot}>
                     {/* <IconButton className={[
                         classes.tabIconButton,
                     ].join(' ')}
                         onClick={reset}>
                         <IconBack />
                     </IconButton> */}
+                    <CardMedia className={classes.headerImg} component='img' image={currentSlide.imgURL}/>
                     <div className={classes.textContainer}>
                         <Typography variant="subtitle1" className={classes.title} component='p'>
                             {currentSlide.name}
