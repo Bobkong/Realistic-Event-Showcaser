@@ -1,4 +1,4 @@
-import { Fade, Grid, makeStyles } from "@material-ui/core"
+import { Fade, Grid, makeStyles, useMediaQuery } from "@material-ui/core"
 import { useAppState } from "../../state";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,12 +20,13 @@ const useStyles = makeStyles((theme) => ({
 const CoverBase = ({ className, children }) => {
     const { showCover } = useAppState();
     const classes = useStyles();
+    const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
     return (
         <Fade in={showCover}>
             <div
                 className={[classes.root, showCover ? '' : classes.rootHidden, className ? className : ''].join(' ')}>
                 <Grid container>
-                    <Grid item xs={5}>
+                    <Grid item xs={isDesktop ? 5 : 12}>
                         {children[0]}
                     </Grid>
                     <Grid item xs={7}>

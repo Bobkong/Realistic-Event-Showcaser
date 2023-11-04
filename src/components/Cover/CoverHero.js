@@ -94,10 +94,13 @@ const CoverHero = () => {
                     <CardMedia component='img' image={googleLogo} alt="google maps" />
                 </Box>
             </div>
-            <div className={classes.modelsRoot}>
-                <CardMedia component='img' image={coverCicle} className={classes.coverCircle} />
-                <CoverModels />
-            </div>
+            {isDesktop && (
+                <div className={classes.modelsRoot}>
+                    <CardMedia component='img' image={coverCicle} className={classes.coverCircle} />
+                    <CoverModels />
+                </div>
+            )}
+
 
         </CoverBase>
     )

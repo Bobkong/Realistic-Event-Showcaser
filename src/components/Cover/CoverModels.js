@@ -37,7 +37,7 @@ const CoverModels = () => {
             <Cycling position={[-1, -1.5, 2]} />
             <Weightlifting position={[1.5, -2.5, 2.5]} /> */}
             
-            <Float speed={1.4} rotationIntensity={1}>
+            <Float speed={1.2} rotationIntensity={1}>
                 <Football position={[2, -2.5, -1]} />
                 <Tennis position={[-2, 1.2, -1]} />
                 <Cycling position={[1.5, 0, 1.5]} />
