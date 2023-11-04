@@ -30,7 +30,7 @@ type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicE
 export function Volleyball(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/covermodels/volleyball.gltf') as GLTFResult
   return (
-    <group {...props} dispose={null} scale={0.8}>
+    <group {...props} dispose={null} scale={0.7}>
       <group position={[-0.542, 1.648, 0.262]} rotation={[-1.222, -0.711, 0.29]} scale={0.672}>
         <mesh geometry={nodes.Cube022.geometry} material={materials['White.004']} />
         <mesh geometry={nodes.Cube022_1.geometry} material={materials['Blue.002']} />

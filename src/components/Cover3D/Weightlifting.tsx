@@ -32,15 +32,15 @@ type GLTFResult = GLTF & {
     NurbsPath010: THREE.Mesh
     NurbsPath011: THREE.Mesh
     Sphere005: THREE.Mesh
-    Vert014: THREE.Mesh
-    Vert014_1: THREE.Mesh
+    Vert024: THREE.Mesh
+    Vert024_1: THREE.Mesh
   }
   materials: {
-    ['White.009']: THREE.MeshStandardMaterial
-    ['Black.010']: THREE.MeshStandardMaterial
-    ['Skin.005']: THREE.MeshStandardMaterial
-    ['Red.008']: THREE.MeshStandardMaterial
-    ['Yellow.006']: THREE.MeshStandardMaterial
+    ['White.013']: THREE.MeshStandardMaterial
+    ['Black.015']: THREE.MeshStandardMaterial
+    ['Skin.009']: THREE.MeshStandardMaterial
+    ['Red.011']: THREE.MeshStandardMaterial
+    ['Yellow.009']: THREE.MeshStandardMaterial
   }
 }
 
@@ -50,31 +50,31 @@ export function Weightlifting(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/covermodels/weightlifting.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cylinder.geometry} material={materials['White.009']} position={[0, 2.162, 0.098]} rotation={[0, 0, -Math.PI / 2]} scale={[0.034, 1.339, 0.034]} />
-      <mesh geometry={nodes.Cylinder001.geometry} material={materials['Black.010']} />
-      <mesh geometry={nodes.Cylinder003.geometry} material={materials['Black.010']} />
-      <mesh geometry={nodes.Cylinder004.geometry} material={materials['Black.010']} rotation={[-Math.PI, 0, 0]} scale={-1} />
-      <mesh geometry={nodes.Cylinder005.geometry} material={materials['Black.010']} rotation={[-Math.PI, 0, 0]} scale={-1} />
-      <mesh geometry={nodes.Vert001.geometry} material={materials['Skin.005']} position={[0, 0.315, -0.002]} scale={0.427} />
-      <mesh geometry={nodes.Vert002.geometry} material={materials['White.009']} position={[0, 0.85, -0.002]} scale={0.427} />
-      <mesh geometry={nodes.Cube014.geometry} material={materials['Skin.005']} position={[-0.001, 1.597, -0.121]} rotation={[-0.364, 0, 0]} scale={0.499} />
-      <mesh geometry={nodes.Cube013.geometry} material={materials['Black.010']} position={[-0.002, 1.597, -0.201]} rotation={[-0.364, 0, 0]} scale={[0.135, 0.135, 0.351]} />
-      <mesh geometry={nodes.Cube015.geometry} material={materials['Skin.005']} position={[0, 1.613, 0.179]} rotation={[-0.465, 0, 0]} scale={[0.021, 0.024, 0.021]} />
-      <mesh geometry={nodes.Cylinder002.geometry} material={materials['Skin.005']} position={[0.308, 1.552, -0.202]} rotation={[-0.364, 0, 0.238]} scale={0.438} />
-      <mesh geometry={nodes.Eyebrow001.geometry} material={materials['Black.010']} position={[-0.106, 1.777, 0.098]} rotation={[-0.369, -0.014, -0.166]} scale={0.449} />
-      <mesh geometry={nodes.NurbsPath001.geometry} material={materials['Black.010']} position={[-0.061, 1.92, -0.033]} rotation={[-1.935, 0, 0]} scale={0.127} />
-      <mesh geometry={nodes.NurbsPath004.geometry} material={materials['Black.010']} position={[-0.06, 1.915, -0.118]} rotation={[-1.935, 0, -0.208]} scale={0.127} />
-      <mesh geometry={nodes.NurbsPath005.geometry} material={materials['Black.010']} position={[-0.046, 1.884, -0.2]} rotation={[-1.935, 0, -0.481]} scale={0.127} />
-      <mesh geometry={nodes.NurbsPath006.geometry} material={materials['Black.010']} position={[-0.047, 1.845, -0.296]} rotation={[-1.935, 0, -0.481]} scale={0.127} />
-      <mesh geometry={nodes.NurbsPath007.geometry} material={materials['Black.010']} position={[-0.046, 1.788, -0.367]} rotation={[-1.935, 0, -0.481]} scale={0.127} />
-      <mesh geometry={nodes.NurbsPath008.geometry} material={materials['Black.010']} position={[-0.003, 1.743, -0.444]} rotation={[-1.935, 0, -0.635]} scale={0.11} />
-      <mesh geometry={nodes.NurbsPath009.geometry} material={materials['Black.010']} position={[0.052, 1.681, -0.495]} rotation={[-1.935, 0, -1.045]} scale={0.084} />
-      <mesh geometry={nodes.NurbsPath010.geometry} material={materials['Black.010']} position={[0.214, 1.855, 0.019]} rotation={[1.206, -0.262, 0]} scale={-0.073} />
-      <mesh geometry={nodes.NurbsPath011.geometry} material={materials['Black.010']} position={[0.236, 1.845, -0.054]} rotation={[1.206, -0.262, 0]} scale={-0.073} />
-      <mesh geometry={nodes.Sphere005.geometry} material={materials['Black.010']} position={[-0.109, 1.7, 0.134]} rotation={[-0.364, 0, 0]} scale={[0.499, 0.443, 0.499]} />
+      <mesh geometry={nodes.Cylinder.geometry} material={materials['White.013']} position={[0, 2.162, 0.098]} rotation={[0, 0, -Math.PI / 2]} scale={[0.034, 1.339, 0.034]} />
+      <mesh geometry={nodes.Cylinder001.geometry} material={materials['Black.015']} />
+      <mesh geometry={nodes.Cylinder003.geometry} material={materials['Black.015']} />
+      <mesh geometry={nodes.Cylinder004.geometry} material={materials['Black.015']} rotation={[-Math.PI, 0, 0]} scale={-1} />
+      <mesh geometry={nodes.Cylinder005.geometry} material={materials['Black.015']} rotation={[-Math.PI, 0, 0]} scale={-1} />
+      <mesh geometry={nodes.Vert001.geometry} material={materials['Skin.009']} position={[0, 0.315, -0.002]} scale={0.427} />
+      <mesh geometry={nodes.Vert002.geometry} material={materials['White.013']} position={[0, 0.85, -0.002]} scale={0.427} />
+      <mesh geometry={nodes.Cube014.geometry} material={materials['Skin.009']} position={[-0.001, 1.597, -0.121]} rotation={[-0.364, 0, 0]} scale={0.499} />
+      <mesh geometry={nodes.Cube013.geometry} material={materials['Black.015']} position={[-0.002, 1.597, -0.201]} rotation={[-0.364, 0, 0]} scale={[0.135, 0.135, 0.351]} />
+      <mesh geometry={nodes.Cube015.geometry} material={materials['Skin.009']} position={[0, 1.613, 0.179]} rotation={[-0.465, 0, 0]} scale={[0.021, 0.024, 0.021]} />
+      <mesh geometry={nodes.Cylinder002.geometry} material={materials['Skin.009']} position={[0.308, 1.552, -0.202]} rotation={[-0.364, 0, 0.238]} scale={0.438} />
+      <mesh geometry={nodes.Eyebrow001.geometry} material={materials['Black.015']} position={[-0.106, 1.777, 0.098]} rotation={[-0.369, -0.014, -0.166]} scale={0.449} />
+      <mesh geometry={nodes.NurbsPath001.geometry} material={materials['Black.015']} position={[-0.061, 1.92, -0.033]} rotation={[-1.935, 0, 0]} scale={0.127} />
+      <mesh geometry={nodes.NurbsPath004.geometry} material={materials['Black.015']} position={[-0.06, 1.915, -0.118]} rotation={[-1.935, 0, -0.208]} scale={0.127} />
+      <mesh geometry={nodes.NurbsPath005.geometry} material={materials['Black.015']} position={[-0.046, 1.884, -0.2]} rotation={[-1.935, 0, -0.481]} scale={0.127} />
+      <mesh geometry={nodes.NurbsPath006.geometry} material={materials['Black.015']} position={[-0.047, 1.845, -0.296]} rotation={[-1.935, 0, -0.481]} scale={0.127} />
+      <mesh geometry={nodes.NurbsPath007.geometry} material={materials['Black.015']} position={[-0.046, 1.788, -0.367]} rotation={[-1.935, 0, -0.481]} scale={0.127} />
+      <mesh geometry={nodes.NurbsPath008.geometry} material={materials['Black.015']} position={[-0.003, 1.743, -0.444]} rotation={[-1.935, 0, -0.635]} scale={0.11} />
+      <mesh geometry={nodes.NurbsPath009.geometry} material={materials['Black.015']} position={[0.052, 1.681, -0.495]} rotation={[-1.935, 0, -1.045]} scale={0.084} />
+      <mesh geometry={nodes.NurbsPath010.geometry} material={materials['Black.015']} position={[0.214, 1.855, 0.019]} rotation={[1.206, -0.262, 0]} scale={-0.073} />
+      <mesh geometry={nodes.NurbsPath011.geometry} material={materials['Black.015']} position={[0.236, 1.845, -0.054]} rotation={[1.206, -0.262, 0]} scale={-0.073} />
+      <mesh geometry={nodes.Sphere005.geometry} material={materials['Black.015']} position={[-0.109, 1.7, 0.134]} rotation={[-0.364, 0, 0]} scale={[0.499, 0.443, 0.499]} />
       <group position={[0, 0.85, -0.002]} scale={0.427}>
-        <mesh geometry={nodes.Vert014.geometry} material={materials['Red.008']} />
-        <mesh geometry={nodes.Vert014_1.geometry} material={materials['Yellow.006']} />
+        <mesh geometry={nodes.Vert024.geometry} material={materials['Red.011']} />
+        <mesh geometry={nodes.Vert024_1.geometry} material={materials['Yellow.009']} />
       </group>
     </group>
   )

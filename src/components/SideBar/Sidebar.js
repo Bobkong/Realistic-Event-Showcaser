@@ -10,10 +10,8 @@ import { useAppState } from '../../state';
 
 
 export const SIDEBAR_WIDTH = {
-    xs: '400px',
-    xsNr: 400,
-    lg: '460px',
-    lgNr: 460
+    xs: '460px',
+    xsNr: 460,
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -28,11 +26,7 @@ const useStyles = makeStyles((theme) => ({
                 inset: '0 0 0 auto !important'
             }
         },
-        [theme.breakpoints.up('lg')]: {
-            '&, & $drawerPaper': {
-                width: SIDEBAR_WIDTH.lg
-            }
-        }
+        
     },
     drawerPaper: {
         display: 'flex',
@@ -79,7 +73,6 @@ export function Slidebar() {
                     paper: [classes.drawerPaper, mobileExpanded ? classes.drawerPaperExpanded : ''].join(' ')
                 }} >
                 <Header />
-
                 <MainContent />
 
             </Drawer>)}

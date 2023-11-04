@@ -10,8 +10,8 @@ import { GLTF } from 'three-stdlib'
 
 type GLTFResult = GLTF & {
   nodes: {
-    Cube015: THREE.Mesh
-    Cube015_1: THREE.Mesh
+    Cube090: THREE.Mesh
+    Cube090_1: THREE.Mesh
     Cube002: THREE.Mesh
     Cube001: THREE.Mesh
     Cube003: THREE.Mesh
@@ -22,11 +22,11 @@ type GLTFResult = GLTF & {
     Plane001: THREE.Mesh
   }
   materials: {
-    Green: THREE.MeshStandardMaterial
-    ['White.003']: THREE.MeshStandardMaterial
-    ['Black.003']: THREE.MeshStandardMaterial
-    ['Brown.001']: THREE.MeshStandardMaterial
-    Purple: THREE.MeshStandardMaterial
+    ['Green.002']: THREE.MeshStandardMaterial
+    ['White.012']: THREE.MeshStandardMaterial
+    ['Black.014']: THREE.MeshStandardMaterial
+    ['Brown.004']: THREE.MeshStandardMaterial
+    ['Purple.001']: THREE.MeshStandardMaterial
   }
 }
 
@@ -37,18 +37,18 @@ export function Tennis(props: JSX.IntrinsicElements['group']) {
   return (
     <group {...props} dispose={null} scale={0.8}>
       <group position={[-0.023, 2.413, 0.002]} rotation={[1.165, -0.529, 2.64]} scale={0.519}>
-        <mesh geometry={nodes.Cube015.geometry} material={materials.Green} />
-        <mesh geometry={nodes.Cube015_1.geometry} material={materials['White.003']} />
+        <mesh geometry={nodes.Cube090.geometry} material={materials['Green.002']} />
+        <mesh geometry={nodes.Cube090_1.geometry} material={materials['White.012']} />
       </group>
-      <mesh geometry={nodes.Cube002.geometry} material={materials['Black.003']} position={[-0.327, 0.119, 0.377]} rotation={[1.21, -0.532, 0.128]} scale={0.95}>
-        <mesh geometry={nodes.Cube001.geometry} material={materials['Brown.001']} />
-        <mesh geometry={nodes.Cube003.geometry} material={materials.Purple} />
-        <mesh geometry={nodes.Plane.geometry} material={materials['White.003']} />
+      <mesh geometry={nodes.Cube002.geometry} material={materials['Black.014']} position={[-0.327, 0.119, 0.377]} rotation={[1.21, -0.532, 0.128]} scale={0.95}>
+        <mesh geometry={nodes.Cube001.geometry} material={materials['Brown.004']} />
+        <mesh geometry={nodes.Cube003.geometry} material={materials['Purple.001']} />
+        <mesh geometry={nodes.Plane.geometry} material={materials['White.012']} />
       </mesh>
-      <mesh geometry={nodes.Cube005.geometry} material={materials['Black.003']} position={[0.516, 0.182, -0.352]} rotation={[1.412, 0.804, -0.825]} scale={0.879}>
-        <mesh geometry={nodes.Cube004.geometry} material={materials['Brown.001']} />
-        <mesh geometry={nodes.Cube006.geometry} material={materials.Purple} />
-        <mesh geometry={nodes.Plane001.geometry} material={materials['White.003']} />
+      <mesh geometry={nodes.Cube005.geometry} material={materials['Black.014']} position={[0.516, 0.182, -0.352]} rotation={[1.412, 0.804, -0.825]} scale={0.879}>
+        <mesh geometry={nodes.Cube004.geometry} material={materials['Brown.004']} />
+        <mesh geometry={nodes.Cube006.geometry} material={materials['Purple.001']} />
+        <mesh geometry={nodes.Plane001.geometry} material={materials['White.012']} />
       </mesh>
     </group>
   )

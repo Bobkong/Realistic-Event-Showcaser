@@ -56,7 +56,8 @@ const useStyles = makeStyles((theme) => ({
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: '50%',
-        aspectRatio: '1'
+        aspectRatio: '1',
+        opacity: 0.9
     }
 
 

@@ -61,20 +61,20 @@ export const tabInfo = [
 export const SlideContent = () => {
     const classes = useStyles();
     const theme = useTheme();
-    const { reset, currentSlide } = useAppState();
+    const { reset, currentSlide, setMapService, mapService } = useAppState();
     const [nearbyResponse, setNearbyResponse] = useState([]);
-    const [mapLoaded, setMapLoaded] = useState(false);
     const [nearbyTab, setNearbyTab] = useState(tabInfo[0]);
     const nearbySearchRef = useRef(null);
 
     const handleTabChange = (nearbyTab) => {
         setNearbyResponse([]);
         setNearbyTab(nearbyTab.value);
-        nearbySearchRef.current.nearbySearch(nearbyTab.value)
+        nearbySearchRef.current.nearbySearch(nearbyTab.value, mapService)
     };
 
     useEffect(() => {
         if (currentSlide !=null && nearbySearchRef.current != null) {
+            console.log('load nearby')
             handleTabChange(tabInfo[0])
         }
     }, [currentSlide])
@@ -95,9 +95,9 @@ export const SlideContent = () => {
                 ))}
             </div>
 
-            <NearbySearch slide={currentSlide} setMapLoaded={setMapLoaded} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef}/>
+            <NearbySearch slide={currentSlide} setMapService={setMapService} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef}/>
 
-            {mapLoaded && <div className={classes.nearyByDiv}>
+            <div className={classes.nearyByDiv}>
                 <Typography variant="subtitle2" color="primary" component='p'>
                     Nearby Recommendations
                 </Typography>
@@ -114,7 +114,7 @@ export const SlideContent = () => {
                     <NearbyCard location={item}/>
                 ))}
 
-            </div>}
+            </div>
         </div>
     )
 }

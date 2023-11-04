@@ -25,10 +25,9 @@ class NearbySearch extends Component {
   constructor(props) {
     super(props);
     this.map = null;
-    this.service = null;
+    this.setMapService = props.setMapService;
 
     this.slide = props.slide;
-    this.setMapLoaded = props.setMapLoaded;
     this.setNearbyResponse = props.setNearbyResponse;
   }
 
@@ -50,12 +49,12 @@ class NearbySearch extends Component {
     };
 
     this.map = new window.google.maps.Map(document.getElementById('map'), mapOptions);
-    this.service = new window.google.maps.places.PlacesService(this.map);
-    this.setMapLoaded(true);
-    this.nearbySearch(NEARBY_THINGS_TO_DO);
+    const service = new window.google.maps.places.PlacesService(this.map);
+    this.setMapService(service);
+    this.nearbySearch(NEARBY_THINGS_TO_DO, service);
   }
 
-  nearbySearch = (type) => {
+  nearbySearch = (type, service) => {
 
     const request = {
       location: { lat: this.slide.coordinates[1], lng: this.slide.coordinates[0] },
@@ -63,11 +62,13 @@ class NearbySearch extends Component {
       type: type,
     };
 
-    if (this.service != null) {
-      this.service.nearbySearch(request, (results, status) => {
+    if (service != null) {
+      console.log('request')
+      service.nearbySearch(request, (results, status) => {
         if (status === window.google.maps.places.PlacesServiceStatus.OK) {
           // only keep locations with photos
           const filteredRadius = results.filter(item => item['photos'] && item['photos'].length > 0)
+          console.log('set response')
           this.setNearbyResponse(filteredRadius);
         }
       });

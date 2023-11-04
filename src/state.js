@@ -16,6 +16,7 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
     const [mobileExpanded, setMobileExpanded] = useState(false);
     const [showCover, setShowCover] = useState(true);
+    const [mapService, setMapService] = useState(null);
     const theme = useTheme();
 
     const initViewState = {
@@ -139,7 +140,9 @@ export const AppStateStore = ({ children, jsonData }) => {
                 updateViewState,
                 setCurrentLocate,
                 showCover,
-                setShowCover
+                setShowCover,
+                mapService,
+                setMapService
             }}>
             {children}
         </AppStateContext.Provider>
