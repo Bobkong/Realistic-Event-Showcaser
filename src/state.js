@@ -15,6 +15,7 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [currentLocate, setCurrentLocate] = useState(null);
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
     const [mobileExpanded, setMobileExpanded] = useState(false);
+    const [showCover, setShowCover] = useState(true);
     const theme = useTheme();
 
     const initViewState = {
@@ -34,9 +35,8 @@ export const AppStateStore = ({ children, jsonData }) => {
 
     // 3d graph layer
     const [tooltipStyle, setTooltipStyle] = useState({ position: "absolute", display: "none" });
-    const defaultLocaiton = jsonData.tabs[0].locations[0];
-    const ScenegraphLayer = createSceneGraphLayer(defaultLocaiton, defaultLocaiton.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
-    let allLayers = [Google3DLayer, ScenegraphLayer];
+   
+    let allLayers = [Google3DLayer];
     const [layers, setLayers] = useState(allLayers);
 
     const orbit = useCallback(previousTransition => {
@@ -62,6 +62,7 @@ export const AppStateStore = ({ children, jsonData }) => {
         });
     };
 
+    // switch slide
     useEffect(
         () => {
             if (currentSlide != null) {
@@ -79,6 +80,7 @@ export const AppStateStore = ({ children, jsonData }) => {
         [currentSlide]
     );
 
+    // locate nearby recommendations
     useEffect(() => {
         if (currentLocate != null) {
             // update view state
@@ -90,11 +92,19 @@ export const AppStateStore = ({ children, jsonData }) => {
         }
     }, [currentLocate]);
 
+    // click explore button
     useEffect(() => {
         // orbit initially
-        console.log('orbit')
-        orbit();
-    }, []);
+        if (!showCover) {
+            console.log('orbit')
+            orbit();
+
+            const defaultLocaiton = jsonData.tabs[0].locations[0];
+            const ScenegraphLayer = createSceneGraphLayer(defaultLocaiton, defaultLocaiton.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
+            setLayers([Google3DLayer, ScenegraphLayer]);
+        }
+        
+    }, [showCover]);
 
     let tabLocationLength, curretnSlideNum
     if (currentSlide) {
@@ -127,7 +137,9 @@ export const AppStateStore = ({ children, jsonData }) => {
                 setCurrentTabIndex,
                 tooltipStyle,
                 updateViewState,
-                setCurrentLocate
+                setCurrentLocate,
+                showCover,
+                setShowCover
             }}>
             {children}
         </AppStateContext.Provider>

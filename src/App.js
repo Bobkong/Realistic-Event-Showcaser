@@ -3,13 +3,15 @@ import './App.css';
 import Map from './components/Map/Map';
 import { Slidebar } from './components/SideBar/Sidebar';
 import { createTheme } from './theme';
-import {CssBaseline, ThemeProvider} from '@material-ui/core';
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import axios from 'axios';
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import { AppStateStore } from './state';
-import { useGLTF } from '@react-three/drei';
+import CoverHero from './components/Cover/CoverHero';
+
 
 const theme = createTheme();
+
 
 
 function App() {
@@ -18,10 +20,10 @@ function App() {
 
   useEffect(() => {
     axios.get('/eventdata.json')
-    .then(response => {
-      setJsonData(response.data)
-    }).catch(error => console.error('Error loading JSON data:', error));
-    
+      .then(response => {
+        setJsonData(response.data)
+      }).catch(error => console.error('Error loading JSON data:', error));
+
   }, []);
 
   if (jsonData == null) {
@@ -33,13 +35,14 @@ function App() {
       <AppStateStore jsonData={jsonData}>
         <CssBaseline>
           <div className="App">
-              <Map/>
-              <Slidebar/>
+            <Map />
+            <Slidebar />
+            <CoverHero /> 
           </div>
         </CssBaseline>
       </AppStateStore>
     </ThemeProvider>
-    
+
   );
 }
 

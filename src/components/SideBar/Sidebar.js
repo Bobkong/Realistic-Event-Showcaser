@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
             '&:not($drawerPaperExpanded)': {
                 borderTopLeftRadius: theme.spacing(1),
                 borderTopRightRadius: theme.spacing(1)
-              }
+            }
         },
         [theme.breakpoints.up('md')]: {
             height: '100%'
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
 export function Slidebar() {
     const classes = useStyles();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
-    const {mobileExpanded, setMobileExpanded, jsonData} = useAppState()
+    const { mobileExpanded, setMobileExpanded, showCover } = useAppState()
 
     useEffect(() => {
         if (isDesktop) {
@@ -69,18 +69,21 @@ export function Slidebar() {
 
 
     return (
-        <Drawer className={classes.drawer}
-            anchor={isDesktop ? 'right' : 'bottom'}
-            hideBackdrop={true}
-            variant='permanent'
-            open={true}
-            classes={{
-                paper: [classes.drawerPaper, mobileExpanded ? classes.drawerPaperExpanded : ''].join(' ')
-            }} >
-            <Header/>
+        <div>
+            {!showCover && (<Drawer className={classes.drawer}
+                anchor={isDesktop ? 'right' : 'bottom'}
+                hideBackdrop={true}
+                variant='permanent'
+                open={true}
+                classes={{
+                    paper: [classes.drawerPaper, mobileExpanded ? classes.drawerPaperExpanded : ''].join(' ')
+                }} >
+                <Header />
 
-            <MainContent/>
-           
-        </Drawer>
+                <MainContent />
+
+            </Drawer>)}
+        </div>
+
     )
 }
