@@ -37,7 +37,7 @@ function App() {
           <div className="App">
             <Map />
             <Slidebar />
-            {/* <CoverHero /> */}
+            <CoverHero />
           </div>
         </CssBaseline>
       </AppStateStore>

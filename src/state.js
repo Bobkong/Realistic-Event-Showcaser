@@ -15,7 +15,7 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [currentLocate, setCurrentLocate] = useState(null);
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
     const [mobileExpanded, setMobileExpanded] = useState(false);
-    const [showCover, setShowCover] = useState(false);
+    const [showCover, setShowCover] = useState(true);
     const [mapService, setMapService] = useState(null);
     const theme = useTheme();
 
