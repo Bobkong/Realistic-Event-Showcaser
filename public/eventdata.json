@@ -3,13 +3,14 @@
     "eventStartTime": "07/26/2024",
     "eventEndTime": "08/11/2024",
     "eventLogo": "https://ik.imagekit.io/poonr2gma/image%2017.png?updatedAt=1697509592740",
+    "eventSubtitle": "Immersively experience Paris Olympic venues, delve into Olympic stories, and embrace the city's charm to the fullest.",
     "enableGoogleNearyby": "true",
     "tabs": [
         {
             "name":"Olympic venues", 
             "index": 0,
             "icon": "https://ik.imagekit.io/poonr2gma/_%EF%B8%8F.png?updatedAt=1697319451770",
-            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
+            "description": "Games span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
             "locations": [
                 {
                     "name": "STADE DE FRANCE",
@@ -260,7 +261,7 @@
             
         },
         {
-            "name":"Olympic stories", 
+            "name":"Olympic milestones", 
             "index": 1,
             "description": "Delve into the rich Olympic milestones of Paris and discover the fascinating stories that have unfolded over the years in the realm of the Olympics.",
             "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
@@ -318,11 +319,11 @@
         {
             "name":"Iconic attractions", 
             "index": 2,
-            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
+            "description": "Virtually but immersively embark on a captivating journey to explore the enchanting attractions that Paris has to offer, and immerse yourself in the irresistible charm and allure of this magnificent city.",
             "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1699153147591",
             "locations": [
                 {
-                    "name": "The Eiffel Tower",
+                    "name": "Eiffel Tower",
                     "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris, France",
                     "subtitle": "The iconic Parisian landmark and one of the most recognized structures in the world.",
                     "coordinates":[2.293,48.8586,70], 

@@ -120,7 +120,7 @@ const variables = {
   },
   typography: {
     htmlFontSize: 16,
-    fontFamily: 'Montserrat, sans-serif',
+    fontFamily: 'Paris, sans-serif',
     fontSize: 16,
     lineHeight: 1.5,
     fontWeightLight: 300,
@@ -129,57 +129,57 @@ const variables = {
     fontWeightBold: 600,
     fontSmoothing: 'antialiased',
     h1: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '6rem',
+      fontSize: '6.4rem',
       lineHeight: 1.084,
       letterSpacing: '-0.016em',
       fontSmoothing: 'antialiased'
     },
     h2: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '4rem',
+      fontSize: '4.4rem',
       lineHeight: 1.125,
       letterSpacing: '-0.008em',
       fontSmoothing: 'antialiased'
     },
     h3: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '3rem',
+      fontSize: '3.2rem',
       lineHeight: 1.167,
       letterSpacing: '0em',
       fontSmoothing: 'antialiased'
     },
     h4: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '2.125rem',
+      fontSize: '2.4rem',
       lineHeight: 1.177,
       letterSpacing: '0.007em',
       fontSmoothing: 'antialiased'
     },
     h5: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '1.5rem',
+      fontSize: '1.8rem',
       lineHeight: 1.334,
       letterSpacing: '0em',
       fontSmoothing: 'antialiased'
     },
     h6: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '1.25rem',
+      fontSize: '1.4rem',
       lineHeight: 1.2,
       letterSpacing: '0.007em',
       fontSmoothing: 'antialiased'
     },
     subtitle1: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '1rem',
+      fontSize: '1.2rem',
       lineHeight: 1.5,
       letterSpacing: '0.009em',
       fontSmoothing: 'antialiased'
@@ -209,7 +209,7 @@ const variables = {
       fontSmoothing: 'antialiased'
     },
     button: {
-      fontFamily: 'Montserrat, sans-serif',
+      fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
       fontSize: '0.875rem',
       lineHeight: 1.715,
@@ -228,7 +228,7 @@ const variables = {
     overline: {
       fontFamily: '"Open Sans", sans-serif',
       fontWeight: 400,
-      fontSize: '0.625rem',
+      fontSize: '0.75rem',
       lineHeight: 1.6,
       letterSpacing: '0.150em',
       textTransform: 'uppercase',
@@ -241,7 +241,7 @@ const variables = {
 const spacing = createSpacing(variables.spacing);
 
 export const appThemeOptions = {
-  themeName: 'Realistic Event Shower',
+  themeName: 'Realistic Paris 2024',
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {

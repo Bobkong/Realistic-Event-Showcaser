@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
           padding: '0px 0px 8px 0px',
           marginBottom: '0px',
-          marginRight: '24px',
+          marginRight: '12px',
           textAlign: 'left',
         }
     },

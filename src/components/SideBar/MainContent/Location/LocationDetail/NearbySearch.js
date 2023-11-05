@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap } from 'react-google-maps';
-import { apiKey, myApiKey } from './utils';
+import { apiKey, isSubstring, myApiKey } from '../../../../../utils';
 export function loadScript(url) {
   // only load once
   if (hasLoadedScript) {
@@ -29,6 +29,7 @@ class NearbySearch extends Component {
 
     this.slide = props.slide;
     this.setNearbyResponse = props.setNearbyResponse;
+    this.jsonData = props.jsonData;
   }
 
   componentDidMount() {
@@ -68,8 +69,15 @@ class NearbySearch extends Component {
         if (status === window.google.maps.places.PlacesServiceStatus.OK) {
           // only keep locations with photos
           const filteredRadius = results.filter(item => item['photos'] && item['photos'].length > 0)
-          console.log('set response')
-          this.setNearbyResponse(filteredRadius);
+          // filter out the locations already in configured files
+          const jsonLocations = this.jsonData.tabs.reduce((acc, tab) => {
+            return acc.concat(tab.locations.map(location => location.name.toUpperCase()));
+          }, []);
+          const filteredLocations = filteredRadius.filter(location => {
+            return !jsonLocations.includes(location['name'].toUpperCase());
+          });
+          
+          this.setNearbyResponse(filteredLocations);
         }
       });
     }

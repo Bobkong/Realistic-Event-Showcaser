@@ -42,7 +42,7 @@ export const AppStateStore = ({ children, jsonData }) => {
     const orbit = useCallback(previousTransition => {
         setViewState((viewState) => ({
             ...viewState,
-            bearing: viewState.bearing + 120,
+            bearing: viewState.bearing - 120,
             transitionDuration: previousTransition ? 20000 : 25000, // TODO should match gradients with easing
             transitionEasing: previousTransition ? x => x : Easing.Quadratic.In,
             transitionInterpolator,

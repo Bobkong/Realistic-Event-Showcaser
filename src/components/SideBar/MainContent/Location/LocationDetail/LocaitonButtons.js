@@ -5,7 +5,7 @@ import { ReactComponent as GoogleMaps } from '../../../../../assets/icons/google
 import { ReactComponent as Website } from '../../../../../assets/icons/website.svg'
 import { Typography, makeStyles, IconButton, ButtonBase } from "@material-ui/core"
 import { useAppState } from '../../../../../state'
-import { ReadFrench } from '../../../../../utils'
+import { ReadFrench, checkMobileDevice } from '../../../../../utils'
 
 const useStyle = makeStyles((theme) => ({
     root: {
@@ -36,7 +36,8 @@ export const LocationButtons = () => {
     const classes = useStyle();
     return (
         <div className={classes.root}>
-            <HearFrenchButton />
+            {/* only show hear french button on website */}
+            {!checkMobileDevice() && (<HearFrenchButton />)}
             <LocateButton />
             <GoogleMapseButton />
             <WebsiteButton />

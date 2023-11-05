@@ -8,7 +8,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react'
 import { AppStateStore } from './state';
 import CoverHero from './components/Cover/CoverHero';
-import CoverModels from './components/Cover/CoverModels';
+import RotateHint from './components/Cover/RotateHint';
 
 const theme = createTheme();
 
@@ -38,6 +38,7 @@ function App() {
             <Map />
             <Slidebar />
             <CoverHero />
+            <RotateHint />
           </div>
         </CssBaseline>
       </AppStateStore>

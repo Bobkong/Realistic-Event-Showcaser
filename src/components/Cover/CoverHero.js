@@ -9,12 +9,10 @@ import coverCicle from '../../assets/images/cover-circle.png';
 const useStyles = makeStyles((theme) => ({
     textContainer: {
         marginTop: theme.spacing(13.5),
-        marginLeft: theme.spacing(8),
-        [theme.breakpoints.up('md')]: {
+        paddingInline: theme.spacing(8),
+        [theme.breakpoints.down('md')]: {
             marginTop: theme.spacing(8),
-            '@media (min-height: 760px)': {
-                marginTop: theme.spacing(15)
-            }
+            paddingInline: theme.spacing(6),
         },
         '& svg path': {
             fill: theme.palette.common.white
@@ -59,7 +57,13 @@ const useStyles = makeStyles((theme) => ({
         transform: 'translate(-50%, -50%)',
         width: '50%',
         aspectRatio: '1',
-        opacity: 0.9
+        opacity: 0.9,
+
+    },
+
+    eventLogo: {
+        height: '72px',
+        width: 'auto'
     },
 
 
@@ -67,19 +71,20 @@ const useStyles = makeStyles((theme) => ({
 
 const CoverHero = () => {
     const classes = useStyles();
-    const { setShowCover } = useAppState();
+    const { setShowCover, jsonData } = useAppState();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
     return (
         <CoverBase >
             <div className={classes.textContainer}>
                 <Typography color="inherit" variant='subtitle1'>
-                    26 Jul - 11 Aug 2024
+                    {jsonData.eventStartTime} - {jsonData.eventEndTime}
                 </Typography>
                 <Typography color="inherit" variant={isDesktop ? 'h1' : 'h2'} className={classes.title}>
-                    PARIS 2024
+                    {jsonData.eventName}
                 </Typography>
+
                 <Typography color="inherit" variant={isDesktop ? 'body1' : 'body2'} className={classes.title}>
-                    Experience Paris Olympic venues, delve into Olympic stories, and embrace the city's charm to the fullest.
+                    {jsonData.eventSubtitle}
                 </Typography>
                 <Button
                     size={isDesktop ? 'large' : 'medium'}
@@ -93,7 +98,7 @@ const CoverHero = () => {
                     <Typography color="inherit" variant='subtitle2' className={classes.builtWithText}>
                         Built with
                     </Typography>
-                    <CardMedia component='img' image={googleLogo} alt="google maps" />
+                    <CardMedia component='img' image={googleLogo} alt="google maps"/>
                 </Box>
             </div>
             {isDesktop && (

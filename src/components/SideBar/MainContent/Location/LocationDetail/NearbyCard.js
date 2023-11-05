@@ -80,7 +80,7 @@ export const NearbyCard = (location) => {
     const distance = `· ${calculateDistance(currentSlide.coordinates[1], currentSlide.coordinates[0], lat, lng)} mi`;
     
     const formatLocation = {
-        coordinates: [lng, lat, 50],
+        coordinates: [lng + 0.0005, lat + 0.0005, 40], // not overlay with building
         imgURL: photo,
         name: name,
         openURL: `https://www.google.com/maps/place/?q=place_id:${placeId}`,

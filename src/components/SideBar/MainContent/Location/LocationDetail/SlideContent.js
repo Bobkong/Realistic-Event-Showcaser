@@ -2,7 +2,7 @@ import { Typography, makeStyles, useTheme, Tabs, Tab } from "@material-ui/core"
 import { useAppState } from "../../../../../state";
 import { LocationButtons } from "./LocaitonButtons";
 import { useEffect, useRef, useState } from "react";
-import NearbySearch, { NEARBY_LODGING, NEARBY_RESTAURANT, NEARBY_THINGS_TO_DO } from "../../../../../NearbySearch";
+import NearbySearch, { NEARBY_LODGING, NEARBY_RESTAURANT, NEARBY_THINGS_TO_DO } from "./NearbySearch";
 import { NearbyCard } from "./NearbyCard";
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -61,7 +61,7 @@ export const tabInfo = [
 export const SlideContent = () => {
     const classes = useStyles();
     const theme = useTheme();
-    const { reset, currentSlide, setMapService, mapService } = useAppState();
+    const { jsonData, currentSlide, setMapService, mapService } = useAppState();
     const [nearbyResponse, setNearbyResponse] = useState([]);
     const [nearbyTab, setNearbyTab] = useState(tabInfo[0]);
     const nearbySearchRef = useRef(null);
@@ -95,7 +95,7 @@ export const SlideContent = () => {
                 ))}
             </div>
 
-            <NearbySearch slide={currentSlide} setMapService={setMapService} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef}/>
+            <NearbySearch slide={currentSlide} setMapService={setMapService} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef} jsonData={jsonData}/>
 
             <div className={classes.nearyByDiv}>
                 <Typography variant="subtitle2" color="primary" component='p'>

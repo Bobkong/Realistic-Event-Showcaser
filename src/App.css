@@ -1,6 +1,20 @@
 .App {
 }
 
+@font-face {
+  font-family: 'Paris';
+  src: url('./paris.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paris';
+  src: url('./paris.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
