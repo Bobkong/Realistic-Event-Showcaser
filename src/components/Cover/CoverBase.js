@@ -3,13 +3,13 @@ import { useAppState } from "../../state";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        left: theme.spacing(8),
-        width: 'auto',
+        width: '100vw',
         height: '100vh',
         position: 'absolute',
         color: theme.palette.common.white,
         display: 'flex',
         top: '0',
+        left: '0'
     },
 
     rootHidden: {

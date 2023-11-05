@@ -35,7 +35,7 @@ type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicE
 export function Tennis(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/covermodels/tennis.gltf') as GLTFResult
   return (
-    <group {...props} dispose={null} scale={0.8}>
+    <group {...props} dispose={null} scale={0.7} >
       <group position={[-0.023, 2.413, 0.002]} rotation={[1.165, -0.529, 2.64]} scale={0.519}>
         <mesh geometry={nodes.Cube090.geometry} material={materials['Green.002']} />
         <mesh geometry={nodes.Cube090_1.geometry} material={materials['White.012']} />

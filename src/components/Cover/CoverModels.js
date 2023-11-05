@@ -1,4 +1,4 @@
-import { Box, Button, Typography, makeStyles, useMediaQuery, useTheme } from "@material-ui/core";
+import { makeStyles, useMediaQuery } from "@material-ui/core";
 import CoverBase from "./CoverBase";
 import { Canvas, useThree } from '@react-three/fiber';
 import { AmbientLight } from 'three';
@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const CoverModels = () => {
-    const classes = useStyles();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
+    const classes = useStyles();
     return (
         <Canvas className={classes.root}>
             <ambientLight />
@@ -37,7 +37,7 @@ const CoverModels = () => {
             <Cycling position={[-1, -1.5, 2]} />
             <Weightlifting position={[1.5, -2.5, 2.5]} /> */}
             
-            <Float speed={1.2} rotationIntensity={1}>
+            <Float speed={1} rotationIntensity={1}>
                 <Football position={[2, -2.5, -1]} />
                 <Tennis position={[-2, 1.2, -1]} />
                 <Cycling position={[1.5, 0, 1.5]} />

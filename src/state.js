@@ -15,19 +15,18 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [currentLocate, setCurrentLocate] = useState(null);
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
     const [mobileExpanded, setMobileExpanded] = useState(false);
-    const [showCover, setShowCover] = useState(true);
+    const [showCover, setShowCover] = useState(false);
     const [mapService, setMapService] = useState(null);
     const theme = useTheme();
 
     const initViewState = {
-        longitude: 2.2478,
-        latitude: 48.9293,
+        longitude:2.3601,
+        latitude: 48.9245,
         zoom: 16.5,
         bearing: 90,
         pitch: 70,
         height: 20
     };
-
     const [viewState, setViewState] = useState(initViewState);
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
     const isMobileCollapsed = !isDesktop && !mobileExpanded

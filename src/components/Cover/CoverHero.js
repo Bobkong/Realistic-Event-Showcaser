@@ -9,6 +9,7 @@ import coverCicle from '../../assets/images/cover-circle.png';
 const useStyles = makeStyles((theme) => ({
     textContainer: {
         marginTop: theme.spacing(13.5),
+        marginLeft: theme.spacing(8),
         [theme.breakpoints.up('md')]: {
             marginTop: theme.spacing(8),
             '@media (min-height: 760px)': {
@@ -48,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         width: '100%',
         height: '100vh',
+        marginRight: theme.spacing(8),
     },
 
     coverCircle: {
@@ -58,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         width: '50%',
         aspectRatio: '1',
         opacity: 0.9
-    }
+    },
 
 
 }));

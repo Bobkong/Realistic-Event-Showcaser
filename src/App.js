@@ -3,12 +3,12 @@ import './App.css';
 import Map from './components/Map/Map';
 import { Slidebar } from './components/SideBar/Sidebar';
 import { createTheme } from './theme';
-import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import { Box, CssBaseline, ThemeProvider, makeStyles } from '@material-ui/core';
 import axios from 'axios';
 import { useState, useEffect } from 'react'
 import { AppStateStore } from './state';
 import CoverHero from './components/Cover/CoverHero';
-
+import CoverModels from './components/Cover/CoverModels';
 
 const theme = createTheme();
 
@@ -37,7 +37,7 @@ function App() {
           <div className="App">
             <Map />
             <Slidebar />
-            <CoverHero /> 
+            {/* <CoverHero /> */}
           </div>
         </CssBaseline>
       </AppStateStore>

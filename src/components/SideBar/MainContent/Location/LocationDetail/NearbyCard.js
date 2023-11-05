@@ -65,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
 
 const handleClick = (location, setCurrentLocate) => {
     // open location slide
-    console.log(location);
     setCurrentLocate(location)
 }
 

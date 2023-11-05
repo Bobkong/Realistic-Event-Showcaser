@@ -13,10 +13,10 @@ const useStyles = makeStyles((theme) => ({
     },
 
     dot: {
-        width: theme.spacing(1),
-        height: theme.spacing(1),
-        margin: theme.spacing(0.5),
-        borderRadius: theme.spacing(0.5),
+        width: theme.spacing(0.8),
+        height: theme.spacing(0.8),
+        margin: theme.spacing(0.4),
+        borderRadius: theme.spacing(0.4),
         backgroundColor: theme.palette.text.disabled,
         transition: theme.transitions.create('background-color', {
             easing: theme.transitions.easing.easeInOut,
