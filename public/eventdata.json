@@ -260,70 +260,82 @@
             
         },
         {
-            "name":"Olympic histories", 
+            "name":"Olympic stories", 
             "index": 1,
-            "description": "Test",
+            "description": "Delve into the rich Olympic milestones of Paris and discover the fascinating stories that have unfolded over the years in the realm of the Olympics.",
             "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
             "locations": [
                 {
-                    "name": "Women were finally allowed to take part in the 1924 Paris Olympic games!",
-                    "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "subtitle": "testestesttest",
-                    "coordinates":[2.2396,48.8847,70], 
+                    "name": "A ceremony outside a stadium",
+                    "address": "",
+                    "subtitle": "For the first time in Olympic history, the ceremony won't be held in a stadium.",
+                    "coordinates":[2.3419,48.8579,80], 
                     "tabIndex": 1,
-                    "imgURL": "https://ik.imagekit.io/poonr2gma/image%2019.png?updatedAt=1697320139071",
-                    "openURL": "https://olympics.com/en/athletes/charlotte-cooper",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/TEAHUPO_O.glb?updatedAt=1698978185294",
-                    "tipImage": "",
-                    "toolTipTitle": "Île de Puteaux",
+                    "imgURL": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/d4zjpklkxjq7sbghn7hs",
+                    "openURL": "https://www.paris2024.org/en/ceremony/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/open.png?updatedAt=1699153972308",
                     "description": [
-                        "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games.",
-                        "In addition to being the home of Paris Saint Germain since 1974, the Parc des Princes has staged many matches for the French football and rugby teams, as well as major international competitions, including the 1998 Football World Cup and the Euro 2016 Football Championship, alongside major concerts by French and global stars. When it was France’s largest stadium for over 25 years, it also staged the finals of the Coupe de France for football and the French rugby union championship each year. Its most recent renovation was carried out for Euro 2016."
+                        "Breaking with history, the opening ceremony will be bold, original and unique. Paris 2024 will offer an opening ceremony that is certain to join the most memorable moments in Olympic history, including several firsts. ",
+                        "For the first time in the history of the Summer Olympic Games, the ceremony will not be taking place in a stadium. Paris 2024 is breaking new ground in sports competition by bringing sports out into the city and the same will be true for the opening ceremony, which will be held in the heart of the city, along its main artery, the Seine."
                     ]
                 },
                 {
-                    "name": "The Olympic Village across time",
-                    "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "subtitle": "testestesttest",
-                    "coordinates":[2.3574,48.9362,70], 
+                    "name": "Women make their debut in Paris 1900",
+                    "address": "Centre Sportif Parisien de Puteaux, 1 All. des Sports, 92800 Puteaux, France",
+                    "subtitle": "Women were finally allowed to take part in the 1900 Paris Olympic games!",
+                    "coordinates":[2.2437,48.8763,75], 
                     "tabIndex": 1,
-                    "imgURL": "https://ik.imagekit.io/poonr2gma/image%2023.png?updatedAt=1697320708378",
-                    "openURL": "https://olympics.com/en/news/paris-1924-the-olympic-games-come-of-age",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Trocadero.glb?updatedAt=1698978184774",
-                    "tipImage": "",
-                    "toolTipTitle": "Île de Puteaux",
+                    "history": "true",
+                    "imgURL": "https://ik.imagekit.io/poonr2gma/image%2019.png?updatedAt=1697320139071",
+                    "openURL": "https://www.paris2024.org/en/gender-equality/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/women(1).png?updatedAt=1699154725758",
                     "description": [
-                        "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof. Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games.",
-                        "In addition to being the home of Paris Saint Germain since 1974, the Parc des Princes has staged many matches for the French football and rugby teams, as well as major international competitions, including the 1998 Football World Cup and the Euro 2016 Football Championship, alongside major concerts by French and global stars. When it was France’s largest stadium for over 25 years, it also staged the finals of the Coupe de France for football and the French rugby union championship each year. Its most recent renovation was carried out for Euro 2016."
+                        "The Paris 1900 Olympic Games saw women compete for the first time. The first female Olympic champion was Charlotte Cooper, a British tennis player who won Wimbledon five times. Out of a total of 997 athletes, 22 were women, competing in just five sports: tennis, sailing, croquet, equestrian events and golf. Of these disciplines, only golf and tennis included women‑only events. ",
+                        "According to the Olympic Charter, the IOC’s role is “to encourage and support the promotion of women in sport at all levels and in all structures, with a view to implementing the principle of equality of men and women”. Female participation in the Olympic Games has increased dramatically since; 48.9% of the athletes at the 2020 Tokyo Games are expected to be women."
+                    ]
+                },
+                {
+                    "name": "The first ever Olympic Village",
+                    "subtitle": "The Paris Games were already blazing new trails in 1924, when they introduced the notion of an Olympic Village",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.2495,48.9299,70], 
+                    "tabIndex": 1,
+                    "history": "true",
+                    "imgURL": "https://sethsolympicsblog.files.wordpress.com/2019/04/fwx0aw1.jpg?w=405&h=260",
+                    "openURL": "https://www.paris2024.org/en/france-and-olympism/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/first%C2%A0village.png?updatedAt=1699153971077",
+                    "description": [
+                        "The first ever Olympic Village was built near the Stade Olympique in Colombes, north-west of Paris. It was an array of temporary wooden cabins, with three beds in each. The athletes were served three meals a day, and shared the toilets, showers and refectory. The village had a currency exchange bureau, dry-cleaner’s, hairdresser’s, newsagent and post office. Unlike the ones after it, the village in 1924 was not built to be used after the Games.",
+                        "As has been the case in other recent editions of the Games, one major difference between Paris 2024 and Paris 1924 is that the Olympic Village is now built with the future in mind. No longer is the objective to house athletes for a few weeks and consequently remove temporary infrastructure, but to create a lasting impact that will benefit locals."
                     ]
                 }
             ]
             
         },
         {
-            "name":"Olympic news", 
+            "name":"Iconic attractions", 
             "index": 2,
             "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
-            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
+            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1699153147591",
             "locations": [
-            ]
-            
-        },
-        {
-            "name":"Iconic attractions", 
-            "index": 3,
-            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
-            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
-            "locations": [
-            ]
-            
-        },
-        {
-            "name":"French cuisine", 
-            "index": 4,
-            "description": "Games, at the core of the city, span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
-            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
-            "locations": [
+                {
+                    "name": "The Eiffel Tower",
+                    "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris, France",
+                    "subtitle": "The iconic Parisian landmark and one of the most recognized structures in the world.",
+                    "coordinates":[2.293,48.8586,70], 
+                    "tabIndex": 2,
+                    "imgURL": "https://a.cdn-hotels.com/gdcs/production107/d507/f99efdcd-6fcc-4a97-a00c-cb6a491554b7.jpg?impolicy=fcrop&w=800&h=533&q=medium",
+                    "openURL": "https://www.toureiffel.paris/en",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699136453388",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/eiffel%20tower.png?updatedAt=1699155929673",
+                    "description": [
+                        "Come and discover the Eiffel Tower: the only trip to the top of its kind in Europe, one where emotions carry you away. From the esplanade to the summit you will experience a whole series of emotions.",
+                        "Soak in the breathtakingly unique views of Paris from every floor, feel the goose bumps as you walk the glass floor on the 1st floor, experience the incredible ascent by stairway or lift, the indescribable awe at the tonnes of iron above you as you stand on the esplanade. Vertigo grips you as you leave the lift at the top of the tower and see the people down on the Champs-de-Mars and the cars driving along Trocadéro! And the Eiffel Tower always has something to offer, day or night, summer or winter!"
+                    ]
+                }
             ]
             
         }

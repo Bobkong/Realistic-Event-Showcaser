@@ -80,10 +80,12 @@ export const NearbyCard = (location) => {
     const distance = `· ${calculateDistance(currentSlide.coordinates[1], currentSlide.coordinates[0], lat, lng)} mi`;
     
     const formatLocation = {
-        coordinates: [lng, lat, 100],
+        coordinates: [lng, lat, 50],
         imgURL: photo,
         name: name,
-        marker: 'https://ik.imagekit.io/poonr2gma/Realistic3d/recommend/map_pin%20(1).glb?updatedAt=1698978972181'
+        openURL: `https://www.google.com/maps/place/?q=place_id:${placeId}`,
+        marker: 'https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073',
+        tabIndex: 'recommend'
     }
 
     return (

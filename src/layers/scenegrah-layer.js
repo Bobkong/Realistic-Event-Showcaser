@@ -41,7 +41,10 @@ const handleIconClick = ({ object}) => {
 
 const handleIconHover = ({ object, x, y, setTooltipStyle, theme }) => {
     if (object) {
-        const { name, tipImage } = object;
+        const { name, tipImage, tabIndex } = object;
+        if (tabIndex === 'recommend') {
+            return;
+        }
         const tooltip = document.getElementById('custom-tooltip');
         const newTooltipStyle = {
             display: 'flex',
@@ -85,7 +88,7 @@ export function createSceneGraphLayer(location, marker, setTooltipStyle, theme, 
         onClick: ({ object}) => handleIconClick({ object}),
         getPosition: d => d.coordinates,
     };
-    if (location.tabIndex === 0) {
+    if (location.tabIndex === 0 || location.tabIndex === 1) {
         return new ScenegraphLayer({
             ...sharedConfig
         });
@@ -93,7 +96,7 @@ export function createSceneGraphLayer(location, marker, setTooltipStyle, theme, 
         return new ScenegraphLayer({
             ...sharedConfig,
             _animations: {
-                '*': { speed: 5 }
+                '*': { speed: 1.5 }
             },
         });
     }

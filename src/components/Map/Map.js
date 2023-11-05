@@ -46,7 +46,7 @@ const useStyle = makeStyles((theme) => ({
 
 
 function Map() {
-    const { layers, viewState, tooltipStyle, showCover } = useAppState();
+    const { layers, viewState, tooltipStyle, showCover, currentSlide } = useAppState();
     const classes = useStyle();
 
     return (
@@ -56,7 +56,7 @@ function Map() {
                 container='map'
                 initialViewState={viewState}
                 controller={{ touchRotate: true, minZoom: 12, maxZoom: 17.8, inertia: 250 }}
-                // style={{filter: 'sepia(50%) saturate(80%) brightness(90%) contrast(80%)'}}
+                style={{filter: currentSlide != null && currentSlide.history === 'true' ? 'sepia(50%) saturate(80%) brightness(90%) contrast(80%)' : ''}}
                 layers={layers}>
                 <div style={tooltipStyle} id='custom-tooltip'></div>
             </DeckGL>
