@@ -34,13 +34,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const RightPanel = () => {
-    const {currentSlide, jsonData, mobileExpanded, isMobileCollapsed, currentTabIndex} = useAppState();
-    const classes = useStyles({mobileExpanded: mobileExpanded});
+    const { currentSlide, jsonData, mobileExpanded, isMobileCollapsed, currentTabIndex } = useAppState();
+    const classes = useStyles({ mobileExpanded: mobileExpanded });
     const tab = jsonData.tabs[currentTabIndex];
     const rootRef = useRef(null);
 
     useLayoutEffect(() => {
-        if(rootRef.current) {
+        if (rootRef.current) {
             // reset slide vertical scroll distance
             rootRef.current.scrollTop = 0;
         }
@@ -51,10 +51,12 @@ export const RightPanel = () => {
             {/* show list */}
             {!currentSlide && (
                 <div className={isMobileCollapsed ? classes.mobileListRoot : classes.listRoot} >
-                    <Typography variant="body2" color="textSecondary" component='p' className={isMobileCollapsed ? classes.mobileCollapsedDescription: ''}>
-                        {tab.description}
-                    </Typography>
-                    <List className={isMobileCollapsed ? classes.mobileCollapsedList: ''}>
+                    {!isMobileCollapsed && (
+                        <Typography variant="body2" color="textSecondary" component='p' className={isMobileCollapsed ? classes.mobileCollapsedDescription : ''}>
+                            {tab.description}
+                        </Typography>)}
+
+                    <List className={isMobileCollapsed ? classes.mobileCollapsedList : ''}>
                         {tab.locations.map((location, index) => (
                             <LocationCard location={location} key={location.name} />
                         ))}

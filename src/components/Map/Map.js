@@ -5,6 +5,7 @@ import { createGoogle3DLayer } from '../../layers/google-3d';
 import { makeStyles } from '@material-ui/core';
 import { SIDEBAR_WIDTH, Slidebar } from '../SideBar/Sidebar';
 import { AmbientLight, PointLight, DirectionalLight, LightingEffect } from '@deck.gl/core';
+import RotateHint from '../Cover/RotateHint';
 
 
 const useStyle = makeStyles((theme) => ({
@@ -64,6 +65,8 @@ function Map() {
             <div
                 className={[classes.mapBlock, showCover ? '' : classes.mapBlockHidden].join(' ')}
             />
+
+            <RotateHint />
 
         </div>
     );

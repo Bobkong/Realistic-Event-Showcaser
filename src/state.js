@@ -18,10 +18,10 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [showCover, setShowCover] = useState(true);
     const [mapService, setMapService] = useState(null);
     const theme = useTheme();
-
+    const defaultLocaiton = jsonData.tabs[0].locations[0];
     const initViewState = {
-        longitude:2.3601,
-        latitude: 48.9245,
+        longitude: defaultLocaiton.coordinates[0],
+        latitude: defaultLocaiton.coordinates[1],
         zoom: 16.5,
         bearing: 90,
         pitch: 70,
@@ -99,7 +99,6 @@ export const AppStateStore = ({ children, jsonData }) => {
             console.log('orbit')
             orbit();
 
-            const defaultLocaiton = jsonData.tabs[0].locations[0];
             const ScenegraphLayer = createSceneGraphLayer(defaultLocaiton, defaultLocaiton.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
             setLayers([Google3DLayer, ScenegraphLayer]);
         }

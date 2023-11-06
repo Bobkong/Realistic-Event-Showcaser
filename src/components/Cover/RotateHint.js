@@ -5,8 +5,8 @@ import { checkMobileDevice } from "../../utils";
 const useStyles = makeStyles((theme) => ({
     root: {
         position: 'absolute',
-        left: '12px',
-        bottom: '12px',
+        right: '12px',
+        top: '12px',
         zIndex: '100',
         color: theme.palette.grey[50]
     },
@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
 const RotateHint = () => {
     const classes = useStyles();
     const { showCover } = useAppState();
-    const theme = useTheme();
     return (
         <>
             {!checkMobileDevice() && !showCover && (

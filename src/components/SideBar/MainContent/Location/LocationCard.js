@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     mobileCollapsedRoot: {
         aspectRatio: '16/10',
         marginRight: '12px',
-        width: '300px',
+        width: '240px',
         padding: '0px',
         borderRadius: '12px',
         overflow: 'hidden',

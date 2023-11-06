@@ -13,18 +13,18 @@
             "description": "Games span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
             "locations": [
                 {
-                    "name": "STADE DE FRANCE",
-                    "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "coordinates":[2.357,48.9245,85], 
-                    "subtitle": "Olympic Games: Athletics, Rugby",
+                    "name": "BERCY ARENA",
+                    "address": "8 Bd de Bercy, 75012 Paris, France",
+                    "coordinates":[2.376,48.8386,75], 
+                    "subtitle": "Olympic Games: Basketball, Gymnastics",
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
-                    "openURL": "https://www.paris2024.org/en/venue/stade-de-france/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/athelet.png?updatedAt=1699139057791",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Stadede.glb?updatedAt=1698978184776",
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/01-Paris2024-BCY-Arena-Bercy-jaune-OLY-changement-de-branding-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/bercy-arena/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/basketball.png?updatedAt=1699139058929",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/BERCY%20ARENA.glb?updatedAt=1699136473341",
                     "description": [
-                        "For the Paris 2024 Olympic and Paralympic Games, the Stade de France, the country’s largest stadium, will transform into the Olympic Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998.",
-                        "Since the World Cup, this multi-sports arena, which is still the country’s largest stadium, has continued to host the biggest sporting events organised in France, from the World Athletics Championships in 2003 to the 2007 Rugby World Cup and the Euro 2016 Football Championship, which will be followed soon by the 2023 Rugby World Cup. Each year, it stages the matches of the French football and rugby teams, as well as some of the biggest concerts by French and international artists."
+                        "Bercy Arena is an iconic venue for culture and sport in Paris and across France, recognisable with its pyramid design that stands out from the landscape of Paris’ 12th arrondissement.",
+                        "Built in 1984, this venue hosts not only high-level sports events, such as the Rolex Paris Masters, an international men’s tennis tournament from the ATP Tour, and the final rounds of the 2018 European women’s handball championship, but also concerts with leading French and international performers, from Madonna to Daft Punk, Johnny Hallyday and Paul McCartney."
                     ]
                 },
                 {
@@ -42,19 +42,20 @@
                         "This idea is perfectly illustrated by the temporary transformation of Place de la Concorde into an open arena. This development also illustrates the major changes that Paris City Council will be putting in place to sustainably reorganise this site."
                     ]
                 },
+
                 {
-                    "name": "BERCY ARENA",
-                    "address": "8 Bd de Bercy, 75012 Paris, France",
-                    "coordinates":[2.376,48.8386,75], 
-                    "subtitle": "Olympic Games: Basketball, Gymnastics",
+                    "name": "STADE DE FRANCE",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.357,48.9245,85], 
+                    "subtitle": "Olympic Games: Athletics, Rugby",
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/01-Paris2024-BCY-Arena-Bercy-jaune-OLY-changement-de-branding-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
-                    "openURL": "https://www.paris2024.org/en/venue/bercy-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/basketball.png?updatedAt=1699139058929",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/BERCY%20ARENA.glb?updatedAt=1699136473341",
+                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/stade-de-france/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/athelet.png?updatedAt=1699139057791",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Stadede.glb?updatedAt=1698978184776",
                     "description": [
-                        "Bercy Arena is an iconic venue for culture and sport in Paris and across France, recognisable with its pyramid design that stands out from the landscape of Paris’ 12th arrondissement.",
-                        "Built in 1984, this venue hosts not only high-level sports events, such as the Rolex Paris Masters, an international men’s tennis tournament from the ATP Tour, and the final rounds of the 2018 European women’s handball championship, but also concerts with leading French and international performers, from Madonna to Daft Punk, Johnny Hallyday and Paul McCartney."
+                        "For the Paris 2024 Olympic and Paralympic Games, the Stade de France, the country’s largest stadium, will transform into the Olympic Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998.",
+                        "Since the World Cup, this multi-sports arena, which is still the country’s largest stadium, has continued to host the biggest sporting events organised in France, from the World Athletics Championships in 2003 to the 2007 Rugby World Cup and the Euro 2016 Football Championship, which will be followed soon by the 2023 Rugby World Cup. Each year, it stages the matches of the French football and rugby teams, as well as some of the biggest concerts by French and international artists."
                     ]
                 },
                 {

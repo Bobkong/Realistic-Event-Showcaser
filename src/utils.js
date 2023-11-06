@@ -18,7 +18,7 @@ export function calDaysLeft(dateString) {
     }
 }
 
-export const apiKey = 'AIzaSyAp9layJVehgMEkJd_XUCKR4zVWg5K--YQ';
+export const apiKey = 'AIzaSyCpvQymc5wjSYIsxy3RV1widM3p3h78CAk';
 export const myApiKey = 'AIzaSyAp9layJVehgMEkJd_XUCKR4zVWg5K--YQ';
 
 export const ReadFrench = (text) => {

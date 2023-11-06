@@ -1,10 +1,12 @@
 import React from 'react';
-import { IconButton, makeStyles, Button, Typography, CardMedia, useMediaQuery } from '@material-ui/core';
+import { IconButton, makeStyles, Button, Typography, CardMedia, useMediaQuery, ClickAwayListener } from '@material-ui/core';
 import { ReactComponent as IconSocialShare } from '../../../assets/icons/icon-social-share.svg';
 import { ReactComponent as IconCollapse } from '../../../assets/icons/expand-more.svg'
 import { ReactComponent as IconExpand } from '../../../assets/icons/expand-less.svg'
 import { calDaysLeft } from '../../../utils';
 import { useAppState } from '../../../state';
+import { useRef } from 'react';
+import Share from './Share';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -69,12 +71,15 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = ({ showDelay = 0, hideDelay = 0 }) => {
     const classes = useStyles({ showDelay, hideDelay });
+    const shareRef = useRef();
+    const rootRef = useRef();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
-    const {jsonData, mobileExpanded, setMobileExpanded} = useAppState();
+    const { jsonData, mobileExpanded, setMobileExpanded } = useAppState();
     const daysLeft = calDaysLeft(jsonData.eventStartTime);
 
     return (
         <div
+            ref={rootRef}
             className={[
                 classes.root,
             ].join(' ')}
@@ -89,14 +94,17 @@ const Header = ({ showDelay = 0, hideDelay = 0 }) => {
 
                 {/* show share button when using desktop or mobile expanded */}
                 {(isDesktop || mobileExpanded) && (
-                    <Button
-                        startIcon={<IconSocialShare />}
-                        color='inherit'
-                    >
-                        Share
-                    </Button>
+                    <ClickAwayListener onClickAway={shareRef?.current ? shareRef.current.hide : () => { }}>
+                        <Button
+                            startIcon={<IconSocialShare />}
+                            color='inherit'
+                            onClick={shareRef?.current ? shareRef.current.show : () => { }}
+                        >
+                            Share
+                        </Button>
+                    </ClickAwayListener>
                 )}
-                
+
                 {!isDesktop && mobileExpanded && (
                     <IconButton
                         onClick={() => {
@@ -119,15 +127,15 @@ const Header = ({ showDelay = 0, hideDelay = 0 }) => {
             {(isDesktop || mobileExpanded) && daysLeft && (
                 <div className={classes.line2}>
                     <Typography variant='body1' color='textPrimary' component='p' >
-                        {jsonData.eventStartTime} - {jsonData.eventEndTime} 
+                        {jsonData.eventStartTime} - {jsonData.eventEndTime}
                     </Typography>
 
-                    <Typography variant='body2' color='textSecondary' component='p' >
+                    <Typography variant='subtitle1' color='textPrimary' component='p' >
                         (in {daysLeft} days)
                     </Typography>
                 </div>
             )}
-
+            <Share anchorEl={rootRef?.current} ref={shareRef} />
         </div>
     )
 }

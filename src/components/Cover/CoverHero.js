@@ -43,6 +43,11 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '12px'
     },
 
+    builtWithImage: {
+        height: '32px',
+        width: 'auto'
+    },
+
     modelsRoot: {
         position: 'relative',
         width: '100%',
@@ -98,7 +103,7 @@ const CoverHero = () => {
                     <Typography color="inherit" variant='subtitle2' className={classes.builtWithText}>
                         Built with
                     </Typography>
-                    <CardMedia component='img' image={googleLogo} alt="google maps"/>
+                    <CardMedia component='img' image="https://status.cloud.google.com/maps-platform/google-maps-platform-logo.png" alt="google maps" className={classes.builtWithImage}/>
                 </Box>
             </div>
             {isDesktop && (
