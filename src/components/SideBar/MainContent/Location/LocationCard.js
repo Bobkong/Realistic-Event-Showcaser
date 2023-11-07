@@ -15,9 +15,9 @@ const useStyles = makeStyles((theme) => ({
     },
 
     mobileCollapsedRoot: {
-        aspectRatio: '16/10',
+        aspectRatio: '16/9',
         marginRight: '12px',
-        width: '240px',
+        width: '200px',
         padding: '0px',
         borderRadius: '12px',
         overflow: 'hidden',
@@ -37,7 +37,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     title: {
-        color: theme.palette.common.white
+        color: theme.palette.common.white,
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        "-webkit-line-clamp": 2,
+        display: "-webkit-box",
+        "-webkit-box-orient": "vertical",
+        wordBreak: 'keep-all',
     },
 
     subtitle: {
@@ -71,7 +77,7 @@ export const LocationCard = ({ location }) => {
         <ListItem className={isMobileCollapsed ? classes.mobileCollapsedRoot : classes.root} 
             style={cardItemStyle} onClick={() => handleClick({location, setCurrentSlide})}>
             <div className={classes.textContainer}>
-                <Typography variant="subtitle1" className={classes.title} component='p'>
+                <Typography variant={isMobileCollapsed ? "body2" : "subtitle1"} className={classes.title} component='p'>
                     {location.name}
                 </Typography>
                 {!isMobileCollapsed && <Typography variant="body2" className={classes.subtitle} component='p'>

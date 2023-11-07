@@ -99,12 +99,6 @@ const CoverHero = () => {
                     endIcon={<NextIcon />}>
                     Explore
                 </Button>
-                <Box className={classes.builtWith}>
-                    <Typography color="inherit" variant='subtitle2' className={classes.builtWithText}>
-                        Built with
-                    </Typography>
-                    <CardMedia component='img' image="https://status.cloud.google.com/maps-platform/google-maps-platform-logo.png" alt="google maps" className={classes.builtWithImage}/>
-                </Box>
             </div>
             {isDesktop && (
                 <div className={classes.modelsRoot}>

@@ -7,6 +7,7 @@ import {
 import Header from './Header/Header';
 import { MainContent } from './MainContent/MainContent';
 import { useAppState } from '../../state';
+import Mascot from '../Map/Mascot';
 
 
 export const SIDEBAR_WIDTH = {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
                 inset: '0 0 0 auto !important'
             }
         },
-        
+
     },
     drawerPaper: {
         display: 'flex',
@@ -75,7 +76,10 @@ export function Slidebar() {
                 <Header />
                 <MainContent />
 
+
             </Drawer>)}
+
+
         </div>
 
     )

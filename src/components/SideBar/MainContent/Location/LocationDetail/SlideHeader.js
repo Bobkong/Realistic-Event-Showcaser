@@ -22,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
         padding: '16px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '4px'
+        gap: '4px',
+        height: '112px'
     },
 
     textContainer: {

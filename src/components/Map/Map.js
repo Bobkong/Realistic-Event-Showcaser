@@ -1,18 +1,17 @@
 import DeckGL from '@deck.gl/react';
 import React, { useEffect, useState } from 'react';
 import { useAppState } from '../../state';
-import { createGoogle3DLayer } from '../../layers/google-3d';
 import { makeStyles } from '@material-ui/core';
 import { SIDEBAR_WIDTH, Slidebar } from '../SideBar/Sidebar';
-import { AmbientLight, PointLight, DirectionalLight, LightingEffect } from '@deck.gl/core';
 import RotateHint from '../Cover/RotateHint';
+import Mascot from './Mascot';
 
 
 const useStyle = makeStyles((theme) => ({
     root: {
         position: 'relative',
         width: '100vw',
-        height: `calc(100vh - 260Px)`,
+        height: `calc(100vh - 270px)`,
         [theme.breakpoints.up('md')]: {
             width: `calc(100% - ${SIDEBAR_WIDTH.xs})`,
             height: '100vh',
@@ -67,7 +66,7 @@ function Map() {
             />
 
             <RotateHint />
-
+            <Mascot />
         </div>
     );
 }

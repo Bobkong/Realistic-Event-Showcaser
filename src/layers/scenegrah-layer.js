@@ -85,7 +85,6 @@ export function createSceneGraphLayer(location, marker, setTooltipStyle, theme, 
         getOrientation: [0, 0, 90],
         sizeScale: 24,
         _lighting: 'pbr',
-        onHover: ({ object, x, y }) => handleIconHover({ object, x, y, setTooltipStyle, theme }),
         onClick: ({ object}) => handleIconClick({ object}),
         getPosition: d => d.coordinates,
     };
