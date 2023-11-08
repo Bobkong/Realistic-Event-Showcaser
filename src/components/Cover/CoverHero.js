@@ -18,34 +18,12 @@ const useStyles = makeStyles((theme) => ({
             fill: theme.palette.common.white
         },
     },
-
-
+    
     title: {
         margin: theme.spacing(1, 0, 2),
         [theme.breakpoints.up('md')]: {
             margin: theme.spacing(1.5, 0, 4)
         }
-    },
-
-    builtWith: {
-        position: 'absolute',
-        bottom: theme.spacing(13.5),
-        [theme.breakpoints.up('md')]: {
-            bottom: theme.spacing(8),
-            '@media (min-height: 760px)': {
-                bottom: theme.spacing(15)
-            }
-        },
-    },
-
-    builtWithText: {
-        opacity: 0.7,
-        marginBottom: '12px'
-    },
-
-    builtWithImage: {
-        height: '32px',
-        width: 'auto'
     },
 
     modelsRoot: {
@@ -81,12 +59,13 @@ const CoverHero = () => {
     return (
         <CoverBase >
             <div className={classes.textContainer}>
+                
                 <Typography color="inherit" variant='subtitle1'>
                     {jsonData.eventStartTime} - {jsonData.eventEndTime}
                 </Typography>
                 <Typography color="inherit" variant={isDesktop ? 'h1' : 'h2'} className={classes.title}>
-                    {jsonData.eventName}
-                </Typography>
+                        {jsonData.eventName}
+                    </Typography>
 
                 <Typography color="inherit" variant={isDesktop ? 'body1' : 'body2'} className={classes.title}>
                     {jsonData.eventSubtitle}

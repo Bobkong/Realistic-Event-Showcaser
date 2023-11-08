@@ -131,7 +131,7 @@ const variables = {
     h1: {
       fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
-      fontSize: '6.4rem',
+      fontSize: '5.8rem',
       lineHeight: 1.084,
       letterSpacing: '-0.016em',
       fontSmoothing: 'antialiased'

@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   if (jsonData == null) {
-    return <div>Loading JSON data...</div>;
+    return <div></div>;
   }
 
   return (

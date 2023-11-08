@@ -22,11 +22,9 @@ export const AppStateStore = ({ children, jsonData }) => {
         longitude: 2.293,
         latitude: 48.8586,
         zoom: 16.5,
-        bearing: 90,
+        bearing: 0,
         pitch: 70,
         height: 20
-
-        ,
     };
     const [viewState, setViewState] = useState(initViewState);
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
@@ -54,7 +52,7 @@ export const AppStateStore = ({ children, jsonData }) => {
     const updateViewState = function (lat, lng) {
         setViewState({
             transitionDuration: 5000,
-            ...{ latitude: lat, longitude: lng, zoom: 16.5, bearing: 90, pitch: 70 },
+            ...{ latitude: lat, longitude: lng, zoom: 16.5, bearing: 0, pitch: 70 },
             transitionEasing: Easing.Quadratic.InOut,
             transitionInterpolator: new FlyToInterpolator({ curve: 1.1 }),
             onTransitionEnd: () => {

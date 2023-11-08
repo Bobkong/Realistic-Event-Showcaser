@@ -272,7 +272,7 @@
             "locations": [
                 {
                     "name": "A ceremony outside a stadium",
-                    "address": "",
+                    "address": "The Seine River",
                     "subtitle": "For the first time in Olympic history, the ceremony won't be held in a stadium.",
                     "coordinates":[2.3419,48.8579,80], 
                     "tabIndex": 1,
@@ -385,7 +385,7 @@
                     ]
                 },
                 {
-                    "name": "Orsay Museum",
+                    "name": "Musée d'Orsay",
                     "address": "1 Rue de la Légion d'Honneur, 75007 Paris, France",
                     "subtitle": "A must-visit for its rich collection of Impressionist and Post-Impressionist masterpieces.",
                     "coordinates":[2.3266,48.8599,90], 

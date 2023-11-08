@@ -40,6 +40,13 @@ const useStyles = makeStyles((theme) => ({
         cursor: 'pointer'
     },
 
+    nearbyCardList: {
+        minHeight: '400px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '16px'
+    },
+
     selectedTab: {
         padding: '8px 16px',
         borderRadius: '20px',
@@ -73,7 +80,7 @@ export const SlideContent = () => {
     };
 
     useEffect(() => {
-        if (currentSlide !=null && nearbySearchRef.current != null) {
+        if (currentSlide != null && nearbySearchRef.current != null) {
             console.log('load nearby')
             handleTabChange(tabInfo[0])
         }
@@ -95,7 +102,7 @@ export const SlideContent = () => {
                 ))}
             </div>
 
-            <NearbySearch slide={currentSlide} setMapService={setMapService} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef} jsonData={jsonData}/>
+            <NearbySearch slide={currentSlide} setMapService={setMapService} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef} jsonData={jsonData} />
 
             <div className={classes.nearyByDiv}>
                 <Typography variant="subtitle2" color="primary" component='p'>
@@ -110,9 +117,12 @@ export const SlideContent = () => {
                         </div>
                     ))}
                 </div>
-                {nearbyResponse.map((item, index) => (
-                    <NearbyCard location={item}/>
-                ))}
+                <div className={classes.nearbyCardList}>
+                    {nearbyResponse.map((item, index) => (
+                        <NearbyCard location={item} />
+                    ))}
+                </div>
+
 
             </div>
         </div>
