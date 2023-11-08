@@ -212,7 +212,7 @@ const variables = {
       fontFamily: 'Paris, sans-serif',
       fontWeight: 600,
       fontSize: '0.875rem',
-      lineHeight: 1.715,
+      lineHeight: 1.5,
       letterSpacing: '0.018em',
       textTransform: 'inherit',
       fontSmoothing: 'antialiased'

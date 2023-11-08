@@ -105,7 +105,7 @@ export const TabItem = ({ tab}) => {
                         alt={tab.name}
                         className={classes.iconImg} />
                 </IconButton>
-                <Typography variant='subtitle2'
+                <Typography variant='button'
                     color={selected ? 'primary' : 'textSecondary'}
                     component='p'>
                     {tab.name}

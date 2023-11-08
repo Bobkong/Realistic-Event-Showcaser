@@ -13,21 +13,6 @@
             "description": "Games span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
             "locations": [
                 {
-                    "name": "BERCY ARENA",
-                    "address": "8 Bd de Bercy, 75012 Paris, France",
-                    "coordinates":[2.376,48.8386,75], 
-                    "subtitle": "Olympic Games: Basketball, Gymnastics",
-                    "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/01-Paris2024-BCY-Arena-Bercy-jaune-OLY-changement-de-branding-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
-                    "openURL": "https://www.paris2024.org/en/venue/bercy-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-6.png?updatedAt=1699326603008",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/BERCY%20ARENA.glb?updatedAt=1699136473341",
-                    "description": [
-                        "Bercy Arena is an iconic venue for culture and sport in Paris and across France, recognisable with its pyramid design that stands out from the landscape of Paris’ 12th arrondissement.",
-                        "Built in 1984, this venue hosts not only high-level sports events, such as the Rolex Paris Masters, an international men’s tennis tournament from the ATP Tour, and the final rounds of the 2018 European women’s handball championship, but also concerts with leading French and international performers, from Madonna to Daft Punk, Johnny Hallyday and Paul McCartney."
-                    ]
-                },
-                {
                     "name": "LA CONCORDE",
                     "address": "2 Av. Gordon Bennett, 75016 Paris, France",
                     "coordinates":[2.3212,48.8651,75], 
@@ -43,34 +28,20 @@
                     ]
                 },
 
+                
                 {
-                    "name": "STADE DE FRANCE",
-                    "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "coordinates":[2.357,48.9245,85], 
-                    "subtitle": "Olympic Games: Athletics, Rugby",
+                    "name": "BERCY ARENA",
+                    "address": "8 Bd de Bercy, 75012 Paris, France",
+                    "coordinates":[2.376,48.8386,75], 
+                    "subtitle": "Olympic Games: Basketball, Gymnastics",
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
-                    "openURL": "https://www.paris2024.org/en/venue/stade-de-france/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-1.png?updatedAt=1699326602873",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Stadede.glb?updatedAt=1698978184776",
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/01-Paris2024-BCY-Arena-Bercy-jaune-OLY-changement-de-branding-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/bercy-arena/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-6.png?updatedAt=1699326603008",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/BERCY%20ARENA.glb?updatedAt=1699136473341",
                     "description": [
-                        "For the Paris 2024 Olympic and Paralympic Games, the Stade de France, the country’s largest stadium, will transform into the Olympic Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998.",
-                        "Since the World Cup, this multi-sports arena, which is still the country’s largest stadium, has continued to host the biggest sporting events organised in France, from the World Athletics Championships in 2003 to the 2007 Rugby World Cup and the Euro 2016 Football Championship, which will be followed soon by the 2023 Rugby World Cup. Each year, it stages the matches of the French football and rugby teams, as well as some of the biggest concerts by French and international artists."
-                    ]
-                },
-                {
-                    "name": "PARC DES PRINCES",
-                    "address": "2 Av. Gordon Bennett, 75016 Paris, France",
-                    "coordinates":[2.2532,48.840,83], 
-                    "subtitle": "Olympic Games: Football",
-                    "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
-                    "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064.png?updatedAt=1699326605182",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Parcdes.glb?updatedAt=1699136460046",
-                    "description": [
-                        "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof.",
-                        "Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                        "Bercy Arena is an iconic venue for culture and sport in Paris and across France, recognisable with its pyramid design that stands out from the landscape of Paris’ 12th arrondissement.",
+                        "Built in 1984, this venue hosts not only high-level sports events, such as the Rolex Paris Masters, an international men’s tennis tournament from the ATP Tour, and the final rounds of the 2018 European women’s handball championship, but also concerts with leading French and international performers, from Madonna to Daft Punk, Johnny Hallyday and Paul McCartney."
                     ]
                 },
                 {
@@ -88,6 +59,38 @@
                         "For the Paris 2024 Games, Roland-Garros will host not only the tennis and wheelchair tennis competitions, but also boxing."
                     ]
                 },
+                {
+                    "name": "STADE DE FRANCE",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.357,48.9245,85], 
+                    "subtitle": "Olympic Games: Athletics, Rugby",
+                    "tabIndex": 0,
+                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/stade-de-france/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-1.png?updatedAt=1699326602873",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Stadede.glb?updatedAt=1698978184776",
+                    "description": [
+                        "For the Paris 2024 Olympic and Paralympic Games, the Stade de France, the country’s largest stadium, will transform into the Olympic Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998.",
+                        "Since the World Cup, this multi-sports arena, which is still the country’s largest stadium, has continued to host the biggest sporting events organised in France, from the World Athletics Championships in 2003 to the 2007 Rugby World Cup and the Euro 2016 Football Championship, which will be followed soon by the 2023 Rugby World Cup. Each year, it stages the matches of the French football and rugby teams, as well as some of the biggest concerts by French and international artists."
+                    ]
+                },
+                
+                {
+                    "name": "PARC DES PRINCES",
+                    "address": "2 Av. Gordon Bennett, 75016 Paris, France",
+                    "coordinates":[2.2532,48.840,83], 
+                    "subtitle": "Olympic Games: Football",
+                    "tabIndex": 0,
+                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064.png?updatedAt=1699326605182",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Parcdes.glb?updatedAt=1699136460046",
+                    "description": [
+                        "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof.",
+                        "Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                    ]
+                },
+                
                 
                 {
                     "name": "PONT ALEXANDRE III",
@@ -262,7 +265,7 @@
             
         },
         {
-            "name":"Olympic milestones", 
+            "name":"Olympic stories", 
             "index": 1,
             "description": "Delve into the rich Olympic milestones of Paris and discover the fascinating stories that have unfolded over the years in the realm of the Olympics.",
             "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
@@ -283,6 +286,22 @@
                     ]
                 },
                 {
+                    "name": "The first ever Olympic Village",
+                    "subtitle": "The Paris Games were already blazing new trails in 1924, when they introduced the notion of an Olympic Village",
+                    "address": "12 Rue François Faber, 92700 Colombes, France",
+                    "coordinates":[2.2495,48.9299,70], 
+                    "tabIndex": 1,
+                    "history": "true",
+                    "imgURL": "https://sethsolympicsblog.files.wordpress.com/2019/04/fwx0aw1.jpg?w=405&h=260",
+                    "openURL": "https://www.paris2024.org/en/france-and-olympism/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/story%202.png?updatedAt=1699326631716",
+                    "description": [
+                        "The first ever Olympic Village was built near the Stade Olympique in Colombes, north-west of Paris. It was an array of temporary wooden cabins, with three beds in each. The athletes were served three meals a day, and shared the toilets, showers and refectory. The village had a currency exchange bureau, dry-cleaner’s, hairdresser’s, newsagent and post office. Unlike the ones after it, the village in 1924 was not built to be used after the Games.",
+                        "As has been the case in other recent editions of the Games, one major difference between Paris 2024 and Paris 1924 is that the Olympic Village is now built with the future in mind. No longer is the objective to house athletes for a few weeks and consequently remove temporary infrastructure, but to create a lasting impact that will benefit locals."
+                    ]
+                },
+                {
                     "name": "Women make their debut in Paris 1900",
                     "address": "Centre Sportif Parisien de Puteaux, 1 All. des Sports, 92800 Puteaux, France",
                     "subtitle": "Women were finally allowed to take part in the 1900 Paris Olympic games!",
@@ -298,20 +317,20 @@
                         "According to the Olympic Charter, the IOC’s role is “to encourage and support the promotion of women in sport at all levels and in all structures, with a view to implementing the principle of equality of men and women”. Female participation in the Olympic Games has increased dramatically since; 48.9% of the athletes at the 2020 Tokyo Games are expected to be women."
                     ]
                 },
+
                 {
-                    "name": "The first ever Olympic Village",
-                    "subtitle": "The Paris Games were already blazing new trails in 1924, when they introduced the notion of an Olympic Village",
+                    "name": "Chariots of Fire",
+                    "subtitle": "A Tale of Triumph and Faith in the 1924 Paris Olympics",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
                     "coordinates":[2.2495,48.9299,70], 
                     "tabIndex": 1,
                     "history": "true",
-                    "imgURL": "https://sethsolympicsblog.files.wordpress.com/2019/04/fwx0aw1.jpg?w=405&h=260",
-                    "openURL": "https://www.paris2024.org/en/france-and-olympism/",
+                    "imgURL": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4366DE67DBF25E8498F543E463D3E73019D0B4C866934997B83372155F83CE5A/scale?width=1200&aspectRatio=1.78&format=jpeg",
+                    "openURL": "https://en.wikipedia.org/wiki/Chariots_of_Fire",
                     "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/story%202.png?updatedAt=1699326631716",
                     "description": [
-                        "The first ever Olympic Village was built near the Stade Olympique in Colombes, north-west of Paris. It was an array of temporary wooden cabins, with three beds in each. The athletes were served three meals a day, and shared the toilets, showers and refectory. The village had a currency exchange bureau, dry-cleaner’s, hairdresser’s, newsagent and post office. Unlike the ones after it, the village in 1924 was not built to be used after the Games.",
-                        "As has been the case in other recent editions of the Games, one major difference between Paris 2024 and Paris 1924 is that the Olympic Village is now built with the future in mind. No longer is the objective to house athletes for a few weeks and consequently remove temporary infrastructure, but to create a lasting impact that will benefit locals."
+                        "Chariots of Fire is a 1981 British historical sports drama film directed by Hugh Hudson, written by Colin Welland and produced by David Puttnam. It is based on the true story of two British athletes in the 1924 Olympics: Eric Liddell, a devout Scottish Christian who runs for the glory of God, and Harold Abrahams, an English Jew who runs to overcome prejudice. ",
+                        "Chariots of Fire was nominated for seven Academy Awards and won four, including Best Picture, Best Original Screenplay and Best Original Score for Vangelis' electronic theme tune. At the 35th British Academy Film Awards, the film was nominated in 11 categories and won in three, including Best Film. It is ranked 19th in the British Film Institute's list of Top 100 British films."
                     ]
                 }
             ]
@@ -327,15 +346,98 @@
                     "name": "Eiffel Tower",
                     "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris, France",
                     "subtitle": "The iconic Parisian landmark and one of the most recognized structures in the world.",
-                    "coordinates":[2.293,48.8586,70], 
+                    "coordinates":[2.293,48.8586,90], 
                     "tabIndex": 2,
                     "imgURL": "https://a.cdn-hotels.com/gdcs/production107/d507/f99efdcd-6fcc-4a97-a00c-cb6a491554b7.jpg?impolicy=fcrop&w=800&h=533&q=medium",
                     "openURL": "https://www.toureiffel.paris/en",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699136453388",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/attraction%201.png?updatedAt=1699326631600",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
                     "description": [
                         "Come and discover the Eiffel Tower: the only trip to the top of its kind in Europe, one where emotions carry you away. From the esplanade to the summit you will experience a whole series of emotions.",
                         "Soak in the breathtakingly unique views of Paris from every floor, feel the goose bumps as you walk the glass floor on the 1st floor, experience the incredible ascent by stairway or lift, the indescribable awe at the tonnes of iron above you as you stand on the esplanade. Vertigo grips you as you leave the lift at the top of the tower and see the people down on the Champs-de-Mars and the cars driving along Trocadéro! And the Eiffel Tower always has something to offer, day or night, summer or winter!"
+                    ]
+                },
+                {
+                    "name": "Louvre Museum",
+                    "address": "Rue de Rivoli, 75001 Paris, France",
+                    "subtitle": "Explore the world's largest art museum and a historic monument in Paris, home to the Mona Lisa.",
+                    "coordinates":[2.3376,48.8606,90], 
+                    "tabIndex": 2,
+                    "imgURL": "https://media.architecturaldigest.com/photos/5900cc370638dd3b70018b33/16:9/w_2560%2Cc_limit/Secrets%2520of%2520Louvre%25201.jpg",
+                    "openURL": "https://www.louvre.fr/en",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
+                    "description": [
+                        "The Louvre, often referred to as the Louvre Museum, is a renowned national art museum situated in the heart of Paris, France. This iconic institution, which stands proudly on the Right Bank of the Seine River in the city's 1st arrondissement, is celebrated for its rich and diverse collection of art, including some of the most acclaimed Western masterpieces in history.",
+                        "The history of the Louvre is a tale of transformation. Originally constructed in the late 12th to 13th century under the patronage of Philip II as the Louvre Palace, it served as a medieval fortress. The vestiges of this fortress can still be observed in the basement of the museum. Over time, as the need for defensive fortifications waned, King Francis I repurposed the structure into the primary residence of the French monarchy in 1546. The palace underwent extensive expansions, gradually taking on the grandeur that defines it today."
+                    ]
+                },
+                {
+                    "name": "Notre-Dame Cathedral",
+                    "address": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France",
+                    "subtitle": "Marvel at the French Gothic architecture and the history of this medieval Catholic cathedral.",
+                    "coordinates":[2.3500,48.8529,90], 
+                    "tabIndex": 2,
+                    "imgURL": "https://cdn.britannica.com/85/83885-050-9CDCFEA9/Notre-Dame-de-Paris-France.jpg",
+                    "openURL": "https://www.notredamedeparis.fr/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
+                    "description": [
+                        "The Notre-Dame Cathedral, commonly known as Notre-Dame, is one of the most iconic landmarks in Paris and France. Located on the Île de la Cité, it serves as a Catholic place of worship and is the seat of the Archdiocese of Paris, dedicated to the Virgin Mary.",
+                        "The cathedral's construction spanned approximately two centuries, from 1163 to the mid-14th century, and it exhibits a blend of architectural styles, including elements of early Gothic and Rayonnant Gothic. With its historical significance, it has witnessed various key events in French history, from royal ceremonies to important moments in the nation's life, and it celebrated its 850th anniversary in 2013."
+                    ]
+                },
+                {
+                    "name": "Orsay Museum",
+                    "address": "1 Rue de la Légion d'Honneur, 75007 Paris, France",
+                    "subtitle": "A must-visit for its rich collection of Impressionist and Post-Impressionist masterpieces.",
+                    "coordinates":[2.3266,48.8599,90], 
+                    "tabIndex": 2,
+                    "imgURL": "https://parisjetaime.com/data/layout_image/fr-FR/Musee-Orsay-facade-630x405-C-OTCP-Amelie-Dupont-I-119-10.jpg",
+                    "openURL": "https://www.musee-orsay.fr/en",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
+                    "description": [
+                        "The Musée d'Orsay, known as the Orsay Museum in English, is located in Paris, France, on the Left Bank of the Seine River. Housed in the former Gare d'Orsay, a Beaux-Arts railway station constructed between 1898 and 1900, the museum's collection primarily focuses on French art from the period between 1848 and 1914, encompassing paintings, sculptures, furniture, and photography.",
+                        "It boasts the world's largest collection of Impressionist and post-Impressionist masterpieces, featuring works by renowned artists such as Berthe Morisot, Claude Monet, Édouard Manet, Degas, Renoir, Cézanne, Seurat, Sisley, Gauguin, and van Gogh. Many of these invaluable artworks were originally housed at the Galerie nationale du Jeu de Paume before the museum's inauguration in 1986. The Musée d'Orsay ranks among the largest art museums in Europe."
+                    ]
+                },
+                {
+                    "name": "Arch of Victory",
+                    "address": "Place Charles de Gaulle, 75008 Paris, France",
+                    "subtitle": "Climb to the top for sweeping vistas down the grand avenues of Paris.",
+                    "coordinates":[2.2950,48.8738,90], 
+                    "tabIndex": 2,
+                    "imgURL": "https://cdn.britannica.com/37/123937-050-0B92318A/Place-Arc-de-Triomphe-Paris-Charles-Gaulle.jpg",
+                    "openURL": "https://en.wikipedia.org/wiki/Victory_Arch",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
+                    "description": [
+                        "The Victory Arch officially known as the Swords of Qādisīyah, and popularly called the Hands of Victory or the Crossed Swords, are a pair of triumphal arches in central Baghdad, Iraq. Each arch consists of a pair of outstretched hands holding crossed swords.",
+                        "The two arches mark the two entrances to Grand Festivities Square and the parade ground constructed to commemorate the Iran–Iraq War, started and led by Iraq's then-president Saddam Hussein. The arches were opened to the public on 8 August 1989. It is one of Baghdad's visitor attractions and near to the Monument to the Unknown Soldier."
+                    ]
+                },
+                {
+                    "name": "The Basilica of Sacré-Cœur de Montmartre",
+                    "address": "35 Rue du Chevalier de la Barre, 75018 Paris, France",
+                    "subtitle": "Enjoy the serene ambiance and the stunning panoramic views of Paris from Montmartre.",
+                    "coordinates":[2.3431,48.8867,160], 
+                    "tabIndex": 2,
+                    "imgURL": "https://a.cdn-hotels.com/gdcs/production71/d1583/1ced23fc-6a8f-44aa-8a8d-aecae5de327b.jpg",
+                    "openURL": "https://www.sacre-coeur-montmartre.com/english/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
+                    "description": [
+                        "The Basilica of the Sacred Heart of Montmartre, commonly known as Sacré-Cœur Basilica or simply Sacré-Cœur, is a Roman Catholic church and minor basilica in Paris dedicated to the Sacred Heart of Jesus. It was officially recognized as a national historic monument by the National Commission of Heritage and Architecture on December 8, 2022.",
+                        "Located at the summit of Montmartre's hill, the Sacré-Cœur Basilica offers breathtaking views of the entire city of Paris and its surrounding suburbs from its dome, which rises two hundred meters above the Seine River. It stands as the second most popular tourist attraction in the capital, following the Eiffel Tower."
+                    ]
+                },
+                {
+                    "name": "Palace of Versailles",
+                    "address": "Place d'Armes, 78000 Versailles, France",
+                    "subtitle": "Witness the opulence of French royalty and stroll through the magnificent gardens.",
+                    "coordinates":[2.1203,48.8049,160], 
+                    "tabIndex": 2,
+                    "imgURL": "https://cdn.britannica.com/65/114465-050-8C96BD81/Hall-of-Mirrors-ceiling-Jules-Hardouin-Mansart-Charles.jpg",
+                    "openURL": "https://en.chateauversailles.fr/",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/attraction.glb?updatedAt=1699408337355",
+                    "description": [
+                        "The Palace of Versailles, commonly known as the Château de Versailles, is a historical masterpiece that epitomizes opulence and grandeur in the heart of France. Situated in the suburban town of Versailles, just outside Paris, this magnificent palace boasts a rich history and unparalleled architectural splendor.",
+                        "Originally a modest hunting lodge, the transformation of Versailles into a world-renowned royal residence began under the reign of King Louis XIV in the late 17th century. It was here that the 'Sun King' orchestrated a massive expansion and renovation project, turning the hunting lodge into an exquisite and sprawling palace adorned with captivating gardens, grand fountains, and the renowned Hall of Mirrors. This opulent hall, with its 17 mirrored arches, crystal chandeliers, and intricate frescoes, is considered a masterpiece of Baroque art and has played a pivotal role in many historical events, including the signing of the Treaty of Versailles, which marked the end of World War I."
                     ]
                 }
             ]

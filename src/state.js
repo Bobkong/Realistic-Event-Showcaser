@@ -18,14 +18,15 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [showCover, setShowCover] = useState(true);
     const [mapService, setMapService] = useState(null);
     const theme = useTheme();
-    const defaultLocaiton = jsonData.tabs[0].locations[0];
     const initViewState = {
-        longitude: defaultLocaiton.coordinates[0],
-        latitude: defaultLocaiton.coordinates[1],
+        longitude: 2.293,
+        latitude: 48.8586,
         zoom: 16.5,
         bearing: 90,
         pitch: 70,
         height: 20
+
+        ,
     };
     const [viewState, setViewState] = useState(initViewState);
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
@@ -98,9 +99,6 @@ export const AppStateStore = ({ children, jsonData }) => {
         if (!showCover) {
             console.log('orbit')
             orbit();
-
-            const ScenegraphLayer = createSceneGraphLayer(defaultLocaiton, defaultLocaiton.marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex);
-            setLayers([Google3DLayer, ScenegraphLayer]);
         }
         
     }, [showCover]);
