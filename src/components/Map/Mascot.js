@@ -38,12 +38,16 @@ const useStyles = makeStyles((theme) => ({
 
 const Mascot = () => {
     const [gifPlaying, setGifPlaying] = useState(false);
+    const [hasShownHint, setHasShownHint] = useState(false);
 
     const classes = useStyles();
     const { showCover, currentSlide, currentTabIndex } = useAppState();
 
     const handleMouseEnter = () => {
         setGifPlaying(true);
+        if(currentSlide != null) {
+            setHasShownHint(true);
+        }
     };
 
     const handleMouseLeave = () => {
@@ -56,7 +60,7 @@ const Mascot = () => {
                 <div className={classes.root}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
-                    {(currentSlide === null || gifPlaying) && (<MessageBox />)}
+                    {(currentSlide != null) && (<MessageBox gifPlaying={gifPlaying} hasShownHint={hasShownHint}/>)}
                     <img className={classes.character} src={gifPlaying ? 'https://media2.giphy.com/media/xd9gIexjZKYpyZFv1A/giphy.gif' : 'https://ik.imagekit.io/poonr2gma/image%2075.png?updatedAt=1699325754904'} />
                 </div>
             )}

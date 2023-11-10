@@ -36,20 +36,21 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const MessageBox = () => {
+const MessageBox = (props) => {
     const classes = useStyles();
+    const {gifPlaying, hasShownHint} = props;
     const { currentSlide, isMobileCollapsed } = useAppState();
 
     return (
         <>
-            {currentSlide === null && (
+            {!gifPlaying && !hasShownHint && (
                 <div className={classes.messageBox}>
                     <div className={classes.triangle}></div>
-                    <p>{isMobileCollapsed ? "When viewing a venue slide, tap me for more info!" : "When viewing a venue slide, hover over me for more info!"}</p>
+                    <p>{isMobileCollapsed ? "Tap me for more info!" : "Hover over me for more info!"}</p>
                 </div>
             )}
 
-            {currentSlide != null && (
+            {gifPlaying && (
                 <img src={currentSlide.tipImage} alt={currentSlide.name} width={isMobileCollapsed ? "140px" : "254px"} height={isMobileCollapsed ? "200px" :  "360px"} />
             )}
         </>
