@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         width: '254px',
         textAlign: 'center',
         [theme.breakpoints.down('md')]: {
-            width: '140px',
+            width: '160px',
             display: 'flex',
             flexDirection: 'column-reverse'
         },
@@ -45,7 +45,7 @@ const MessageBox = () => {
             {currentSlide === null && (
                 <div className={classes.messageBox}>
                     <div className={classes.triangle}></div>
-                    <p>{isMobileCollapsed ? "When viewing a venue, tap me for more info!" : "When viewing a venue, hover over me for more info!"}</p>
+                    <p>{isMobileCollapsed ? "When viewing a venue slide, tap me for more info!" : "When viewing a venue slide, hover over me for more info!"}</p>
                 </div>
             )}
 

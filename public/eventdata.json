@@ -154,7 +154,7 @@
                         "While this venue has already welcomed more than 2 million spectators since it opened, with performances from leading international artists, conventions and seminars, as well as the rugby matches of Racing 92, its resident club, in 2024 it will host swimming events for the very first time. How? Thanks to a modular, multipurpose structure."
                     ]
                 },
-                
+
                 {
                     "name": "VAIRES-SUR-MARNE NAUTICAL STADIUM",
                     "address": "Rte de Torcy, 77360 Vaires-sur-Marne, France",
@@ -168,6 +168,21 @@
                     "description": [
                         "The Vaires-sur-Marne Nautical Stadium, delivered in June 2019, will host the Olympic rowing and canoe-kayak events, and the Paralympic para rowing and para canoe-kayak events at the Vaires-Torcy leisure complex in 2024. ",
                         "The French Rowing and Canoe-Kayak Federations are delighted with this brand-new Nautical Stadium, which was the first newly developed Olympic facility to be delivered, in 2019."
+                    ]
+                },
+                {
+                    "name": "GRAND PALAIS",
+                    "address": "3 Av. du Général Eisenhower, 75008 Paris, France",
+                    "coordinates":[2.3125,48.8674,75],
+                    "subtitle": "Olympic Games: Fencing, Taekwondo", 
+                    "tabIndex": 0,
+                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Grand-Palais-16-9-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
+                    "openURL": "https://www.paris2024.org/en/venue/grand-palais/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2065.png?updatedAt=1699582779103",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/grandpalace(1).glb?updatedAt=1699580874384",
+                    "description": [
+                        "The Grand Palais is a magnificent site at the heart of Paris. Built for the Paris Universal Exhibition in 1900, thanks to the most advanced construction techniques of the time, it is renowned worldwide for its magnificent nave and glass roof. ",
+                        "Grand Palais, which had never previously benefited from a full restoration, is currently undergoing work and will reopen in 2024 to host the Olympic and Paralympic Games in the Nave."
                     ]
                 },
                 {
@@ -259,6 +274,21 @@
                         "The Porte de La Chapelle Arena, an eco-design venue thought out for a legacy to benefit neighbouring communities well beyond the Games, will be a new cultural hub to the north of Paris, hosting a range of cultural and sporting events each day.",
                         "This new facility is designed to be open to all, especially to people living nearby, and to offer a variety of sports activities in its complementary spaces. With its mid-size capacity of 8,000 seats after the Games, the Porte de La Chapelle Arena will further strengthen the choice of sport and live performance venues available throughout Paris. As soon as it opens in 2023, it will be home to Paris Basketball as its resident club."
                     ]
+                },
+                {
+                    "name": "SOUTH PARIS ARENA",
+                    "address": "1 Pl. de la Prte de Versailles, 75015 Paris, France",
+                    "coordinates":[2.2905,48.8280,95],
+                    "subtitle": "Olympic Games: Weightlifting, Table Tennis, Volleyball, Boccia, Goalball, Handball", 
+                    "tabIndex": 0,
+                    "imgURL": "https://lh3.googleusercontent.com/p/AF1QipMA5v6DWLgqbfaDPqC7RQi1ZncFlgTjSmnUh-YE=s1360-w1360-h1020",
+                    "openURL": "https://www.paris2024.org/en/venue/south-paris-arena/",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2066.png?updatedAt=1699582779245",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/realsoutharena.glb?updatedAt=1699582139439",
+                    "description": [
+                        "South Paris Arena is part of Paris Expo, an exhibition and convention centre that is one of the most active in Europe and most visited in France. Across 35 hectares, 228,000 sqm of exhibition halls and 8 pavilions, Paris Expo welcomes 7.5 million visitors each year, particularly during the International Agricultural Show.",
+                        "With Halls 1, 4 and 6 hosting a large number of the Games’ events and those set aside for Games logistics, Paris Expo will be a major hub for the Paris 2024 Games."
+                    ]
                 }
                
             ]
@@ -268,7 +298,7 @@
             "name":"Olympic stories", 
             "index": 1,
             "description": "Delve into the rich Olympic milestones of Paris and discover the fascinating stories that have unfolded over the years in the realm of the Olympics.",
-            "icon": "https://ik.imagekit.io/poonr2gma/_.png?updatedAt=1697319550239",
+            "icon": "https://ik.imagekit.io/poonr2gma/story.png?updatedAt=1699581083257",
             "locations": [
                 {
                     "name": "A ceremony outside a stadium",

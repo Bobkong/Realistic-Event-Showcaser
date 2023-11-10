@@ -44,7 +44,7 @@ export const RightPanel = () => {
             // reset slide vertical scroll distance
             rootRef.current.scrollTop = 0;
         }
-    }, [currentSlide]);
+    }, [currentSlide, currentTabIndex]);
 
     return (
         <div className={classes.root} ref={rootRef}>

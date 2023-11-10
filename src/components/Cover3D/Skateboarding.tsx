@@ -17,14 +17,14 @@ type GLTFResult = GLTF & {
     Cylinder002: THREE.Mesh
     Eyebrow001: THREE.Mesh
     Sphere005: THREE.Mesh
-    Cube004: THREE.Mesh
-    Cube004_1: THREE.Mesh
-    Cube004_2: THREE.Mesh
-    Cube004_3: THREE.Mesh
-    Cube005: THREE.Mesh
-    Cube005_1: THREE.Mesh
-    Cube005_2: THREE.Mesh
-    Cube005_3: THREE.Mesh
+    Cube014_1: THREE.Mesh
+    Cube014_2: THREE.Mesh
+    Cube014_3: THREE.Mesh
+    Cube014_4: THREE.Mesh
+    Cube015_1: THREE.Mesh
+    Cube015_2: THREE.Mesh
+    Cube015_3: THREE.Mesh
+    Cube015_4: THREE.Mesh
     Sphere: THREE.Mesh
     Plane: THREE.Mesh
     Plane_1: THREE.Mesh
@@ -34,26 +34,26 @@ type GLTFResult = GLTF & {
     Badan003: THREE.Mesh
     Badan004: THREE.Mesh
     Cylinder001: THREE.Mesh
-    Cylinder005_1: THREE.Mesh
-    Cylinder005_2: THREE.Mesh
+    Cylinder006_1: THREE.Mesh
+    Cylinder006_2: THREE.Mesh
     Cylinder005: THREE.Mesh
-    Cylinder008: THREE.Mesh
-    Cylinder008_1: THREE.Mesh
     Cylinder009: THREE.Mesh
     Cylinder009_1: THREE.Mesh
     Cylinder010: THREE.Mesh
     Cylinder010_1: THREE.Mesh
+    Cylinder011: THREE.Mesh
+    Cylinder011_1: THREE.Mesh
     Cube001: THREE.Mesh
   }
   materials: {
     Skin: THREE.MeshStandardMaterial
     Black: THREE.MeshStandardMaterial
     ['Skin.001']: THREE.MeshStandardMaterial
-    Blue: THREE.MeshStandardMaterial
+    ['Blue.001']: THREE.MeshStandardMaterial
     Yellow: THREE.MeshStandardMaterial
     White: THREE.MeshStandardMaterial
     Red: THREE.MeshStandardMaterial
-    ['Black.001']: THREE.MeshStandardMaterial
+    ['Black.002']: THREE.MeshStandardMaterial
   }
 }
 
@@ -71,16 +71,16 @@ export function Skateboarding(props: JSX.IntrinsicElements['group']) {
       <mesh geometry={nodes.Eyebrow001.geometry} material={materials.Black} position={[-0.893, -0.046, -0.151]} rotation={[0.325, 0.313, -0.496]} />
       <mesh geometry={nodes.Sphere005.geometry} material={materials.Black} position={[-0.893, -0.046, -0.151]} rotation={[0.325, 0.313, -0.496]} />
       <group position={[-0.051, 0.137, 0.087]} rotation={[0.675, 1.14, -0.723]} scale={1.17}>
-        <mesh geometry={nodes.Cube004.geometry} material={materials.Blue} />
-        <mesh geometry={nodes.Cube004_1.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cube004_2.geometry} material={materials.Yellow} />
-        <mesh geometry={nodes.Cube004_3.geometry} material={materials.White} />
+        <mesh geometry={nodes.Cube014_1.geometry} material={materials['Blue.001']} />
+        <mesh geometry={nodes.Cube014_2.geometry} material={materials.Black} />
+        <mesh geometry={nodes.Cube014_3.geometry} material={materials.Yellow} />
+        <mesh geometry={nodes.Cube014_4.geometry} material={materials.White} />
       </group>
       <group position={[-0.675, 0.299, -0.197]} rotation={[0.403, 0.977, -0.519]} scale={1.17}>
-        <mesh geometry={nodes.Cube005.geometry} material={materials.Blue} />
-        <mesh geometry={nodes.Cube005_1.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cube005_2.geometry} material={materials.Yellow} />
-        <mesh geometry={nodes.Cube005_3.geometry} material={materials.White} />
+        <mesh geometry={nodes.Cube015_1.geometry} material={materials['Blue.001']} />
+        <mesh geometry={nodes.Cube015_2.geometry} material={materials.Black} />
+        <mesh geometry={nodes.Cube015_3.geometry} material={materials.Yellow} />
+        <mesh geometry={nodes.Cube015_4.geometry} material={materials.White} />
       </group>
       <mesh geometry={nodes.Sphere.geometry} material={materials.Red} position={[0.15, 1.995, 0.18]} rotation={[0.325, 0.313, -0.496]} scale={0.905} />
       <group position={[0.027, 0.123, -0.005]} rotation={[0.014, 0.217, -0.252]} scale={[0.929, 0.929, 0.991]}>
@@ -96,23 +96,23 @@ export function Skateboarding(props: JSX.IntrinsicElements['group']) {
       <mesh geometry={nodes.Badan004.geometry} material={materials.Black} scale={0.736} />
       <mesh geometry={nodes.Cylinder001.geometry} material={materials.Black} position={[0.316, 0.065, -0.022]} rotation={[0.012, -0.006, -0.003]} />
       <group position={[-0.504, 0.28, 0.313]} rotation={[0, 0.225, 0]} scale={1.055}>
-        <mesh geometry={nodes.Cylinder005_1.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cylinder005_2.geometry} material={materials.Blue} />
+        <mesh geometry={nodes.Cylinder006_1.geometry} material={materials.Black} />
+        <mesh geometry={nodes.Cylinder006_2.geometry} material={materials['Blue.001']} />
       </group>
       <mesh geometry={nodes.Cylinder005.geometry} material={materials.Black} position={[-0.534, 0.28, 0.181]} />
       <group position={[0.347, 0.063, 0.128]} rotation={[0, 0.225, 0]} scale={1.055}>
-        <mesh geometry={nodes.Cylinder008.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cylinder008_1.geometry} material={materials.Blue} />
+        <mesh geometry={nodes.Cylinder009.geometry} material={materials.Black} />
+        <mesh geometry={nodes.Cylinder009_1.geometry} material={materials['Blue.001']} />
       </group>
       <group position={[-0.571, 0.28, 0.022]} rotation={[0, 0.224, -Math.PI]} scale={-1.055}>
-        <mesh geometry={nodes.Cylinder009.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cylinder009_1.geometry} material={materials.Blue} />
+        <mesh geometry={nodes.Cylinder010.geometry} material={materials.Black} />
+        <mesh geometry={nodes.Cylinder010_1.geometry} material={materials['Blue.001']} />
       </group>
       <group position={[0.276, 0.063, -0.181]} rotation={[0, 0.224, -Math.PI]} scale={-1.055}>
-        <mesh geometry={nodes.Cylinder010.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Cylinder010_1.geometry} material={materials.Blue} />
+        <mesh geometry={nodes.Cylinder011.geometry} material={materials.Black} />
+        <mesh geometry={nodes.Cylinder011_1.geometry} material={materials['Blue.001']} />
       </group>
-      <mesh geometry={nodes.Cube001.geometry} material={materials['Black.001']} position={[0.098, 1.856, 0.189]} rotation={[0.325, 0.313, -0.496]} scale={0.793} />
+      <mesh geometry={nodes.Cube001.geometry} material={materials['Black.002']} position={[0.098, 1.856, 0.189]} rotation={[0.325, 0.313, -0.496]} scale={0.793} />
     </group>
   )
 }

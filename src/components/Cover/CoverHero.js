@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
         width: '50%',
         aspectRatio: '1',
         opacity: 0.9,
-
+        userSelect: 'none',
+        '-webkit-user-select': 'none',
     },
 
     eventLogo: {

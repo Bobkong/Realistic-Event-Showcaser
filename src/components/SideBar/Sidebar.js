@@ -11,8 +11,8 @@ import Mascot from '../Map/Mascot';
 
 
 export const SIDEBAR_WIDTH = {
-    xs: '460px',
-    xsNr: 460,
+    xs: '520px',
+    xsNr: 520,
 };
 
 const useStyles = makeStyles((theme) => ({

@@ -10,9 +10,9 @@ import { GLTF } from 'three-stdlib'
 
 type GLTFResult = GLTF & {
   nodes: {
-    Icosphere002: THREE.Mesh
-    Icosphere002_1: THREE.Mesh
-    Icosphere002_2: THREE.Mesh
+    Icosphere001: THREE.Mesh
+    Icosphere001_1: THREE.Mesh
+    Icosphere001_2: THREE.Mesh
     Cube007: THREE.Mesh
     Cube007_1: THREE.Mesh
     Cube007_2: THREE.Mesh
@@ -31,11 +31,11 @@ type GLTFResult = GLTF & {
     Torus013: THREE.Mesh
     Torus014: THREE.Mesh
     Torus015: THREE.Mesh
-    Cube001: THREE.Mesh
-    Cube001_1: THREE.Mesh
+    Cube004: THREE.Mesh
+    Cube004_1: THREE.Mesh
     Cube002: THREE.Mesh
     Cube003: THREE.Mesh
-    Cube004: THREE.Mesh
+    Cube004_2: THREE.Mesh
     Cube005: THREE.Mesh
     NurbsPath001: THREE.Mesh
     NurbsPath002: THREE.Mesh
@@ -67,9 +67,9 @@ export function Football(props: JSX.IntrinsicElements['group']) {
   return (
     <group {...props} dispose={null} scale={0.8}>
       <group position={[-0.431, 0.916, -0.019]} scale={1.146}>
-        <mesh geometry={nodes.Icosphere002.geometry} material={materials['White.001']} />
-        <mesh geometry={nodes.Icosphere002_1.geometry} material={materials['Black.001']} />
-        <mesh geometry={nodes.Icosphere002_2.geometry} material={materials['Black 2']} />
+        <mesh geometry={nodes.Icosphere001.geometry} material={materials['White.001']} />
+        <mesh geometry={nodes.Icosphere001_1.geometry} material={materials['Black.001']} />
+        <mesh geometry={nodes.Icosphere001_2.geometry} material={materials['Black 2']} />
       </group>
       <group position={[0.895, 1.189, -0.162]} rotation={[0.324, 0.007, 0.113]} scale={0.442}>
         <mesh geometry={nodes.Cube007.geometry} material={materials['Red.001']} />
@@ -91,12 +91,12 @@ export function Football(props: JSX.IntrinsicElements['group']) {
         <mesh geometry={nodes.Torus014.geometry} material={materials['Red.001']} position={[-0.458, -0.063, 1.367]} rotation={[0.18, 0.099, -0.016]} />
         <mesh geometry={nodes.Torus015.geometry} material={materials['Red.001']} position={[-0.414, -0.137, 1.611]} rotation={[0.076, 0.005, 0.065]} />
       </group>
-      <group position={[0.44, 0.756, -0.541]} rotation={[0, Math.PI / 2, 0]} scale={0.442}>
-        <mesh geometry={nodes.Cube001.geometry} material={materials['Red.001']} />
-        <mesh geometry={nodes.Cube001_1.geometry} material={materials['Yellow.001']} />
+      <group position={[1.026, 0.554, -0.427]} rotation={[0, Math.PI / 2, 0]} scale={0.442}>
+        <mesh geometry={nodes.Cube004.geometry} material={materials['Red.001']} />
+        <mesh geometry={nodes.Cube004_1.geometry} material={materials['Yellow.001']} />
         <mesh geometry={nodes.Cube002.geometry} material={materials['Red.001']} />
         <mesh geometry={nodes.Cube003.geometry} material={materials['White.001']} />
-        <mesh geometry={nodes.Cube004.geometry} material={materials['Yellow.001']} />
+        <mesh geometry={nodes.Cube004_2.geometry} material={materials['Yellow.001']} />
         <mesh geometry={nodes.Cube005.geometry} material={materials['Red.001']} position={[0, -0.04, -0.02]} />
         <mesh geometry={nodes.NurbsPath001.geometry} material={materials.Blue} />
         <mesh geometry={nodes.NurbsPath002.geometry} material={materials.Blue} position={[0, -0.047, 0]} />
