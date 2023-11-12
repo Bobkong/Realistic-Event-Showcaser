@@ -432,7 +432,7 @@
                     "name": "Arch of Victory",
                     "address": "Place Charles de Gaulle, 75008 Paris, France",
                     "subtitle": "Climb to the top for sweeping vistas down the grand avenues of Paris.",
-                    "coordinates":[2.2950,48.8738,90], 
+                    "coordinates":[2.2950,48.8738,98], 
                     "tabIndex": 2,
                     "imgURL": "https://cdn.britannica.com/37/123937-050-0B92318A/Place-Arc-de-Triomphe-Paris-Charles-Gaulle.jpg",
                     "openURL": "https://en.wikipedia.org/wiki/Victory_Arch",

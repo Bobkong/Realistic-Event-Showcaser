@@ -64,9 +64,12 @@ const HearFrenchButton = () => {
 
 const LocateButton = () => {
     const classes = useStyle();
-    const {updateViewState, currentSlide} = useAppState();
+    const {updateViewState, currentSlide, setCurrentLocate} = useAppState();
     return (
-        <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={() => updateViewState(currentSlide.coordinates[1], currentSlide.coordinates[0])}>
+        <ButtonBase className={classes.buttonBase} disableTouchRipple onClick={() => {
+            updateViewState(currentSlide.coordinates[1], currentSlide.coordinates[0]);
+            setCurrentLocate(currentSlide);
+        }}>
             <IconButton className={classes.icon}>
                 <Locate />
             </IconButton>
