@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core';
 import { SIDEBAR_WIDTH, Slidebar } from '../SideBar/Sidebar';
 import RotateHint from '../Cover/RotateHint';
 import Mascot from './Mascot';
+import { checkMobileDevice } from '../../utils';
 
 
 const useStyle = makeStyles((theme) => ({
@@ -55,7 +56,7 @@ function Map() {
             <DeckGL
                 container='map'
                 initialViewState={viewState}
-                controller={{ touchRotate: true, minZoom: 12, maxZoom: 17.8, inertia: 250 }}
+                controller={{ touchRotate: true, minZoom: 12, maxZoom: checkMobileDevice() ? 16.5 : 17.8, inertia: 250 }}
                 style={{filter: currentSlide != null && currentSlide.history === 'true' ? 'sepia(50%) saturate(80%) brightness(90%) contrast(80%)' : ''}}
                 layers={layers}>
                 <div style={tooltipStyle} id='custom-tooltip'></div>
