@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
 export const SlideHeader = () => {
     const classes = useStyles();
     const theme = useTheme();
-    const { currentSlide, mobileExpanded } = useAppState();
+    const { currentSlide, mobileExpanded, currentLocate } = useAppState();
     const isDesktop = useMediaQuery((theme) => theme.breakpoints.up('md'));
 
 
@@ -115,10 +115,10 @@ export const SlideHeader = () => {
             {!mobileExpanded && !isDesktop && (
                 <div className={classes.mobileRoot}>
                     <Typography variant="h4" color="primary" component='p'>
-                        {currentSlide.name}
+                        {currentLocate.name}
                     </Typography>
                     <Typography variant="body1" color="textSecondary" component='p'>
-                        {currentSlide.address}
+                        {currentLocate.address}
                     </Typography>
                 </div>
             )}

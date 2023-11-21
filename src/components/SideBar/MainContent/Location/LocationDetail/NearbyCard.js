@@ -63,9 +63,10 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const handleClick = (location, setCurrentLocate) => {
+const handleClick = (location, setCurrentLocate, setMobileExpanded) => {
     // open location slide
-    setCurrentLocate(location)
+    setCurrentLocate(location);
+    setMobileExpanded(false);
 }
 
 export const NearbyCard = (location) => {
@@ -76,15 +77,15 @@ export const NearbyCard = (location) => {
     const rating = location['location']['rating'];
     const photo = location['location']['photos'][0].getUrl();
     const placeId = location['location']['place_id'];
-    const { currentSlide, setCurrentLocate } = useAppState();
+    const { currentSlide, setCurrentLocate, setMobileExpanded, jsonData } = useAppState();
     const distance = `· ${calculateDistance(currentSlide.coordinates[1], currentSlide.coordinates[0], lat, lng)} mi`;
     
     const formatLocation = {
-        coordinates: [lng + 0.0005, lat + 0.0005, 40], // not overlay with building
+        coordinates: [lng, lat, 40], // not overlay with building
         imgURL: photo,
         name: name,
         openURL: `https://www.google.com/maps/place/?q=place_id:${placeId}`,
-        marker: 'https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073',
+        marker: jsonData.nearbyPlacesMarker,
         tabIndex: 'recommend'
     }
 
@@ -110,7 +111,7 @@ export const NearbyCard = (location) => {
                 </div>
             </div>
             <div className={classes.buttons}>
-                <IconButton className={classes.button} onClick={() => handleClick(formatLocation, setCurrentLocate)}>
+                <IconButton className={classes.button} onClick={() => handleClick(formatLocation, setCurrentLocate, setMobileExpanded)}>
                     <Locate />
                 </IconButton>
                 <IconButton className={classes.button} onClick={() => {

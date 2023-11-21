@@ -104,27 +104,29 @@ export const SlideContent = () => {
 
             <NearbySearch slide={currentSlide} setMapService={setMapService} setNearbyResponse={setNearbyResponse} ref={nearbySearchRef} jsonData={jsonData} />
 
-            <div className={classes.nearyByDiv}>
-                <Typography variant="subtitle2" color="primary" component='p'>
-                    Nearby Recommendations
-                </Typography>
-                <div className={classes.tabs}>
-                    {tabInfo.map((tab) => (
-                        <div className={nearbyTab === tab.value ? classes.selectedTab : classes.defaultTab} onClick={() => handleTabChange(tab)}>
-                            <Typography variant="caption" color={nearbyTab === tab.value ? 'white' : 'primary'} component='p'>
-                                {tab.label}
-                            </Typography>
-                        </div>
-                    ))}
-                </div>
-                <div className={classes.nearbyCardList}>
-                    {nearbyResponse.map((item, index) => (
-                        <NearbyCard location={item} />
-                    ))}
-                </div>
+            {jsonData.enableGoogleNearyby &&
+                (<div className={classes.nearyByDiv}>
+                    <Typography variant="subtitle2" color="primary" component='p'>
+                        Nearby Recommendations
+                    </Typography>
+                    <div className={classes.tabs}>
+                        {tabInfo.map((tab) => (
+                            <div className={nearbyTab === tab.value ? classes.selectedTab : classes.defaultTab} onClick={() => handleTabChange(tab)}>
+                                <Typography variant="caption" color={nearbyTab === tab.value ? 'white' : 'primary'} component='p'>
+                                    {tab.label}
+                                </Typography>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={classes.nearbyCardList}>
+                        {nearbyResponse.map((item, index) => (
+                            <NearbyCard location={item} />
+                        ))}
+                    </div>
 
 
-            </div>
+                </div>)
+            }
         </div>
     )
 }

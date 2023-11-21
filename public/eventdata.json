@@ -4,7 +4,10 @@
     "eventEndTime": "08/11/2024",
     "eventLogo": "https://ik.imagekit.io/poonr2gma/image%2017.png?updatedAt=1697509592740",
     "eventSubtitle": "Immersively experience Paris Olympic venues, delve into Olympic stories, and embrace the city's charm to the fullest.",
-    "enableGoogleNearyby": "true",
+    "enableGoogleNearyby": true,
+    "nearbyPlacesMarker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073",
+    "mascotImg": "https://ik.imagekit.io/poonr2gma/image%2075.png?updatedAt=1699325754904",
+    "mascotGif": "https://media2.giphy.com/media/xd9gIexjZKYpyZFv1A/giphy.gif",
     "tabs": [
         {
             "name":"Olympic venues", 

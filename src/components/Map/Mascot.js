@@ -41,7 +41,7 @@ const Mascot = () => {
     const [hasShownHint, setHasShownHint] = useState(false);
 
     const classes = useStyles();
-    const { showCover, currentSlide, currentTabIndex } = useAppState();
+    const { showCover, currentSlide, currentTabIndex, jsonData } = useAppState();
 
     const handleMouseEnter = () => {
         setGifPlaying(true);
@@ -61,7 +61,7 @@ const Mascot = () => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
                     {(currentSlide != null) && (<MessageBox gifPlaying={gifPlaying} hasShownHint={hasShownHint}/>)}
-                    <img className={classes.character} src={gifPlaying ? 'https://media2.giphy.com/media/xd9gIexjZKYpyZFv1A/giphy.gif' : 'https://ik.imagekit.io/poonr2gma/image%2075.png?updatedAt=1699325754904'} />
+                    <img className={classes.character} src={gifPlaying ? jsonData.mascotGif : jsonData.mascotImg} />
                 </div>
             )}
         </>
