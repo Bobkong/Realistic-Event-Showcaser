@@ -18,7 +18,6 @@ export const AppStateStore = ({ children, jsonData }) => {
     const [mobileExpanded, setMobileExpanded] = useState(false);
     const [showCover, setShowCover] = useState(true);
     const [mapService, setMapService] = useState(null);
-    const theme = useTheme();
     const initViewState = {
         longitude: 2.293,
         latitude: 48.8586,

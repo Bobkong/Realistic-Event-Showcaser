@@ -70,7 +70,7 @@ const handleIconHover = ({ object, x, y, setTooltipStyle, theme }) => {
     }
 };
 
-export function createSceneGraphLayer(location, marker, setTooltipStyle, theme, setCurrentSlide, setCurrentTabIndex) {
+export function createSceneGraphLayer(location, marker) {
     // graph layer
     const sharedConfig = {
         id: 'scenegraph-layer',
