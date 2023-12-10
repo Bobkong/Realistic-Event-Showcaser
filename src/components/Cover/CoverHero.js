@@ -64,7 +64,7 @@ const CoverHero = () => {
                 <Typography color="inherit" variant='subtitle1'>
                     {jsonData.eventStartTime} - {jsonData.eventEndTime}
                 </Typography>
-                <Typography color="inherit" variant={isDesktop ? 'h1' : 'h2'} className={classes.title}>
+                <Typography color="inherit" variant={isDesktop ? 'h3' : 'h4'} className={classes.title}>
                         {jsonData.eventName}
                     </Typography>
 

@@ -241,7 +241,7 @@ const variables = {
 const spacing = createSpacing(variables.spacing);
 
 export const appThemeOptions = {
-  themeName: 'Realistic Paris 2024',
+  themeName: 'Realistic Event Showcaser',
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {

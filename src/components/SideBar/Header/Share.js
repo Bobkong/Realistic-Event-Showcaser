@@ -6,7 +6,7 @@ import {ReactComponent as IconLinkedin} from '../../../assets/icons/icon-linkedi
 
 const SHARING_URL = 'https://realistic3devent.com/';
 const SHARING_TEXT =
-  'An interactive map using Google Photorealistic 3D tiles to experience Paris Olympic venues, delve into Olympic stories and embrace the charm of Paris to the fullest.';
+  'Experience the full charm of Paris while exploring its game venues and immersing yourself in its stories.';
 const SHARING_HASHTAGS = 'googlemaps,tiles3d,deck.gl,paris2024';
 
 const useStyles = makeStyles((theme) => ({

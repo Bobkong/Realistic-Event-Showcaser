@@ -1,16 +1,16 @@
 {
-    "eventName": "Paris 2024",
+    "eventName": "City of Sports - Paris ",
     "eventStartTime": "07/26/2024",
     "eventEndTime": "08/11/2024",
-    "eventLogo": "https://ik.imagekit.io/poonr2gma/image%2017.png?updatedAt=1697509592740",
-    "eventSubtitle": "Immersively experience Paris Olympic venues, delve into Olympic stories, and embrace the city's charm to the fullest.",
+    "eventLogo": "",
+    "eventSubtitle": "Experience the full charm of Paris while exploring its game venues and immersing yourself in its stories.",
     "enableGoogleNearyby": true,
     "nearbyPlacesMarker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073",
-    "mascotImg": "https://ik.imagekit.io/poonr2gma/image%2075.png?updatedAt=1699325754904",
-    "mascotGif": "https://media2.giphy.com/media/xd9gIexjZKYpyZFv1A/giphy.gif",
+    "mascotImg": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/DgfrJNR8oUyv%20(1)%20(1)%201.png?updatedAt=1702106379497",
+    "mascotGif": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/DgfrJNR8oUyv%20(1)%20(1)%20(1)%20(1).gif?updatedAt=1702106551353",
     "tabs": [
         {
-            "name":"Olympic venues", 
+            "name":"Game venues", 
             "index": 0,
             "icon": "https://ik.imagekit.io/poonr2gma/_%EF%B8%8F.png?updatedAt=1697319451770",
             "description": "Games span across the entire Île-de-France region and extend throughout France. Paris is ingeniously transforming its iconic landmarks into sports arenas, creating the perfect stage for unforgettable sporting moments, all set against the backdrop of the city's magnificent monuments.",
@@ -19,14 +19,14 @@
                     "name": "LA CONCORDE",
                     "address": "2 Av. Gordon Bennett, 75016 Paris, France",
                     "coordinates":[2.3212,48.8651,75], 
-                    "subtitle": "Olympic Games: Skateboarding, Breaking",
+                    "subtitle": "Games: Skateboarding, Breaking",
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/LC1_1_LA-CONCORDE_PARIS2024-min-scaled.jpg?x-oss-process=image/resize,w_1795,h_2560,m_lfit/format,webp",
+                    "imgURL": "https://cdn.britannica.com/15/178015-050-4BE9CC94/Luxor-Obelisk-Paris-Place-de-la-Concorde.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/concorde/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-8.png?updatedAt=1699326603245",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/LaConcorde.glb?updatedAt=1699136457253",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Frame%2064-min.png?updatedAt=1702135659208",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/LaConcorde.glb?updatedAt=1702107396715",
                     "description": [
-                        "From the bid phase, Paris 2024 wants to enable urban sports to become established in their natural environment, away from stadiums, at the heart of the city. ",
+                        "From the bid phase, Paris wants to enable urban sports to become established in their natural environment, away from stadiums, at the heart of the city. ",
                         "This idea is perfectly illustrated by the temporary transformation of Place de la Concorde into an open arena. This development also illustrates the major changes that Paris City Council will be putting in place to sustainably reorganise this site."
                     ]
                 },
@@ -36,12 +36,12 @@
                     "name": "BERCY ARENA",
                     "address": "8 Bd de Bercy, 75012 Paris, France",
                     "coordinates":[2.376,48.8386,75], 
-                    "subtitle": "Olympic Games: Basketball, Gymnastics",
+                    "subtitle": "Games: Basketball, Gymnastics",
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/01-Paris2024-BCY-Arena-Bercy-jaune-OLY-changement-de-branding-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Palais_Omnisports_de_Paris-Bercy_2007.jpg/1200px-Palais_Omnisports_de_Paris-Bercy_2007.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/bercy-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-6.png?updatedAt=1699326603008",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/BERCY%20ARENA.glb?updatedAt=1699136473341",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-6.png?updatedAt=1702105675748",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/BERCY%20ARENA.glb?updatedAt=1702107395742",
                     "description": [
                         "Bercy Arena is an iconic venue for culture and sport in Paris and across France, recognisable with its pyramid design that stands out from the landscape of Paris’ 12th arrondissement.",
                         "Built in 1984, this venue hosts not only high-level sports events, such as the Rolex Paris Masters, an international men’s tennis tournament from the ATP Tour, and the final rounds of the 2018 European women’s handball championship, but also concerts with leading French and international performers, from Madonna to Daft Punk, Johnny Hallyday and Paul McCartney."
@@ -51,29 +51,29 @@
                     "name": "ROLAND-GARROS STADIUM",
                     "address": "2 Av. Gordon Bennett, 75016 Paris, France",
                     "coordinates":[2.2545,48.8453,80], 
-                    "subtitle": "Olympic Games: Tennis, Boxing",
+                    "subtitle": "Games: Tennis, Boxing",
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/06/PARIS2024-RG-PARA-FINAL_V7-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/roland-garros-stadium/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-13.png?updatedAt=1699326604857",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/ROLAND-GARROS%20STADIUM.glb?updatedAt=1699136460367",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-13.png?updatedAt=1702105677466",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/ROLAND-GARROS%20STADIUM.glb?updatedAt=1702107397562",
                     "description": [
-                        "Roland-Garros is a legendary stadium. An iconic global tennis stadium, it will be a key venue for the Paris 2024 Games, for which it is writing a new no-less legendary page in its history. ",
-                        "For the Paris 2024 Games, Roland-Garros will host not only the tennis and wheelchair tennis competitions, but also boxing."
+                        "Roland-Garros is a legendary stadium. An iconic global tennis stadium, it will be a key venue for the 2024 Games, for which it is writing a new no-less legendary page in its history. ",
+                        "For the 2024 Games, Roland-Garros will host not only the tennis and wheelchair tennis competitions, but also boxing."
                     ]
                 },
                 {
                     "name": "STADE DE FRANCE",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
                     "coordinates":[2.357,48.9245,85], 
-                    "subtitle": "Olympic Games: Athletics, Rugby",
+                    "subtitle": "Games: Athletics, Rugby",
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Stade-de-France-16-9-1-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/stade-de-france/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-1.png?updatedAt=1699326602873",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Stadede.glb?updatedAt=1698978184776",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-1.png?updatedAt=1702105675095",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/Stadede.glb?updatedAt=1702107397678",
                     "description": [
-                        "For the Paris 2024 Olympic and Paralympic Games, the Stade de France, the country’s largest stadium, will transform into the Olympic Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998.",
+                        "For the Games 2024, the Stade de France, the country’s largest stadium, will transform into the Games Stadium after three decades of hosting France’s biggest sports events. Built in Saint-Denis, the Stade de France was designed by the architects Macary, Zublena, Regembal and Costantini. It was created for the Football World Cup held in France in 1998.",
                         "Since the World Cup, this multi-sports arena, which is still the country’s largest stadium, has continued to host the biggest sporting events organised in France, from the World Athletics Championships in 2003 to the 2007 Rugby World Cup and the Euro 2016 Football Championship, which will be followed soon by the 2023 Rugby World Cup. Each year, it stages the matches of the French football and rugby teams, as well as some of the biggest concerts by French and international artists."
                     ]
                 },
@@ -82,15 +82,15 @@
                     "name": "PARC DES PRINCES",
                     "address": "2 Av. Gordon Bennett, 75016 Paris, France",
                     "coordinates":[2.2532,48.840,83], 
-                    "subtitle": "Olympic Games: Football",
+                    "subtitle": "Games: Football",
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/17-Paris2024-PDP-Parc-Des-Princes-bleu-sansTM-OLY-changement-de-branding-bis-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "imgURL": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Paris_Le_Parc_des_Princes.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/parc-des-princes/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064.png?updatedAt=1699326605182",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Parcdes.glb?updatedAt=1699136460046",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064.png?updatedAt=1702105677850",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/Parcdes.glb?updatedAt=1702107396148",
                     "description": [
                         "Parc des Princes is an iconic venue in the history of French sport, located in the City of Light’s 16th arrondissement. It stands out in the Porte de Saint-Cloud landscape with its iconic concrete columns that crown its roof.",
-                        "Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Olympic Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the Paris 2024 Games."
+                        "Built in its current form in 1972, and designed by the architect Robert Taillibert, who was also behind Montreal’s Games Stadium, the “Parc” was the country’s largest stadium until the Stade de France was built in 1998. This stadium is ideally positioned to host the 2024 Games."
                     ]
                 },
                 
@@ -99,12 +99,12 @@
                     "name": "PONT ALEXANDRE III",
                     "address": "Av. de la Prte de la Chapelle, 75018 Paris, France",
                     "coordinates":[2.3136,48.8639,70],
-                    "subtitle": "Olympic Games: Triathlon, Cycling Water sports", 
+                    "subtitle": "Games: Triathlon, Cycling, Water sports", 
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/06/Pont-Alexandre-III_20230106_V9-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,webp",
+                    "imgURL": "https://cdn.sortiraparis.com/images/80/77153/377817-histoire-du-pont-alexandre-iii.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/pont-alexandre-iii/",
-                    "tipImage": "hhttps://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-2.png?updatedAt=1699326602997",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/pontalexandre.glb?updatedAt=1699136460446",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-2.png?updatedAt=1702105676001",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/pontalexandre.glb?updatedAt=1702107396699",
                     "description": [
                         "Pont Alexandre III is a bridge between the Seine’s two banks, at the heart of Paris and surrounded by the countless monuments sprinkled across the capital.",
                         "It has been part of the city’s most memorable events since it was inaugurated for the 1900 Exposition Universelle, and is a work of art and monument in its own right."
@@ -114,12 +114,12 @@
                     "name": "EIFFEL TOWER STADIUM",
                     "address": "75007 Paris, France",
                     "coordinates":[2.2986,48.8552,78],
-                    "subtitle": "Olympic Games: Beach Volleyball", 
+                    "subtitle": "Games: Beach Volleyball", 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2023/08/PARIS2024-JO-EIFFEL-CECIFOOT-16-9-V3-1.jpg?x-oss-process=image/resize,w_2000,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/eiffel-tower-stadium/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-9.png?updatedAt=1699326603239",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/southparisarena.glb?updatedAt=1699136473343",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-9.png?updatedAt=1702105675831",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/southparisarena.glb?updatedAt=1702107397908",
                     "description": [
                         "For Parisians, the Champ de Mars is a place to meet up and celebrate, regularly attracting thousands of people to share in events together, from the traditional 14 July firework displays to a Football World Cup Final.",
                         "On a daily basis, people meet up there to enjoy some sport, take in the views or simply walk around the vast alleyways and lawns of this magnificent site, which is now one of Paris’ most iconic public gardens. To stage the beach volleyball and blind football events, a temporary outdoor arena will be built in 2024, enabling everyone to enjoy this venue’s magical setting."
@@ -128,15 +128,15 @@
                 {
                     "name": "YVES-DU-MANOIR STADIUM",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
-                    "subtitle": "Olympic Games: Hockey",
+                    "subtitle": "Games: Hockey",
                     "coordinates":[2.2495,48.9299,70], 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/06/YDM_1_Stade-Yves-du-Manoir_Paris2024-2-scaled.jpg?x-oss-process=image/resize,w_2560,h_1500,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/yves-du-manoir-stadium/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-7.png?updatedAt=1699326602888",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Yvesdumanoir.glb?updatedAt=1699136463359",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-7.png?updatedAt=1702105675814",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/Yvesdumanoir.glb?updatedAt=1702107398554",
                     "description": [
-                        "Hosting the Olympic Games twice is a privilege that very few venues will experience. Designed by the architect Louis Faure-Dujarric, Yves-du-Manoir Stadium is one of them. It was the main venue for the eighth Olympiad in 1924, staging the opening ceremony and athletics events for instance. A unique venue in France, it is the only one that will host the second Games in its history in 2024, staging the hockey competitions.",
+                        "Hosting the Games twice is a privilege that very few venues will experience. Designed by the architect Louis Faure-Dujarric, Yves-du-Manoir Stadium is one of them. It was the main venue for the eighth Olympiad in 1924, staging the opening ceremony and athletics events for instance. A unique venue in France, it is the only one that will host the second Games in its history in 2024, staging the hockey competitions.",
                         "Until 1972, when the Parc des Princes was inaugurated, the Yves-du-Manoir multi-sports venue, named after a French rugby player, was the main stadium in the Paris Region. Located in Colombes, northwest of Paris, it has hosted around 250 national and international competitions over the past century, from athletics to rugby, football and even boxing, including the World Championship in 1972, in front of 40,000 spectators.",
                         "Yves-du-Manoir Stadium has already been renovated several times, and the Hauts-de-Seine department, which owns this facility, will be launching a modernisation programme to benefit its communities, associations, schools and universities."
                     ]
@@ -146,14 +146,14 @@
                     "name": "PARIS LA DÉFENSE ARENA",
                     "address": "99 Jard. de l'Arche, 92000 Nanterre, France",
                     "coordinates":[2.2290,48.8945,100],
-                    "subtitle": "Olympic Games: Water polo, Swimming", 
+                    "subtitle": "Games: Water polo, Swimming", 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2022/10/DEF_1P_ARENA-LA-DEFENSE_PARIS2024-1-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1706,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/paris-la-defense-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-5.png?updatedAt=1699326602527",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/parisladefense.glb?updatedAt=1699136455733",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-5.png?updatedAt=1702105676007",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/parisladefense.glb?updatedAt=1702107395741",
                     "description": [
-                        "In 2024, for the first time, the Paris La Défense Arena, located in Nanterre, is transforming into an Olympic swimming pool. Paris La Défense Arena is a truly exceptional facility in terms of its scale, its capacity and its technology: 13km of stands, 5,500-tonne framework, 28,632 sq.m of courts and pitches… ",
+                        "In 2024, for the first time, the Paris La Défense Arena, located in Nanterre, is transforming into an Games swimming pool. Paris La Défense Arena is a truly exceptional facility in terms of its scale, its capacity and its technology: 13km of stands, 5,500-tonne framework, 28,632 sq.m of courts and pitches… ",
                         "While this venue has already welcomed more than 2 million spectators since it opened, with performances from leading international artists, conventions and seminars, as well as the rugby matches of Racing 92, its resident club, in 2024 it will host swimming events for the very first time. How? Thanks to a modular, multipurpose structure."
                     ]
                 },
@@ -162,57 +162,57 @@
                     "name": "VAIRES-SUR-MARNE NAUTICAL STADIUM",
                     "address": "Rte de Torcy, 77360 Vaires-sur-Marne, France",
                     "coordinates":[2.62,48.865,85],
-                    "subtitle": "Olympic Games: Canoe-kayak, Rowing", 
+                    "subtitle": "Games: Canoe-kayak, Rowing", 
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/VNS_1_-Stade-Nautique-de-Vaires-sur-Marne_Paris2024-scaled.jpg?x-oss-process=image/resize,w_2560,h_1852,m_lfit/format,webp",
+                    "imgURL": "https://static.actu.fr/uploads/2021/02/25757-210208090531204-0.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/vaires-sur-marne-nautical-stadium/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-10.png?updatedAt=1699326602882",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/vairessurmarne.glb?updatedAt=1699136462844",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-10.png?updatedAt=1702105675724",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/vairessurmarne.glb?updatedAt=1702107398430",
                     "description": [
-                        "The Vaires-sur-Marne Nautical Stadium, delivered in June 2019, will host the Olympic rowing and canoe-kayak events, and the Paralympic para rowing and para canoe-kayak events at the Vaires-Torcy leisure complex in 2024. ",
-                        "The French Rowing and Canoe-Kayak Federations are delighted with this brand-new Nautical Stadium, which was the first newly developed Olympic facility to be delivered, in 2019."
+                        "The Vaires-sur-Marne Nautical Stadium, delivered in June 2019, will host the Games rowing and canoe-kayak events, and the Paralympic para rowing and para canoe-kayak events at the Vaires-Torcy leisure complex in 2024. ",
+                        "The French Rowing and Canoe-Kayak Federations are delighted with this brand-new Nautical Stadium, which was the first newly developed Games facility to be delivered, in 2019."
                     ]
                 },
                 {
                     "name": "GRAND PALAIS",
                     "address": "3 Av. du Général Eisenhower, 75008 Paris, France",
                     "coordinates":[2.3125,48.8674,75],
-                    "subtitle": "Olympic Games: Fencing, Taekwondo", 
+                    "subtitle": "Games: Fencing, Taekwondo", 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-Look-of-the-Games-Grand-Palais-16-9-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/grand-palais/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2065.png?updatedAt=1699582779103",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/grandpalace(1).glb?updatedAt=1699580874384",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2065.png?updatedAt=1702105677641",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/grandpalace.glb?updatedAt=1702107394658",
                     "description": [
                         "The Grand Palais is a magnificent site at the heart of Paris. Built for the Paris Universal Exhibition in 1900, thanks to the most advanced construction techniques of the time, it is renowned worldwide for its magnificent nave and glass roof. ",
-                        "Grand Palais, which had never previously benefited from a full restoration, is currently undergoing work and will reopen in 2024 to host the Olympic and Paralympic Games in the Nave."
+                        "Grand Palais, which had never previously benefited from a full restoration, is currently undergoing work and will reopen in 2024 to host the Games in the Nave."
                     ]
                 },
                 {
                     "name": "CHAMP DE MARS ARENA",
                     "address": "75007 Paris, France",
                     "coordinates":[2.2986,48.8552,78],
-                    "subtitle": "Olympic Games: Freestyle wrestling, Greco-roman wrestling, Judo", 
+                    "subtitle": "Games: Freestyle wrestling, Greco-roman wrestling, Judo", 
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-LOOKVisuel-ARENA-CHAMPSDEMARS_OLY-scaled.jpg?x-oss-process=image/resize,w_2560,h_1323,m_lfit/format,webp",
+                    "imgURL": "https://images.mnstatic.com/6c/fd/6cfd876d26722675d73c7addff72cd89.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/champ-de-mars-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-3.png?updatedAt=1699326603014",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/champdemars.glb?updatedAt=1699136455084",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-3.png?updatedAt=1702105675995",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/champdemars.glb?updatedAt=1702107395636",
                     "description": [
-                        "During the Paris 2024 Games, the prestigious Champ de Mars Arena will be far more than just the “Grand Palais Overlay”. However, this is the name that the Arena is known by up until now, because this 10,000 sqm temporary building is hosting events while work is being carried out on the Grand Palais.",
-                        "In 2024, following the completion of this work, the Champ de Mars Arena will be kept in place for a few more months to host competitions for the Paris 2024 Olympic and Paralympic Games."
+                        "During the 2024 Games, the prestigious Champ de Mars Arena will be far more than just the “Grand Palais Overlay”. However, this is the name that the Arena is known by up until now, because this 10,000 sqm temporary building is hosting events while work is being carried out on the Grand Palais.",
+                        "In 2024, following the completion of this work, the Champ de Mars Arena will be kept in place for a few more months to host competitions for the Games 2024."
                     ]
                 },
                 {
                     "name": "TROCADÉRO",
                     "address": "75007 Paris, France",
                     "coordinates":[2.2856,48.8576,90],
-                    "subtitle": "Olympic Games: Cycling road, Athletics", 
+                    "subtitle": "Games: Cycling road, Athletics", 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/06/Paris2024-PIE-Pont-dIena.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/trocadero/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-4.png?updatedAt=1699326603251",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/Trocadero.glb?updatedAt=1699136461985",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-3.png?updatedAt=1702105675995",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/Trocadero.glb?updatedAt=1702107398489",
                     "description": [
                         "Trocadéro and the Eiffel Tower are facing each other in one of the most iconic of Paris’ landmarks. This area in the heart of Paris will be dedicated to the Games in 2024, welcoming multiple events but also a wide range of activites, celebrating the Games, the athletes and their performance.",
                         "In 2024, Trocadéro will offer an exceptional viewing platform and experience for spectators and television audiences for road cycling, and athletics (20km race walk) events."
@@ -222,12 +222,12 @@
                     "name": "PIERRE MAUROY STADIUM",
                     "address": "261 Bd de Tournai, 59650 Villeneuve-d'Ascq, France",
                     "coordinates":[3.1280,50.6119,85],
-                    "subtitle": "Olympic Games: Handball, Basketball", 
+                    "subtitle": "Games: Handball, Basketball", 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/07/LIL_1_Stade-de-Lille_Paris2024-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1610,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/pierre-mauroy-stadium/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-15.png?updatedAt=1699326604755",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/pierremauroy.glb?updatedAt=1699136457663",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-15.png?updatedAt=1702105677573",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/pierremauroy.glb?updatedAt=1702107395663",
                     "description": [
                         "Pierre Mauroy stadium is a modular multi-sports showcase with a spectacular design, built in 2012 and home to LOSC, one of France’s leading football clubs.",
                         "Located in Villeneuve-d’Ascq, it enables the Hauts de France region and the European Metropolis of Lille, the country’s fourth largest city area, to benefit from an outstanding facility that can host a range of cultural and sporting events throughout the year."
@@ -237,14 +237,14 @@
                     "name": "GOLF NATIONAL",
                     "address": "2 Av. du Golf, 78280 Guyancourt, France",
                     "coordinates":[2.19,48.76,125],
-                    "subtitle": "Olympic Games: Golf", 
+                    "subtitle": "Games: Golf", 
                     "tabIndex": 0,
                     "imgURL": "https://medias.paris2024.org/uploads/2021/06/JO-Paris2024-Golf_FINAL-V2-cyan.jpg?x-oss-process=image/resize,w_2000,h_1309,m_lfit/format,webp",
                     "openURL": "https://www.paris2024.org/en/venue/national-golf/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-14.png?updatedAt=1699326604896",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/nationalgolf.glb?updatedAt=1699152518222",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-14.png?updatedAt=1702105677843",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/nationalgolf.glb?updatedAt=1702107395758",
                     "description": [
-                        "What could be a better showcase than one of Europe’s most prestigious golf sites to host the world’s most beautiful competition? With Golf National, the 120 players from the Olympic tournament will find a setting and a course to match their ambitions.",
+                        "What could be a better showcase than one of Europe’s most prestigious golf sites to host the world’s most beautiful competition? With Golf National, the 120 players from the Games tournament will find a setting and a course to match their ambitions.",
                         "Out of the two 18-hole courses, “L’Albatros” stands out as the most competitive and complex. It is used for major international competitions, including the Ryder Cup in 2018."
                     ]
                 },
@@ -252,27 +252,27 @@
                     "name": "NORTH PARIS ARENA",
                     "address": "ZAC Paris Nord 2, 93420 Villepinte, France",
                     "coordinates":[2.5261,48.9762,115],
-                    "subtitle": "Olympic Games: Boxing, Modern pentathlon", 
+                    "subtitle": "Games: Boxing, Modern pentathlon", 
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2022/08/PARIS2024-JO-PARIS_NORD_EXT_PAR-V3-scaled.jpg?x-oss-process=image/resize,w_2560,h_1708,m_lfit/format,jpeg",
+                    "imgURL": "https://medias.paris2024.org/uploads/2020/06/ARENA-BYBAT-SCAUNP2F-3-1024x731.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/north-paris-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-12.png?updatedAt=1699326604747",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/northparisarena.glb?updatedAt=1699136455210",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-12.png?updatedAt=1702105677383",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/northparisarena.glb?updatedAt=1702107395344",
                     "description": [
                         "The Villepinte exhibition centre will be turned into a large modular sports facility called “the North Paris Arena” for the Games. This huge exhibition centre with nine halls is the largest such facility in France, with another Games competition venue – the Paris Expo exhibition centre at Porte de Versailles – coming in second.",
-                        "Designed to accommodate large gatherings, the North Paris Arena is the perfect venue in Villepinte – a city right in the heart of Seine-Saint-Denis – for thousands of spectators to see the Paris 2024 Olympic and Paralympic Games action up close."
+                        "Designed to accommodate large gatherings, the North Paris Arena is the perfect venue in Villepinte – a city right in the heart of Seine-Saint-Denis – for thousands of spectators to see the Games 2024 and Paralympic Games action up close."
                     ]
                 },
                 {
                     "name": "PORTE DE LA CHAPELLE ARENA",
                     "address": "Av. de la Prte de la Chapelle, 75018 Paris, France",
                     "coordinates":[2.3605,48.8994,88],
-                    "subtitle": "Olympic Games: Badminton, Rhythmic gymnasgtics", 
+                    "subtitle": "Games: Badminton, Rhythmic gymnasgtics", 
                     "tabIndex": 0,
-                    "imgURL": "https://medias.paris2024.org/uploads/2021/06/OLY-ARENA-PORTE-DE-LA-CHAPELLE-16_9-scaled.jpg?x-oss-process=image/resize,w_2560,m_lfit/format,webp",
+                    "imgURL": "https://static.actu.fr/uploads/2023/01/capture4jpg.jpg",
                     "openURL": "https://www.paris2024.org/en/venue/porte-chapelle-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2064-11.png?updatedAt=1699326604616",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/PORTE%20DE%20LA%20CHAPELLE%20ARENA.glb?updatedAt=1699136471948",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2064-11.png?updatedAt=1702105676941",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/PORTE%20DE%20LA%20CHAPELLE%20ARENA.glb?updatedAt=1702107396898",
                     "description": [
                         "The Porte de La Chapelle Arena, an eco-design venue thought out for a legacy to benefit neighbouring communities well beyond the Games, will be a new cultural hub to the north of Paris, hosting a range of cultural and sporting events each day.",
                         "This new facility is designed to be open to all, especially to people living nearby, and to offer a variety of sports activities in its complementary spaces. With its mid-size capacity of 8,000 seats after the Games, the Porte de La Chapelle Arena will further strengthen the choice of sport and live performance venues available throughout Paris. As soon as it opens in 2023, it will be home to Paris Basketball as its resident club."
@@ -282,15 +282,15 @@
                     "name": "SOUTH PARIS ARENA",
                     "address": "1 Pl. de la Prte de Versailles, 75015 Paris, France",
                     "coordinates":[2.2905,48.8280,95],
-                    "subtitle": "Olympic Games: Weightlifting, Table Tennis, Volleyball, Boccia, Goalball, Handball", 
+                    "subtitle": "Games: Weightlifting, Table Tennis, Volleyball, Boccia, Goalball, Handball", 
                     "tabIndex": 0,
                     "imgURL": "https://lh3.googleusercontent.com/p/AF1QipMA5v6DWLgqbfaDPqC7RQi1ZncFlgTjSmnUh-YE=s1360-w1360-h1020",
                     "openURL": "https://www.paris2024.org/en/venue/south-paris-arena/",
-                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/Frame%2066.png?updatedAt=1699582779245",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/realsoutharena.glb?updatedAt=1699582139439",
+                    "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20tipimg/Frame%2066.png?updatedAt=1702105677677",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/new%20venue/realsoutharena.glb?updatedAt=1702106814120",
                     "description": [
                         "South Paris Arena is part of Paris Expo, an exhibition and convention centre that is one of the most active in Europe and most visited in France. Across 35 hectares, 228,000 sqm of exhibition halls and 8 pavilions, Paris Expo welcomes 7.5 million visitors each year, particularly during the International Agricultural Show.",
-                        "With Halls 1, 4 and 6 hosting a large number of the Games’ events and those set aside for Games logistics, Paris Expo will be a major hub for the Paris 2024 Games."
+                        "With Halls 1, 4 and 6 hosting a large number of the Games’ events and those set aside for Games logistics, Paris Expo will be a major hub for the 2024 Games."
                     ]
                 }
                
@@ -298,71 +298,70 @@
             
         },
         {
-            "name":"Olympic stories", 
+            "name":"Sports stories", 
             "index": 1,
-            "description": "Delve into the rich Olympic milestones of Paris and discover the fascinating stories that have unfolded over the years in the realm of the Olympics.",
+            "description": "Delve into the rich sports milestones of Paris and discover the fascinating stories that have unfolded over the years in the realm of the Games.",
             "icon": "https://ik.imagekit.io/poonr2gma/story.png?updatedAt=1699581083257",
             "locations": [
                 {
                     "name": "A ceremony outside a stadium",
                     "address": "The Seine River",
-                    "subtitle": "For the first time in Olympic history, the ceremony won't be held in a stadium.",
+                    "subtitle": "For the first time in the Games history, the ceremony won't be held in a stadium.",
                     "coordinates":[2.3419,48.8579,80], 
                     "tabIndex": 1,
-                    "imgURL": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/d4zjpklkxjq7sbghn7hs",
+                    "imgURL": "https://www.settour.com.tw/ss_img/poi/20230314/861e6cb3-9602-44b1-a768-01952cb2ea10.jpg",
                     "openURL": "https://www.paris2024.org/en/ceremony/",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073",
                     "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/story%201.png?updatedAt=1699326631583",
                     "description": [
-                        "Breaking with history, the opening ceremony will be bold, original and unique. Paris 2024 will offer an opening ceremony that is certain to join the most memorable moments in Olympic history, including several firsts. ",
-                        "For the first time in the history of the Summer Olympic Games, the ceremony will not be taking place in a stadium. Paris 2024 is breaking new ground in sports competition by bringing sports out into the city and the same will be true for the opening ceremony, which will be held in the heart of the city, along its main artery, the Seine."
+                        "Breaking with history, the opening ceremony will be bold, original and unique. Paris will offer an opening ceremony that is certain to join the most memorable moments in the Games history, including several firsts. ",
+                        "For the first time in the history of the Summer Games, the ceremony will not be taking place in a stadium. Paris is breaking new ground in sports competition by bringing sports out into the city and the same will be true for the opening ceremony, which will be held in the heart of the city, along its main artery, the Seine."
                     ]
                 },
                 {
-                    "name": "The first ever Olympic Village",
-                    "subtitle": "The Paris Games were already blazing new trails in 1924, when they introduced the notion of an Olympic Village",
+                    "name": "The first ever Village",
+                    "subtitle": "The Paris Games were already blazing new trails in 1924, when they introduced the notion of a Village",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
                     "coordinates":[2.2495,48.9299,70], 
                     "tabIndex": 1,
                     "history": "true",
                     "imgURL": "https://sethsolympicsblog.files.wordpress.com/2019/04/fwx0aw1.jpg?w=405&h=260",
                     "openURL": "https://www.paris2024.org/en/france-and-olympism/",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073",
                     "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/story%202.png?updatedAt=1699326631716",
                     "description": [
-                        "The first ever Olympic Village was built near the Stade Olympique in Colombes, north-west of Paris. It was an array of temporary wooden cabins, with three beds in each. The athletes were served three meals a day, and shared the toilets, showers and refectory. The village had a currency exchange bureau, dry-cleaner’s, hairdresser’s, newsagent and post office. Unlike the ones after it, the village in 1924 was not built to be used after the Games.",
-                        "As has been the case in other recent editions of the Games, one major difference between Paris 2024 and Paris 1924 is that the Olympic Village is now built with the future in mind. No longer is the objective to house athletes for a few weeks and consequently remove temporary infrastructure, but to create a lasting impact that will benefit locals."
+                        "The first ever Village was built near the Stade Olympique in Colombes, north-west of Paris. It was an array of temporary wooden cabins, with three beds in each. The athletes were served three meals a day, and shared the toilets, showers and refectory. The village had a currency exchange bureau, dry-cleaner’s, hairdresser’s, newsagent and post office. Unlike the ones after it, the village in 1924 was not built to be used after the Games.",
+                        "As has been the case in other recent editions of the Games, one major difference between 2024 and 1924 is that the Village is now built with the future in mind. No longer is the objective to house athletes for a few weeks and consequently remove temporary infrastructure, but to create a lasting impact that will benefit locals."
                     ]
                 },
                 {
-                    "name": "Women make their debut in Paris 1900",
+                    "name": "Women make their debut in 1900 Paris",
                     "address": "Centre Sportif Parisien de Puteaux, 1 All. des Sports, 92800 Puteaux, France",
-                    "subtitle": "Women were finally allowed to take part in the 1900 Paris Olympic games!",
+                    "subtitle": "Women were finally allowed to participate the Games in Paris !",
                     "coordinates":[2.2437,48.8763,75], 
                     "tabIndex": 1,
                     "history": "true",
                     "imgURL": "https://ik.imagekit.io/poonr2gma/image%2019.png?updatedAt=1697320139071",
                     "openURL": "https://www.paris2024.org/en/gender-equality/",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073",
                     "tipImage": "https://ik.imagekit.io/poonr2gma/Realistic3d/tipimg/story%203.png?updatedAt=1699326631427",
                     "description": [
-                        "The Paris 1900 Olympic Games saw women compete for the first time. The first female Olympic champion was Charlotte Cooper, a British tennis player who won Wimbledon five times. Out of a total of 997 athletes, 22 were women, competing in just five sports: tennis, sailing, croquet, equestrian events and golf. Of these disciplines, only golf and tennis included women‑only events. ",
-                        "According to the Olympic Charter, the IOC’s role is “to encourage and support the promotion of women in sport at all levels and in all structures, with a view to implementing the principle of equality of men and women”. Female participation in the Olympic Games has increased dramatically since; 48.9% of the athletes at the 2020 Tokyo Games are expected to be women."
+                        "The Paris 1900 Games saw women compete for the first time. The first female Games champion was Charlotte Cooper, a British tennis player who won Wimbledon five times. Out of a total of 997 athletes, 22 were women, competing in just five sports: tennis, sailing, croquet, equestrian events and golf. Of these disciplines, only golf and tennis included women‑only events. "
                     ]
                 },
 
                 {
                     "name": "Chariots of Fire",
-                    "subtitle": "A Tale of Triumph and Faith in the 1924 Paris Olympics",
+                    "subtitle": "A Tale of Triumph and Faith in the 1924 Paris Games",
                     "address": "12 Rue François Faber, 92700 Colombes, France",
                     "coordinates":[2.2495,48.9299,70], 
                     "tabIndex": 1,
                     "history": "true",
                     "imgURL": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4366DE67DBF25E8498F543E463D3E73019D0B4C866934997B83372155F83CE5A/scale?width=1200&aspectRatio=1.78&format=jpeg",
                     "openURL": "https://en.wikipedia.org/wiki/Chariots_of_Fire",
-                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/story.glb?updatedAt=1699136473007",
+                    "marker": "https://ik.imagekit.io/poonr2gma/Realistic3d/venue/mappin.glb?updatedAt=1699157077073",
                     "description": [
-                        "Chariots of Fire is a 1981 British historical sports drama film directed by Hugh Hudson, written by Colin Welland and produced by David Puttnam. It is based on the true story of two British athletes in the 1924 Olympics: Eric Liddell, a devout Scottish Christian who runs for the glory of God, and Harold Abrahams, an English Jew who runs to overcome prejudice. ",
+                        "Chariots of Fire is a 1981 British historical sports drama film directed by Hugh Hudson, written by Colin Welland and produced by David Puttnam. It is based on the true story of two British athletes in the 1924 Games: Eric Liddell, a devout Scottish Christian who runs for the glory of God, and Harold Abrahams, an English Jew who runs to overcome prejudice. ",
                         "Chariots of Fire was nominated for seven Academy Awards and won four, including Best Picture, Best Original Screenplay and Best Original Score for Vangelis' electronic theme tune. At the 35th British Academy Film Awards, the film was nominated in 11 categories and won in three, including Best Film. It is ranked 19th in the British Film Institute's list of Top 100 British films."
                     ]
                 }

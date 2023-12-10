@@ -88,7 +88,7 @@ export function createSceneGraphLayer(location, marker) {
         onClick: ({ object}) => handleIconClick({ object}),
         getPosition: d => d.coordinates,
     };
-    if (location.tabIndex === 0 || location.tabIndex === 1) {
+    if (location.tabIndex === 0) {
         return new ScenegraphLayer({
             ...sharedConfig
         });
